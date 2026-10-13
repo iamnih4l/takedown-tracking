@@ -1,28 +1,32 @@
 /**
- * Social Media Takedown Accountability Platform - Frontend Controller
- * Minimal, Fast, Reliable Law-Enforcement Operational Interface
+ * Social Media Takedown Accountability Platform - Modern Frontend Controller
+ * Minimalist, Fast, and Reliable Law-Enforcement Interface
+ * Features: Hardware-Accelerated Ambient Shader, Radial Gauges, Interactive 3D Mesh
  */
 
 let cachedScoreboardData = null;
 let currentPlatformFilter = 'all';
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Initialize core UI controls immediately (zero blocking)
+  // 1. Initialize UI interactions immediately
   initThemeToggle();
   initTabs();
   initPlatformFilters();
   initRetryButton();
 
-  // 2. Fetch and render primary operational data immediately
+  // 2. Fetch and render primary operational metrics immediately (zero-wait)
   fetchAndRenderScoreboard();
 
-  // 3. Check background API health
+  // 3. Check live backend API connectivity
   checkApiHealth();
 
-  // 4. Initialize non-essential 3D hero visualization after DOM is interactive
+  // 4. Initialize ambient WebGL glow shader in background
+  initAmbientShader();
+
+  // 5. Initialize 3D hero constellation mesh
   setTimeout(() => {
     initHero3DCanvas();
-  }, 50);
+  }, 40);
 });
 
 // --- Theme Switcher ---
@@ -52,26 +56,37 @@ function initThemeToggle() {
 
 // --- Progressive Tab Navigation ---
 function initTabs() {
-  const tabButtons = document.querySelectorAll('.tab-btn');
+  const tabButtons = document.querySelectorAll('.nav-item');
   const panels = document.querySelectorAll('.tab-panel');
 
-  tabButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      tabButtons.forEach(b => {
-        b.classList.remove('active');
-        b.setAttribute('aria-selected', 'false');
-      });
-      panels.forEach(p => p.classList.remove('active'));
-
-      btn.classList.add('active');
-      btn.setAttribute('aria-selected', 'true');
-      const targetPanelId = btn.getAttribute('aria-controls');
-      const targetPanel = document.getElementById(targetPanelId);
-      if (targetPanel) {
-        targetPanel.classList.add('active');
-      }
+  function activateTab(btn) {
+    if (!btn) return;
+    tabButtons.forEach(b => {
+      b.classList.remove('active');
+      b.setAttribute('aria-selected', 'false');
     });
+    panels.forEach(p => p.classList.remove('active'));
+
+    btn.classList.add('active');
+    btn.setAttribute('aria-selected', 'true');
+    const targetPanelId = btn.getAttribute('aria-controls');
+    const targetPanel = document.getElementById(targetPanelId);
+    if (targetPanel) {
+      targetPanel.classList.add('active');
+    }
+  }
+
+  tabButtons.forEach(btn => {
+    btn.addEventListener('click', () => activateTab(btn));
   });
+
+  const inspectRulesBtn = document.getElementById('btn-inspect-rules');
+  if (inspectRulesBtn) {
+    inspectRulesBtn.addEventListener('click', () => {
+      const methTab = document.getElementById('tab-methodology');
+      if (methTab) activateTab(methTab);
+    });
+  }
 }
 
 // --- Connectivity & Health ---
@@ -104,7 +119,7 @@ function initRetryButton() {
   }
 }
 
-// --- Primary Data Fetch & Render (Tested Contract) ---
+// --- Primary Data Fetch & Render (Tested Public Contract) ---
 async function fetchAndRenderScoreboard() {
   const errorState = document.getElementById('error-state');
   const errorMessage = document.getElementById('error-message');
@@ -121,7 +136,7 @@ async function fetchAndRenderScoreboard() {
   } catch (err) {
     console.error('Failed to load scoreboard metrics:', err);
     if (errorState && errorMessage) {
-      errorMessage.textContent = `Unable to retrieve metrics from backend API (${err.message}). Verify that python -m takedown_tracking.cli serve is running.`;
+      errorMessage.textContent = `Unable to retrieve metrics from backend API (${err.message}). Check service connectivity.`;
       errorState.style.display = 'flex';
     }
     showErrorInTables('Backend API unavailable. Check service connectivity.');
@@ -162,7 +177,33 @@ function renderDashboard(data) {
     ? `${perf.verified_takedowns_count.toLocaleString()} verified`
     : '--');
 
-  // 3. Core Metrics Bento Cards
+  // 3. Radial Progress Donut Ring (Orbit Pattern)
+  const complianceVal = perf.deadline_compliance_rate_pct !== null && perf.deadline_compliance_rate_pct !== undefined
+    ? perf.deadline_compliance_rate_pct
+    : null;
+  const complianceText = complianceVal !== null ? complianceVal.toFixed(1) : 'N/A';
+  renderText('metric-deadline-compliance', complianceText);
+
+  const radialCircle = document.getElementById('radial-compliance-circle');
+  if (radialCircle && complianceVal !== null) {
+    const circumference = 251.2; // 2 * PI * 40
+    const offset = circumference * (1 - Math.min(100, Math.max(0, complianceVal)) / 100);
+    radialCircle.style.strokeDashoffset = offset;
+    if (complianceVal >= 80) {
+      radialCircle.style.stroke = 'var(--accent-emerald)';
+    } else if (complianceVal < 50) {
+      radialCircle.style.stroke = 'var(--accent-rose)';
+    } else {
+      radialCircle.style.stroke = 'var(--accent-orange)';
+    }
+  }
+
+  // Linear progress bar fallback
+  const progressBar = document.getElementById('compliance-progress-bar');
+  if (progressBar && complianceVal !== null) {
+    progressBar.style.width = `${Math.min(100, Math.max(0, complianceVal))}%`;
+  }
+
   // Median Removal Time (with Right-Censoring Clarity)
   const medianEl = document.getElementById('metric-median-removal');
   const medianUnitEl = document.getElementById('metric-median-unit');
@@ -199,26 +240,17 @@ function renderDashboard(data) {
     }
   }
 
-  // Statutory Deadline Compliance
-  renderText('metric-deadline-compliance', perf.deadline_compliance_rate_pct !== null && perf.deadline_compliance_rate_pct !== undefined
-    ? perf.deadline_compliance_rate_pct.toFixed(1)
-    : 'N/A');
-  const progressBar = document.getElementById('compliance-progress-bar');
-  if (progressBar && perf.deadline_compliance_rate_pct !== null && perf.deadline_compliance_rate_pct !== undefined) {
-    progressBar.style.width = `${Math.min(100, Math.max(0, perf.deadline_compliance_rate_pct))}%`;
-  }
-
   // Still Available Rate
   renderText('metric-still-available', perf.still_available_rate_pct !== null && perf.still_available_rate_pct !== undefined
     ? perf.still_available_rate_pct.toFixed(1)
     : '0.0');
 
-  // Data Request SLA Turnaround
+  // Data Assistance SLA Turnaround
   renderText('metric-median-data', perf.median_data_response_hours !== null && perf.median_data_response_hours !== undefined
     ? perf.median_data_response_hours.toFixed(1)
     : 'N/A');
 
-  // Quarantined Deficiencies
+  // Quarantined Procedural Defects
   renderText('metric-incomplete-count', perf.incomplete_police_requests_count !== null && perf.incomplete_police_requests_count !== undefined
     ? perf.incomplete_police_requests_count.toLocaleString()
     : '[Protected < k]');
@@ -228,17 +260,17 @@ function renderDashboard(data) {
   if (medianIndicator) {
     if (perf.median_removal_censored) {
       medianIndicator.textContent = 'Overdue (Right-Censored)';
-      medianIndicator.className = 'status-indicator warn';
+      medianIndicator.className = 'status-tag warn';
     } else if (perf.median_removal_hours !== null && perf.median_removal_hours !== undefined) {
       if (perf.median_removal_hours <= 3.0) {
-        medianIndicator.textContent = 'Rule 3(1)(d) Compliant (<= 3h)';
-        medianIndicator.className = 'status-indicator pass';
+        medianIndicator.textContent = 'Rule 3(1)(d) <= 3h Compliant';
+        medianIndicator.className = 'status-tag pass';
       } else if (perf.median_removal_hours <= 24.0) {
-        medianIndicator.textContent = 'Standard Turnaround (<= 24h)';
-        medianIndicator.className = 'status-indicator pass';
+        medianIndicator.textContent = 'Standard <= 24h Turnaround';
+        medianIndicator.className = 'status-tag pass';
       } else {
         medianIndicator.textContent = 'Exceeds Statutory SLAs';
-        medianIndicator.className = 'status-indicator warn';
+        medianIndicator.className = 'status-tag warn';
       }
     }
   }
@@ -247,15 +279,15 @@ function renderDashboard(data) {
   if (dataIndicator) {
     if (perf.median_data_response_hours !== null && perf.median_data_response_hours !== undefined) {
       if (perf.median_data_response_hours <= 72.0) {
-        dataIndicator.textContent = 'Within 72.0h Statutory SLA';
-        dataIndicator.className = 'status-indicator pass';
+        dataIndicator.textContent = 'Within 72h SLA';
+        dataIndicator.className = 'status-tag pass';
       } else {
-        dataIndicator.textContent = 'Exceeds 72.0h Statutory SLA';
-        dataIndicator.className = 'status-indicator warn';
+        dataIndicator.textContent = 'Exceeds 72h SLA';
+        dataIndicator.className = 'status-tag warn';
       }
     } else {
       dataIndicator.textContent = 'No Data Requests';
-      dataIndicator.className = 'status-indicator';
+      dataIndicator.className = 'status-tag';
     }
   }
 
@@ -283,6 +315,13 @@ function renderIntegrityPanel(data) {
   const verifiedCount = integrity.verified_takedowns_count !== undefined ? integrity.verified_takedowns_count : (perf.verified_takedowns_count || 0);
   const coverage = integrity.verification_coverage_pct !== undefined ? integrity.verification_coverage_pct : (perf.verification_coverage_pct || 100);
 
+  // Overview Donut Card
+  renderText('overview-verified-count', verifiedCount.toLocaleString());
+  renderText('overview-false-claims', falseCount.toLocaleString());
+  renderText('overview-reuploads', reuploadCount.toLocaleString());
+  renderText('overview-coverage-pct', `${coverage.toFixed(0)}%`);
+
+  // Dedicated Integrity Panel
   renderText('int-verified-count', verifiedCount.toLocaleString());
   renderText('int-false-claims-count', falseCount.toLocaleString());
   renderText('int-reuploads-count', reuploadCount.toLocaleString());
@@ -308,27 +347,37 @@ function renderPlatformsTable(platforms) {
   }
 
   tbody.innerHTML = platforms.map(p => {
+    // Generate clean glyph letter
+    const initial = (p.platform.split(' ').pop() || p.platform.charAt(0)).toUpperCase();
+
     if (p.is_suppressed) {
       return `
         <tr>
-          <td><strong>${escapeHtml(p.platform)}</strong></td>
-          <td><span class="suppressed-badge" title="Cohort is below the k-anonymity publication threshold.">Suppressed</span></td>
+          <td>
+            <div class="platform-cell">
+              <span class="platform-glyph">${escapeHtml(initial)}</span>
+              <strong>${escapeHtml(p.platform)}</strong>
+            </div>
+          </td>
+          <td><span class="badge-suppressed" title="Cohort is below the k-anonymity publication threshold.">Suppressed</span></td>
           <td colspan="8" class="text-muted"><em>Protected cohort &lt; 10 cases suppressed under k-anonymity privacy policy.</em></td>
         </tr>
       `;
     }
 
     const medDisp = p.median_removal_censored 
-      ? `<span class="badge-neutral" title="Unresolved overdue requests exceed median rank">${escapeHtml(p.median_removal_display || '> window')}</span>`
+      ? `<span class="badge-censored" title="Unresolved overdue requests exceed median rank">${escapeHtml(p.median_removal_display || '> window')}</span>`
       : (p.median_removal_hours !== null && p.median_removal_hours !== undefined ? `${p.median_removal_hours.toFixed(1)}h` : '--');
 
     const p90Disp = p.p90_removal_censored
-      ? `<span class="badge-neutral" title="Unresolved overdue requests exceed p90 rank">${escapeHtml(p.p90_removal_display || '> window')}</span>`
+      ? `<span class="badge-censored" title="Unresolved overdue requests exceed p90 rank">${escapeHtml(p.p90_removal_display || '> window')}</span>`
       : (p.p90_removal_hours !== null && p.p90_removal_hours !== undefined ? `${p.p90_removal_hours.toFixed(1)}h` : '--');
 
-    let compClass = 'status-indicator';
+    let compClass = 'status-tag';
+    let compWidth = 0;
     if (p.deadline_compliance_rate_pct !== null && p.deadline_compliance_rate_pct !== undefined) {
-      compClass = p.deadline_compliance_rate_pct >= 80 ? 'status-indicator pass' : (p.deadline_compliance_rate_pct < 50 ? 'status-indicator danger' : 'status-indicator warn');
+      compWidth = Math.min(100, Math.max(0, p.deadline_compliance_rate_pct));
+      compClass = p.deadline_compliance_rate_pct >= 80 ? 'status-tag pass' : (p.deadline_compliance_rate_pct < 50 ? 'status-tag danger' : 'status-tag warn');
     }
 
     const rejectDisp = p.rejections_count !== null && p.rejections_count !== undefined
@@ -341,16 +390,24 @@ function renderPlatformsTable(platforms) {
 
     return `
       <tr>
-        <td><strong>${escapeHtml(p.platform)}</strong></td>
-        <td><span class="public-badge">Audited</span></td>
+        <td>
+          <div class="platform-cell">
+            <span class="platform-glyph">${escapeHtml(initial)}</span>
+            <strong>${escapeHtml(p.platform)}</strong>
+          </div>
+        </td>
+        <td><span class="badge-audited">Audited</span></td>
         <td>${p.sample_size !== null && p.sample_size !== undefined ? p.sample_size : '--'}</td>
         <td>${medDisp}</td>
         <td>${p90Disp}</td>
-        <td class="${compClass}">${p.deadline_compliance_rate_pct !== null && p.deadline_compliance_rate_pct !== undefined ? p.deadline_compliance_rate_pct.toFixed(1) + '%' : 'N/A'}</td>
-        <td class="${p.still_available_rate_pct > 15 ? 'status-indicator warn' : ''}">${p.still_available_rate_pct !== null && p.still_available_rate_pct !== undefined ? p.still_available_rate_pct.toFixed(1) + '%' : '0.0%'}</td>
+        <td>
+          <div class="mini-progress-bar"><div class="mini-progress-fill" style="width: ${compWidth}%;"></div></div>
+          <span class="${compClass}">${p.deadline_compliance_rate_pct !== null && p.deadline_compliance_rate_pct !== undefined ? p.deadline_compliance_rate_pct.toFixed(1) + '%' : 'N/A'}</span>
+        </td>
+        <td class="${p.still_available_rate_pct > 15 ? 'status-tag warn' : ''}">${p.still_available_rate_pct !== null && p.still_available_rate_pct !== undefined ? p.still_available_rate_pct.toFixed(1) + '%' : '0.0%'}</td>
         <td>${rejectDisp}</td>
         <td>${p.median_data_response_hours !== null && p.median_data_response_hours !== undefined ? p.median_data_response_hours.toFixed(1) + 'h' : 'N/A'}</td>
-        <td><span class="verified-pill">${verifiedDisp}</span></td>
+        <td><span style="color: var(--accent-emerald); font-weight: 700;">${verifiedDisp}</span></td>
       </tr>
     `;
   }).join('');
@@ -370,28 +427,33 @@ function renderCategoriesTable(categories) {
       return `
         <tr>
           <td><strong>${escapeHtml(c.category)}</strong></td>
-          <td><span class="suppressed-badge">Suppressed</span></td>
+          <td><span class="badge-suppressed">Suppressed</span></td>
           <td colspan="4" class="text-muted"><em>Protected cohort &lt; 10 cases suppressed under k-anonymity.</em></td>
         </tr>
       `;
     }
 
     const medDisp = c.median_removal_censored 
-      ? `<span class="badge-neutral">${escapeHtml(c.median_removal_display || '> window')}</span>`
+      ? `<span class="badge-censored">${escapeHtml(c.median_removal_display || '> window')}</span>`
       : (c.median_removal_hours !== null && c.median_removal_hours !== undefined ? `${c.median_removal_hours.toFixed(1)}h` : '--');
 
     const p90Disp = c.p90_removal_censored
-      ? `<span class="badge-neutral">${escapeHtml(c.p90_removal_display || '> window')}</span>`
+      ? `<span class="badge-censored">${escapeHtml(c.p90_removal_display || '> window')}</span>`
       : (c.p90_removal_hours !== null && c.p90_removal_hours !== undefined ? `${c.p90_removal_hours.toFixed(1)}h` : '--');
+
+    let compWidth = c.deadline_compliance_rate_pct !== null && c.deadline_compliance_rate_pct !== undefined ? Math.min(100, Math.max(0, c.deadline_compliance_rate_pct)) : 0;
 
     return `
       <tr>
         <td><strong>${escapeHtml(c.category)}</strong></td>
-        <td><span class="public-badge">Audited</span></td>
+        <td><span class="badge-audited">Audited</span></td>
         <td>${c.sample_size !== null && c.sample_size !== undefined ? c.sample_size : '--'}</td>
         <td>${medDisp}</td>
         <td>${p90Disp}</td>
-        <td>${c.deadline_compliance_rate_pct !== null && c.deadline_compliance_rate_pct !== undefined ? c.deadline_compliance_rate_pct.toFixed(1) + '%' : 'N/A'}</td>
+        <td>
+          <div class="mini-progress-bar"><div class="mini-progress-fill" style="width: ${compWidth}%;"></div></div>
+          ${c.deadline_compliance_rate_pct !== null && c.deadline_compliance_rate_pct !== undefined ? c.deadline_compliance_rate_pct.toFixed(1) + '%' : 'N/A'}
+        </td>
       </tr>
     `;
   }).join('');
@@ -399,7 +461,7 @@ function renderCategoriesTable(categories) {
 
 function initPlatformFilters() {
   const searchInput = document.getElementById('platform-search');
-  const filterBtns = document.querySelectorAll('.filter-tag-btn');
+  const filterBtns = document.querySelectorAll('.pill-filter-btn');
 
   function applyFilters() {
     if (!cachedScoreboardData) return;
@@ -455,13 +517,137 @@ function escapeHtml(str) {
     .replace(/'/g, '&#39;');
 }
 
-// --- Lightweight Non-Blocking 3D Verification Hero Canvas ---
+// --- Hardware-Accelerated Ambient Glow WebGL Shader ---
+function initAmbientShader() {
+  const canvas = document.getElementById('ambient-shader');
+  if (!canvas) return;
+
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReducedMotion) {
+    canvas.style.display = 'none';
+    return;
+  }
+
+  let gl = null;
+  try {
+    gl = canvas.getContext('webgl', { alpha: true, antialias: false, powerPreference: 'low-power' });
+  } catch (e) {
+    return;
+  }
+  if (!gl) return;
+
+  // Vertex Shader: full quad
+  const vsSource = `
+    attribute vec2 a_pos;
+    void main() {
+      gl_Position = vec4(a_pos, 0.0, 1.0);
+    }
+  `;
+
+  // Fragment Shader: silky warm orange ambient aura + subtle wave distortion
+  const fsSource = `
+    precision mediump float;
+    uniform vec2 u_resolution;
+    uniform float u_time;
+    uniform vec2 u_mouse;
+
+    void main() {
+      vec2 st = gl_FragCoord.xy / u_resolution.xy;
+      
+      // Top right glowing aura center with mouse parallax
+      vec2 center = vec2(0.9, 0.9) + (u_mouse - 0.5) * 0.06;
+      float dist = distance(st, center);
+
+      // Subtle atmospheric noise undulation
+      float wave = sin(st.x * 2.8 + u_time * 0.35) * cos(st.y * 2.6 + u_time * 0.3) * 0.06;
+      float glow = smoothstep(1.15, 0.08, dist + wave);
+
+      // Deep orange & warm amber radiance (CoinSphere & Orbit reference)
+      vec3 warmOrange = vec3(1.0, 0.46, 0.10); // #FF751A
+      vec3 darkAmber = vec3(0.95, 0.22, 0.02);  // #F23805
+      vec3 ambientColor = mix(darkAmber, warmOrange, glow * 0.85);
+
+      // Bottom left subtle emerald whisper
+      float bDist = distance(st, vec2(0.1, 0.1));
+      float bGlow = smoothstep(0.7, 0.0, bDist) * 0.08;
+      vec3 emerald = vec3(0.06, 0.72, 0.5);
+
+      vec3 finalColor = ambientColor * (glow * 0.42) + emerald * bGlow;
+      float alpha = glow * 0.55 + bGlow * 0.35;
+
+      gl_FragColor = vec4(finalColor, alpha);
+    }
+  `;
+
+  function createShader(gl, type, source) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, source);
+    gl.compileShader(s);
+    return gl.getShaderParameter(s, gl.COMPILE_STATUS) ? s : null;
+  }
+
+  const vs = createShader(gl, gl.VERTEX_SHADER, vsSource);
+  const fs = createShader(gl, gl.FRAGMENT_SHADER, fsSource);
+  if (!vs || !fs) return;
+
+  const prog = gl.createProgram();
+  gl.attachShader(prog, vs);
+  gl.attachShader(prog, fs);
+  gl.linkProgram(prog);
+  if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) return;
+
+  gl.useProgram(prog);
+
+  // Buffer setup for fullscreen quad
+  const posBuf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, posBuf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([
+    -1, -1,   1, -1,  -1,  1,
+    -1,  1,   1, -1,   1,  1
+  ]), gl.STATIC_DRAW);
+
+  const aPos = gl.getAttribLocation(prog, 'a_pos');
+  gl.enableVertexAttribArray(aPos);
+  gl.vertexAttribPointer(aPos, 2, gl.FLOAT, false, 0, 0);
+
+  const uRes = gl.getUniformLocation(prog, 'u_resolution');
+  const uTime = gl.getUniformLocation(prog, 'u_time');
+  const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+  let mouseX = 0.5, mouseY = 0.5;
+  window.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX / window.innerWidth;
+    mouseY = 1.0 - (e.clientY / window.innerHeight);
+  });
+
+  function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    gl.viewport(0, 0, canvas.width, canvas.height);
+  }
+  window.addEventListener('resize', resize);
+  resize();
+
+  let startTime = performance.now();
+  function renderShader() {
+    if (!document.hidden) {
+      const elapsed = (performance.now() - startTime) * 0.001;
+      gl.uniform2f(uRes, canvas.width, canvas.height);
+      gl.uniform1f(uTime, elapsed);
+      gl.uniform2f(uMouse, mouseX, mouseY);
+      gl.drawArrays(gl.TRIANGLES, 0, 6);
+    }
+    requestAnimationFrame(renderShader);
+  }
+  requestAnimationFrame(renderShader);
+}
+
+// --- Interactive 3D Verification Hero Constellation Mesh ---
 function initHero3DCanvas() {
   const canvas = document.getElementById('hero-canvas');
   const fallback = document.getElementById('canvas-fallback');
   if (!canvas) return;
 
-  // Respect prefers-reduced-motion
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (prefersReducedMotion) {
     canvas.style.display = 'none';
@@ -484,36 +670,26 @@ function initHero3DCanvas() {
     return;
   }
 
-  // Verification Constellation Nodes in 3D Space (X, Y, Z)
-  // 3 Primary Nodes: Police Unit (center-left), Platform (center), External Verifier (center-right)
+  // Multi-party Verification Nodes in 3D Space
   const nodes = [
-    { x: -90, y: 0, z: 0, label: 'Police Order', primary: true, color: '#f59e0b' },
-    { x: 0, y: -20, z: 20, label: 'Platform Intermediary', primary: true, color: '#ff6b2b' },
-    { x: 90, y: 15, z: -10, label: 'Independent Verifier', primary: true, color: '#10b981' },
-    // Surrounding Verification & Timing Checkpoints
-    { x: -55, y: -35, z: -30, color: '#ff8542' },
-    { x: -40, y: 40, z: 25, color: '#ff8542' },
-    { x: 45, y: -45, z: 20, color: '#10b981' },
-    { x: 50, y: 40, z: -25, color: '#10b981' },
-    { x: -110, y: -25, z: 15, color: '#f59e0b' },
-    { x: 110, y: -20, z: 30, color: '#10b981' },
-    { x: 0, y: 55, z: -20, color: '#ff6b2b' }
+    { x: -80, y: 0, z: 0, label: 'Police Order', primary: true, color: '#f59e0b' },
+    { x: 0, y: -15, z: 15, label: 'Platform Intermediary', primary: true, color: '#ff7a1a' },
+    { x: 80, y: 15, z: -10, label: 'Independent Verifier', primary: true, color: '#10b981' },
+    { x: -45, y: -30, z: -25, color: '#ff8c42' },
+    { x: -35, y: 35, z: 20, color: '#ff8c42' },
+    { x: 40, y: -35, z: 15, color: '#10b981' },
+    { x: 45, y: 35, z: -20, color: '#10b981' },
+    { x: -95, y: -20, z: 12, color: '#f59e0b' },
+    { x: 95, y: -15, z: 25, color: '#10b981' }
   ];
 
-  // Optical verification packet trails
   const packets = [
-    { from: 0, to: 1, progress: 0.1, speed: 0.008 },
-    { from: 1, to: 2, progress: 0.5, speed: 0.010 },
-    { from: 0, to: 3, progress: 0.8, speed: 0.007 },
-    { from: 2, to: 6, progress: 0.3, speed: 0.009 }
+    { from: 0, to: 1, progress: 0.1, speed: 0.009 },
+    { from: 1, to: 2, progress: 0.5, speed: 0.011 },
+    { from: 0, to: 3, progress: 0.8, speed: 0.008 }
   ];
 
-  let mouseX = 0;
-  let mouseY = 0;
-  let rotX = 0;
-  let rotY = 0;
-  let isHovered = false;
-  let animationFrameId = null;
+  let mouseX = 0, mouseY = 0, rotX = 0, rotY = 0, isHovered = false;
 
   canvas.addEventListener('mousemove', (e) => {
     const rect = canvas.getBoundingClientRect();
@@ -522,28 +698,18 @@ function initHero3DCanvas() {
     isHovered = true;
   });
 
-  canvas.addEventListener('mouseleave', () => {
-    isHovered = false;
-  });
+  canvas.addEventListener('mouseleave', () => { isHovered = false; });
 
   function project(p, width, height) {
-    // 3D Rotation matrices
-    const cosY = Math.cos(rotY);
-    const sinY = Math.sin(rotY);
-    const cosX = Math.cos(rotX);
-    const sinX = Math.sin(rotX);
+    const cosY = Math.cos(rotY), sinY = Math.sin(rotY);
+    const cosX = Math.cos(rotX), sinX = Math.sin(rotX);
 
-    // Rotate Y
     let x1 = p.x * cosY + p.z * sinY;
     let z1 = -p.x * sinY + p.z * cosY;
-
-    // Rotate X
     let y1 = p.y * cosX - z1 * sinX;
     let z2 = p.y * sinX + z1 * cosX;
 
-    // Perspective projection
-    const fov = 260;
-    const distance = 260;
+    const fov = 240, distance = 240;
     const scale = fov / (distance + z2);
 
     return {
@@ -555,31 +721,28 @@ function initHero3DCanvas() {
   }
 
   function renderFrame() {
-    // Pause animation when tab is not visible to save CPU/battery
     if (document.hidden) {
-      animationFrameId = requestAnimationFrame(renderFrame);
+      requestAnimationFrame(renderFrame);
       return;
     }
 
     const width = canvas.width;
     const height = canvas.height;
 
-    // Smooth inertia interpolation
-    const targetRotY = isHovered ? mouseX * 0.45 : Math.sin(Date.now() * 0.0006) * 0.15;
-    const targetRotX = isHovered ? -mouseY * 0.35 : Math.cos(Date.now() * 0.0007) * 0.08;
+    const targetRotY = isHovered ? mouseX * 0.4 : Math.sin(Date.now() * 0.0006) * 0.12;
+    const targetRotX = isHovered ? -mouseY * 0.3 : Math.cos(Date.now() * 0.0007) * 0.07;
 
     rotY += (targetRotY - rotY) * 0.05;
     rotX += (targetRotX - rotX) * 0.05;
 
     ctx.clearRect(0, 0, width, height);
 
-    // Project nodes
     const projected = nodes.map(n => ({
       ...n,
       proj: project(n, width, height)
     }));
 
-    // Draw connecting lines
+    // Draw connecting edges
     ctx.lineWidth = 1;
     for (let i = 0; i < projected.length; i++) {
       for (let j = i + 1; j < projected.length; j++) {
@@ -588,9 +751,9 @@ function initHero3DCanvas() {
         const dz = projected[i].z - projected[j].z;
         const dist3d = Math.sqrt(dx * dx + dy * dy + dz * dz);
 
-        if (dist3d < 95) {
-          const alpha = (1 - dist3d / 95) * 0.22;
-          ctx.strokeStyle = `rgba(255, 107, 43, ${alpha})`;
+        if (dist3d < 90) {
+          const alpha = (1 - dist3d / 90) * 0.24;
+          ctx.strokeStyle = `rgba(255, 122, 26, ${alpha})`;
           ctx.beginPath();
           ctx.moveTo(projected[i].proj.x, projected[i].proj.y);
           ctx.lineTo(projected[j].proj.x, projected[j].proj.y);
@@ -599,7 +762,7 @@ function initHero3DCanvas() {
       }
     }
 
-    // Draw traveling verification pulse packets
+    // Draw traveling pulse packets
     packets.forEach(pkt => {
       pkt.progress += pkt.speed;
       if (pkt.progress > 1) pkt.progress = 0;
@@ -609,7 +772,7 @@ function initHero3DCanvas() {
       const curX = p1.x + (p2.x - p1.x) * pkt.progress;
       const curY = p1.y + (p2.y - p1.y) * pkt.progress;
 
-      ctx.fillStyle = '#ff8542';
+      ctx.fillStyle = '#ff8c42';
       ctx.beginPath();
       ctx.arc(curX, curY, 2.2, 0, Math.PI * 2);
       ctx.fill();
@@ -619,16 +782,15 @@ function initHero3DCanvas() {
     projected.sort((a, b) => b.proj.z - a.proj.z);
     projected.forEach(node => {
       const p = node.proj;
-      const radius = node.primary ? Math.max(3.5, 4.8 * p.scale) : Math.max(1.8, 2.5 * p.scale);
+      const radius = node.primary ? Math.max(3.5, 4.5 * p.scale) : Math.max(1.8, 2.4 * p.scale);
 
-      ctx.fillStyle = node.color || '#ff6b2b';
+      ctx.fillStyle = node.color || '#ff7a1a';
       ctx.beginPath();
       ctx.arc(p.x, p.y, radius, 0, Math.PI * 2);
       ctx.fill();
 
-      // Outer glow on primary nodes
       if (node.primary) {
-        ctx.strokeStyle = `rgba(255, 107, 43, ${0.35 * p.scale})`;
+        ctx.strokeStyle = `rgba(255, 122, 26, ${0.4 * p.scale})`;
         ctx.lineWidth = 1.5;
         ctx.beginPath();
         ctx.arc(p.x, p.y, radius + 3, 0, Math.PI * 2);
@@ -636,9 +798,8 @@ function initHero3DCanvas() {
       }
     });
 
-    animationFrameId = requestAnimationFrame(renderFrame);
+    requestAnimationFrame(renderFrame);
   }
 
-  // Start animation loop
-  animationFrameId = requestAnimationFrame(renderFrame);
+  requestAnimationFrame(renderFrame);
 }

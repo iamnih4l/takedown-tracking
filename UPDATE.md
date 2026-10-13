@@ -196,14 +196,14 @@ If content is verified removed, `verified_removed_at` will automatically overrid
 
 ## F. Frontend Architecture & Design Implementation
 
-* **Operational Law-Enforcement Principle**: Prioritized operational correctness, immediate access to information, privacy, accessibility, and zero-wait responsiveness over decorative complexity.
-* **Cinematic Dark Aesthetic**: Near-black obsidian (`#080b11`) and charcoal (`#0d121c`, `#131a29`) card surfaces with warm orange focal accents (`#ff6b2b`, `#ff8542`) and subtle border luminescence (`rgba(255, 107, 43, 0.22)`).
-* **Lightweight 3D Canvas Constellation**: Built with native HTML5 Canvas 2D and 3D perspective projection (< 100 lines of pure vanilla JS, zero external frameworks). Displays multi-party audit nodes (Police $\rightarrow$ Intermediary $\rightarrow$ External Verifier) with interactive mouse parallax and traveling optical pulse packets. Non-blocking initialization after DOM and data render; respects `prefers-reduced-motion: reduce` with a static fallback.
-* **Progressive Disclosure Navigation**:
-  1. *Overview & Executive Metrics*: Core bento cards (median removal, p90 tail, statutory compliance, still available, 72h data assistance, quarantined defects).
-  2. *Platform Comparisons*: Full table of fictional intermediaries (`Platform A` .. `Platform J`) with real-time text search, SLA filter buttons, and sample sizes.
-  3. *Harm Categories & SLAs*: Statutory breakdown (`CSAM`, `NonConsensualImagery`, `Impersonation`, `FinancialFraud`) with 2.0h / 3.0h / 72.0h legal rules.
-  4. *Verification & Integrity Audit*: Verification coverage %, false removal claims, and 7-day re-upload monitoring.
-  5. *Auditing Methodology*: Gazette Notification 269993 citations, right-censored mathematical definitions, and $k$-anonymity guarantees.
-* **Fault Tolerance & Reliability**: Live `/api/health` connectivity badge, honest disclosure of suppressed or censored cohorts, and a self-healing error state with a retry button if the backend is temporarily unreachable.
+* **Design Philosophy (Orbit, CoinSphere, Leadly, Aaru References)**: Minimalist, fast, and reliable accountability cockpit combining cinematic ambient lighting, warm orange focal accents, and high-density operational clarity.
+* **Hardware-Accelerated Ambient WebGL Glow Shader (`#ambient-shader`)**: Silky, warm orange and amber radiance running on a full-viewport WebGL fragment shader canvas. Smoothly refracts with mouse position and undulates subtly in the background without blocking CPU rendering or DOM interactions. Automatically respects `prefers-reduced-motion` and pauses when the tab is hidden.
+* **Orbit & Leadly Inspired Sidebar Shell**: Dedicated 260px navigation sidebar featuring a celestial orbital emblem, section navigation pills with active orange gradient glow (`#ff7a1a` to `#ff4d00`), and a persistent bottom 2026 IT Rules Statutory SLA Monitor card with a direct link to the legal auditing rules.
+* **Radial Donut Progress Rings & Waveform Splines**:
+  - *Statutory Deadline Compliance*: SVG circular radial progress ring with glowing stroke and center percentage readout.
+  - *Median Content Removal Time*: Dynamic spline wave curve showing empirical turnaround duration against statutory benchmarks.
+  - *Verification & Integrity Donut*: Crawler coverage ring showing independently verified removals against false claims and re-uploads.
+* **Modern Intermediary Table Design**: Fictional intermediaries (`Platform A` .. `Platform J`) equipped with initial glyph avatars, live search filtering, quick filter pills (`All`, `≥ 80% SLA`, `< 50% SLA`, `High Non-Removal`), inline horizontal progress meters, and right-censored badges (`> measurement window`).
+* **Interactive 3D Constellation Mesh (`#hero-canvas`)**: Non-blocking vanilla 3D perspective canvas displaying multi-party audit nodes (Police Demand $\rightarrow$ Intermediary $\rightarrow$ External Verifier) with mouse parallax and optical packet trails.
+* **Fault Tolerance & Reliability**: Zero external heavy libraries, live `/api/health` connectivity badge, honest disclosure of suppressed or censored cohorts, and a self-healing error state with a retry button if the backend is temporarily unreachable.
 
