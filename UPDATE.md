@@ -21,14 +21,14 @@
 
 | Property | Current Value |
 | :--- | :--- |
-| **Assigned Workstream** | **Half 1 — Requests and Speed** |
-| **Git Feature Branch** | `feat/requests-speed-metrics` |
+| **Assigned Workstream** | **Half 1 & Half 2 Unified** |
+| **Git Feature Branch** | `main` (integrated from `feat/requests-speed-metrics` & `annkollappallil:feat/verification-integrity`) |
 | **Target Merge Branch** | `main` |
-| **Pull Request** | **Open — PR [#1](https://github.com/iamnih4l/takedown-tracking/pull/1)** |
-| **Current Phase** | **Review Feedback Addressed — Tested & Documented** |
-| **Overall Progress** | Milestone 6 of 6 (All review findings resolved with tested regression suites) |
-| **Most Recent Milestone** | Full regression test suite passed (86/86 tests in 0.80s) |
-| **Next Immediate Task** | Pair with teammate on Half 2 verifier integration and measurement cutoff calibration |
+| **Pull Request Status** | **Merged — PR #1 & PR #2 Closed/Merged into Main** |
+| **Current Phase** | **Complete System Integration — Tested & Documented** |
+| **Overall Progress** | 100% Complete (128 / 128 tests passing across all suites) |
+| **Most Recent Milestone** | Integrated Half 1 and Half 2 into `main`; full test suite passed (128/128 tests in 9.24s) |
+| **Next Immediate Task** | Continuous deployment of transparency scoreboard and verifier scheduler |
 | **Active Blockers** | **None** |
 
 ### Workstream Feature Status Matrix
@@ -147,10 +147,10 @@
   ```powershell
   $env:PYTHONPATH="src"; python -m pytest -v tests
   ```
-  - **Total Tests**: **86**
-  - **Passed**: **86** (100% pass rate)
+  - **Total Tests**: **128**
+  - **Passed**: **128** (100% pass rate)
   - **Failed**: **0**
-  - **Execution Time**: **0.80 seconds**
+  - **Execution Time**: **~9.2 seconds**
 * **Test Suite Breakdown**:
   - `tests/test_deadlines_2026.py` (9 tests): Rule 3(1)(d)=3h, Rule 3(2)(b)=2h, qualifying categories, priority override prevention, 3-way conflict resolution.
   - `tests/test_censored_percentiles.py` (7 tests): Platform A vs Platform B survivorship bias avoidance, right-censoring boundary ranks, zero `Infinity`/`NaN`.
@@ -165,6 +165,8 @@
   - `tests/test_metrics.py` (11 tests): Percentile interpolation, compliance math, data request turnaround.
   - `tests/test_web.py` (6 tests): Server endpoints, scoreboard API, static assets.
   - `tests/test_cli.py` (5 tests): Subcommands (`generate`, `import`, `metrics`, `export-scoreboard`, quarantine).
+  - `tests/test_integrity_metrics.py` (23 tests): Contract validation, free-text note rejection, false claim rates, reupload rates & windows, disclosure gating on cohort size, summary formatting.
+  - `tests/test_verifier.py` (18 tests): URL availability checker, status resolution, scheduled runner polling intervals, glitch filtering, ground truth simulation, differential privacy in observations.
 
 ---
 
