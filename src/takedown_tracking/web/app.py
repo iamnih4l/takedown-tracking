@@ -74,6 +74,59 @@ class TakedownRequestHandler(BaseHTTPRequestHandler):
         else:
             self.send_error(404, "Not Found")
 
+    def do_POST(self) -> None:
+        """Handle POST requests for dataset upload and recalculation."""
+        parsed = urllib.parse.urlparse(self.path)
+        path = parsed.path
+
+        if path == "/api/upload":
+            content_length = int(self.headers.get("Content-Length", 0))
+            if content_length == 0 or content_length > 25_000_000:
+                self.send_json(400, {"error": "Invalid payload size (max 25MB)."})
+                return
+
+            raw_body = self.rfile.read(content_length)
+            content_type = self.headers.get("Content-Type", "")
+
+            try:
+                if "application/json" in content_type:
+                    data = json.loads(raw_body.decode("utf-8"))
+                    if isinstance(data, list):
+                        records_data = data
+                    elif isinstance(data, dict) and "records" in data:
+                        records_data = data["records"]
+                    else:
+                        records_data = [data]
+                    result = RequestImporter.from_dict_list(records_data)
+                elif "text/csv" in content_type:
+                    csv_text = raw_body.decode("utf-8", errors="replace")
+                    result = RequestImporter.from_csv_string(csv_text)
+                else:
+                    # Auto-detect JSON or CSV
+                    try:
+                        data = json.loads(raw_body.decode("utf-8"))
+                        records_data = data if isinstance(data, list) else data.get("records", [data])
+                        result = RequestImporter.from_dict_list(records_data)
+                    except Exception:
+                        csv_text = raw_body.decode("utf-8", errors="replace")
+                        result = RequestImporter.from_csv_string(csv_text)
+
+                pfilter = PrivacyFilter(k_threshold=10, is_demonstration_mode=True)
+                TakedownRequestHandler.scoreboard = pfilter.filter_and_publish(
+                    result.valid_records, invalid_records_count=result.invalid_count
+                )
+                self.send_json(200, {
+                    "status": "success",
+                    "valid_count": len(result.valid_records),
+                    "invalid_count": result.invalid_count,
+                    "scoreboard": TakedownRequestHandler.scoreboard.to_dict(),
+                })
+            except Exception as e:
+                self.send_json(400, {"error": f"Failed to ingest dataset: {str(e)}"})
+        else:
+            self.send_error(404, "Not Found")
+
+
 
 def run_server(
     host: str = "127.0.0.1",

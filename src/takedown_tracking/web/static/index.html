@@ -158,6 +158,16 @@
         </div>
 
         <div class="top-bar-right">
+          <!-- Dataset Ingestion Upload Modal Trigger -->
+          <button id="btn-open-upload" class="btn-upload-trigger" title="Upload dispatch dataset (CSV or JSON)">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="17 8 12 3 7 8"/>
+              <line x1="12" y1="3" x2="12" y2="15"/>
+            </svg>
+            <span>Upload Dataset</span>
+          </button>
+
           <!-- Live Service Health Status Indicator -->
           <span id="health-badge" class="health-badge" title="Backend service connectivity status">
             <span class="health-dot" aria-hidden="true"></span>
@@ -446,6 +456,7 @@
                       <th scope="col">Rejections</th>
                       <th scope="col">Data Response</th>
                       <th scope="col">Verified Takedowns</th>
+                      <th scope="col">Deep Dive</th>
                     </tr>
                   </thead>
                   <tbody id="platforms-table-body">
@@ -625,6 +636,166 @@
         </div>
       </div>
     </main>
+  </div>
+
+  <!-- Platform Deep-Dive Slide-Over Drawer -->
+  <div id="drawer-backdrop" class="drawer-backdrop" aria-hidden="true"></div>
+  <aside id="platform-drawer" class="platform-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-platform-name" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="drawer-brand-wrap">
+        <span id="drawer-platform-glyph" class="platform-glyph big">A</span>
+        <div>
+          <h3 id="drawer-platform-name" class="drawer-title">Platform A</h3>
+          <span id="drawer-platform-status" class="badge-audited">Audited Intermediary</span>
+        </div>
+      </div>
+      <button id="drawer-close-btn" class="drawer-close-btn" aria-label="Close platform details">&times;</button>
+    </div>
+
+    <div class="drawer-body">
+      <!-- Compliance Gauge Section -->
+      <div class="drawer-gauge-card">
+        <div class="drawer-gauge-top">
+          <span class="drawer-section-label">Overall SLA Compliance</span>
+          <span id="drawer-sla-tag" class="status-tag pass">2026 Rules</span>
+        </div>
+        <div class="drawer-gauge-row">
+          <div class="radial-svg-wrap mini" aria-hidden="true">
+            <svg class="radial-svg" viewBox="0 0 100 100">
+              <circle class="radial-bg-circle" cx="50" cy="50" r="40"></circle>
+              <circle id="drawer-compliance-circle" class="radial-fill-circle" cx="50" cy="50" r="40"></circle>
+            </svg>
+            <div class="radial-center-text">
+              <span id="drawer-compliance-pct">--</span>%
+            </div>
+          </div>
+          <div class="drawer-gauge-text">
+            <div class="drawer-stat-row">
+              <span>Tracked Requests:</span>
+              <strong id="drawer-sample-size">--</strong>
+            </div>
+            <div class="drawer-stat-row">
+              <span>Privacy Gate:</span>
+              <span id="drawer-privacy-status" class="badge-pill success">k &ge; 10 Satisfied</span>
+            </div>
+            <div class="drawer-stat-row">
+              <span>Still Available:</span>
+              <strong id="drawer-still-available" style="color: var(--accent-amber);">--%</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Removal Speed Profile -->
+      <div class="drawer-section">
+        <h4 class="drawer-heading">Removal Turnaround Profile</h4>
+        <div class="drawer-grid-2">
+          <div class="drawer-metric-tile">
+            <span class="drawer-tile-label">Median Speed (p50)</span>
+            <div class="drawer-tile-val-wrap">
+              <span id="drawer-median-speed" class="drawer-tile-num">--</span>
+              <span id="drawer-median-unit" class="drawer-tile-unit">hours</span>
+            </div>
+            <span class="drawer-tile-sub">Kaplan-Meier survival estimate</span>
+          </div>
+          <div class="drawer-metric-tile">
+            <span class="drawer-tile-label">Tail Latency (p90)</span>
+            <div class="drawer-tile-val-wrap">
+              <span id="drawer-p90-speed" class="drawer-tile-num">--</span>
+              <span id="drawer-p90-unit" class="drawer-tile-unit">hours</span>
+            </div>
+            <span class="drawer-tile-sub">Upper 10th percentile tail</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Independent Crawler Verification Integrity -->
+      <div class="drawer-section">
+        <h4 class="drawer-heading">Independent Verification Integrity</h4>
+        <div class="drawer-tiles-list">
+          <div class="drawer-list-item">
+            <div>
+              <strong>Verified Takedowns</strong>
+              <p>Confirmed removed by independent crawler</p>
+            </div>
+            <span id="drawer-verified-count" class="badge-pill success">--</span>
+          </div>
+          <div class="drawer-list-item">
+            <div>
+              <strong>False Removal Claims</strong>
+              <p>Self-reported removed, crawler verified live</p>
+            </div>
+            <span id="drawer-false-claims" class="badge-pill danger">0</span>
+          </div>
+          <div class="drawer-list-item">
+            <div>
+              <strong>Observed Re-uploads</strong>
+              <p>Reappeared within post-removal 7-day window</p>
+            </div>
+            <span id="drawer-reuploads" class="badge-pill warning">0</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Statutory Standards Evaluation -->
+      <div class="drawer-section">
+        <h4 class="drawer-heading">Statutory IT Rules Evaluation</h4>
+        <div class="drawer-rules-box">
+          <div class="drawer-rule-row">
+            <span>Rule 3(1)(d) (3h Court/Govt Order):</span>
+            <strong id="drawer-rule-31d">Evaluated (&le; 3h)</strong>
+          </div>
+          <div class="drawer-rule-row">
+            <span>Rule 3(2)(b) (2h Emergency Grievance):</span>
+            <strong id="drawer-rule-32b">Evaluated (&le; 2h)</strong>
+          </div>
+          <div class="drawer-rule-row">
+            <span>Sec 79(3)(b) (72h Data Turnaround):</span>
+            <strong id="drawer-data-speed">--</strong>
+          </div>
+          <div class="drawer-rule-row">
+            <span>Rejections / Disputes:</span>
+            <strong id="drawer-rejections">--</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Dataset Upload Modal Dialog -->
+  <div id="upload-modal-backdrop" class="modal-backdrop" aria-hidden="true">
+    <div id="upload-modal" class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="upload-modal-title">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-orange)" stroke-width="2.5" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="17 8 12 3 7 8"/>
+            <line x1="12" y1="3" x2="12" y2="15"/>
+          </svg>
+          <h3 id="upload-modal-title" class="modal-title">Ingest Dispatch &amp; Verification Dataset</h3>
+        </div>
+        <button id="upload-close-btn" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc">
+          Upload police dispatch records (CSV or JSON). Records undergo schema validation, procedural completeness checks, and k-anonymity filtering before live scoreboard recalculation.
+        </p>
+        <div id="upload-dropzone" class="upload-dropzone">
+          <input type="file" id="dataset-file-input" accept=".csv,.json" class="file-input-hidden" aria-label="Choose CSV or JSON dataset">
+          <div class="dropzone-inner">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="12" y1="18" x2="12" y2="12"/>
+              <polyline points="9 15 12 12 15 15"/>
+            </svg>
+            <span class="dropzone-prompt">Drag &amp; drop <strong>.csv</strong> or <strong>.json</strong> dispatch file</span>
+            <span class="dropzone-browse">or <button type="button" id="btn-browse-file" class="btn-link">browse from local disk</button></span>
+          </div>
+        </div>
+        <div id="upload-status" class="upload-status" style="display: none;"></div>
+      </div>
+    </div>
   </div>
 
   <script src="/app.js"></script>

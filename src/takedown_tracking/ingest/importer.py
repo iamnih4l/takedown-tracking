@@ -50,17 +50,10 @@ class RequestImporter:
     """Parses and validates requests from CSV and JSON sources."""
 
     @classmethod
-    def from_json_file(cls, path: Union[str, Path]) -> ImportResult:
-        """Import records from a JSON file."""
-        file_path = Path(path)
-        if not file_path.exists():
-            raise FileNotFoundError(f"Input file not found: {file_path}")
-
-        with open(file_path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-
+    def from_dict_list(cls, data: List[Any]) -> ImportResult:
+        """Import records from a Python list of dictionaries."""
         if not isinstance(data, list):
-            raise ValueError("Root JSON element must be an array of request records.")
+            raise ValueError("Input data must be a list of request dictionaries.")
 
         valid_records: List[RequestRecord] = []
         failures: List[ValidationFailure] = []
@@ -72,7 +65,7 @@ class RequestImporter:
                         row_index=idx,
                         field="root",
                         error_code="INVALID_RECORD_FORMAT",
-                        message="Record must be a JSON object.",
+                        message="Record must be a JSON object / dict.",
                     )
                 )
                 continue
@@ -90,28 +83,52 @@ class RequestImporter:
         )
 
     @classmethod
-    def from_csv_file(cls, path: Union[str, Path]) -> ImportResult:
-        """Import records from a CSV file."""
+    def from_json_file(cls, path: Union[str, Path]) -> ImportResult:
+        """Import records from a JSON file."""
         file_path = Path(path)
         if not file_path.exists():
             raise FileNotFoundError(f"Input file not found: {file_path}")
 
+        with open(file_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+        if not isinstance(data, list):
+            raise ValueError("Root JSON element must be an array of request records.")
+
+        return cls.from_dict_list(data)
+
+    @classmethod
+    def from_csv_string(cls, content: str) -> ImportResult:
+        """Import records from raw CSV text content."""
+        import io
         valid_records: List[RequestRecord] = []
         failures: List[ValidationFailure] = []
         total_rows = 0
 
-        with open(file_path, "r", encoding="utf-8", newline="") as f:
-            reader = csv.DictReader(f)
-            for idx, row in enumerate(reader, start=2):  # Header is row 1
-                total_rows += 1
-                record, row_failures = RequestValidator.validate_row(row, row_index=idx)
-                if record:
-                    valid_records.append(record)
-                if row_failures:
-                    failures.extend(row_failures)
+        reader = csv.DictReader(io.StringIO(content))
+        for idx, row in enumerate(reader, start=2):
+            total_rows += 1
+            record, row_failures = RequestValidator.validate_row(row, row_index=idx)
+            if record:
+                valid_records.append(record)
+            if row_failures:
+                failures.extend(row_failures)
 
         return ImportResult(
             valid_records=valid_records,
             failures=failures,
             total_rows=total_rows,
         )
+
+    @classmethod
+    def from_csv_file(cls, path: Union[str, Path]) -> ImportResult:
+        """Import records from a CSV file."""
+        file_path = Path(path)
+        if not file_path.exists():
+            raise FileNotFoundError(f"Input file not found: {file_path}")
+
+        with open(file_path, "r", encoding="utf-8", newline="") as f:
+            content = f.read()
+
+        return cls.from_csv_string(content)
+

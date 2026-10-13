@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initThemeToggle();
   initTabs();
   initPlatformFilters();
+  initPlatformDrawer();
+  initUploadModal();
   initRetryButton();
 
   // 2. Fetch and render primary operational metrics immediately (zero-wait)
@@ -342,17 +344,17 @@ function renderPlatformsTable(platforms) {
   if (!tbody) return;
 
   if (!platforms || platforms.length === 0) {
-    tbody.innerHTML = '<tr><td colspan="10" class="loading-cell">No platform records match the filter criteria.</td></tr>';
+    tbody.innerHTML = '<tr><td colspan="11" class="loading-cell">No platform records match the filter criteria.</td></tr>';
     return;
   }
 
-  tbody.innerHTML = platforms.map(p => {
+  tbody.innerHTML = platforms.map((p, idx) => {
     // Generate clean glyph letter
     const initial = (p.platform.split(' ').pop() || p.platform.charAt(0)).toUpperCase();
 
     if (p.is_suppressed) {
       return `
-        <tr>
+        <tr class="suppressed-row">
           <td>
             <div class="platform-cell">
               <span class="platform-glyph">${escapeHtml(initial)}</span>
@@ -360,7 +362,7 @@ function renderPlatformsTable(platforms) {
             </div>
           </td>
           <td><span class="badge-suppressed" title="Cohort is below the k-anonymity publication threshold.">Suppressed</span></td>
-          <td colspan="8" class="text-muted"><em>Protected cohort &lt; 10 cases suppressed under k-anonymity privacy policy.</em></td>
+          <td colspan="9" class="text-muted"><em>Protected cohort &lt; 10 cases suppressed under k-anonymity privacy policy.</em></td>
         </tr>
       `;
     }
@@ -389,7 +391,7 @@ function renderPlatformsTable(platforms) {
       : '--';
 
     return `
-      <tr>
+      <tr class="clickable-row" data-platform-index="${idx}" title="Click to inspect ${escapeHtml(p.platform)} in detail">
         <td>
           <div class="platform-cell">
             <span class="platform-glyph">${escapeHtml(initial)}</span>
@@ -408,9 +410,23 @@ function renderPlatformsTable(platforms) {
         <td>${rejectDisp}</td>
         <td>${p.median_data_response_hours !== null && p.median_data_response_hours !== undefined ? p.median_data_response_hours.toFixed(1) + 'h' : 'N/A'}</td>
         <td><span style="color: var(--accent-emerald); font-weight: 700;">${verifiedDisp}</span></td>
+        <td>
+          <button type="button" class="inspect-pill-btn" aria-label="Deep dive into ${escapeHtml(p.platform)}">Inspect &rarr;</button>
+        </td>
       </tr>
     `;
   }).join('');
+
+  // Attach interactive click listeners to rows
+  const rows = tbody.querySelectorAll('.clickable-row');
+  rows.forEach(row => {
+    row.addEventListener('click', () => {
+      const idx = parseInt(row.getAttribute('data-platform-index'), 10);
+      if (!isNaN(idx) && platforms[idx]) {
+        openPlatformDrawer(platforms[idx]);
+      }
+    });
+  });
 }
 
 function renderCategoriesTable(categories) {
@@ -516,6 +532,239 @@ function escapeHtml(str) {
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#39;');
 }
+
+// --- Platform Deep-Dive Drawer Controller ---
+function initPlatformDrawer() {
+  const closeBtn = document.getElementById('drawer-close-btn');
+  const backdrop = document.getElementById('drawer-backdrop');
+
+  if (closeBtn) closeBtn.addEventListener('click', closePlatformDrawer);
+  if (backdrop) backdrop.addEventListener('click', closePlatformDrawer);
+
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closePlatformDrawer();
+      closeUploadModal();
+    }
+  });
+}
+
+function openPlatformDrawer(p) {
+  if (!p) return;
+  const drawer = document.getElementById('platform-drawer');
+  const backdrop = document.getElementById('drawer-backdrop');
+  if (!drawer || !backdrop) return;
+
+  const initial = (p.platform.split(' ').pop() || p.platform.charAt(0)).toUpperCase();
+  renderText('drawer-platform-glyph', initial);
+  renderText('drawer-platform-name', p.platform);
+
+  const sampleSize = p.sample_size !== null && p.sample_size !== undefined ? `${p.sample_size} cases` : '--';
+  renderText('drawer-sample-size', sampleSize);
+
+  // SLA Gauge
+  const compVal = p.deadline_compliance_rate_pct !== null && p.deadline_compliance_rate_pct !== undefined ? p.deadline_compliance_rate_pct : null;
+  const compText = compVal !== null ? compVal.toFixed(1) : 'N/A';
+  renderText('drawer-compliance-pct', compText);
+
+  const circle = document.getElementById('drawer-compliance-circle');
+  const slaTag = document.getElementById('drawer-sla-tag');
+  if (circle && compVal !== null) {
+    const circumference = 251.2;
+    const offset = circumference * (1 - Math.min(100, Math.max(0, compVal)) / 100);
+    circle.style.strokeDashoffset = offset;
+    if (compVal >= 80) {
+      circle.style.stroke = 'var(--accent-emerald)';
+      if (slaTag) { slaTag.textContent = 'Compliant'; slaTag.className = 'status-tag pass'; }
+    } else if (compVal < 50) {
+      circle.style.stroke = 'var(--accent-rose)';
+      if (slaTag) { slaTag.textContent = 'Critical Miss'; slaTag.className = 'status-tag danger'; }
+    } else {
+      circle.style.stroke = 'var(--accent-orange)';
+      if (slaTag) { slaTag.textContent = 'Under-Review'; slaTag.className = 'status-tag warn'; }
+    }
+  }
+
+  // Still Available
+  renderText('drawer-still-available', p.still_available_rate_pct !== null && p.still_available_rate_pct !== undefined ? `${p.still_available_rate_pct.toFixed(1)}%` : '0.0%');
+
+  // Speeds
+  const medEl = document.getElementById('drawer-median-speed');
+  const medUnit = document.getElementById('drawer-median-unit');
+  if (medEl) {
+    if (p.median_removal_censored) {
+      medEl.textContent = p.median_removal_display || '> window';
+      if (medUnit) medUnit.style.display = 'none';
+    } else if (p.median_removal_hours !== null && p.median_removal_hours !== undefined) {
+      medEl.textContent = p.median_removal_hours.toFixed(1);
+      if (medUnit) medUnit.style.display = 'inline';
+    } else {
+      medEl.textContent = '--';
+    }
+  }
+
+  const p90El = document.getElementById('drawer-p90-speed');
+  const p90Unit = document.getElementById('drawer-p90-unit');
+  if (p90El) {
+    if (p.p90_removal_censored) {
+      p90El.textContent = p.p90_removal_display || '> window';
+      if (p90Unit) p90Unit.style.display = 'none';
+    } else if (p.p90_removal_hours !== null && p.p90_removal_hours !== undefined) {
+      p90El.textContent = p.p90_removal_hours.toFixed(1);
+      if (p90Unit) p90Unit.style.display = 'inline';
+    } else {
+      p90El.textContent = '--';
+    }
+  }
+
+  // Integrity & Crawler Audits
+  renderText('drawer-verified-count', p.verified_takedowns_count !== null && p.verified_takedowns_count !== undefined ? `${p.verified_takedowns_count} cases` : '--');
+  renderText('drawer-false-claims', p.false_removal_claims_count !== null && p.false_removal_claims_count !== undefined ? `${p.false_removal_claims_count} cases` : '0');
+  renderText('drawer-reuploads', p.observed_reuploads_count !== null && p.observed_reuploads_count !== undefined ? `${p.observed_reuploads_count} cases` : '0');
+
+  // Statutory rules
+  const medH = p.median_removal_hours;
+  if (medH !== null && medH !== undefined && !p.median_removal_censored) {
+    renderText('drawer-rule-31d', medH <= 3.0 ? `Compliant (${medH.toFixed(1)}h <= 3.0h)` : `Overdue (${medH.toFixed(1)}h > 3.0h)`);
+    renderText('drawer-rule-32b', medH <= 2.0 ? `Compliant (${medH.toFixed(1)}h <= 2.0h)` : `Overdue (${medH.toFixed(1)}h > 2.0h)`);
+  } else if (p.median_removal_censored) {
+    renderText('drawer-rule-31d', 'Overdue (> window)');
+    renderText('drawer-rule-32b', 'Overdue (> window)');
+  } else {
+    renderText('drawer-rule-31d', 'No qualifying orders');
+    renderText('drawer-rule-32b', 'No qualifying orders');
+  }
+
+  renderText('drawer-data-speed', p.median_data_response_hours !== null && p.median_data_response_hours !== undefined ? `${p.median_data_response_hours.toFixed(1)}h (SLA <= 72h)` : 'No 79(3)(b) requests');
+  renderText('drawer-rejections', p.rejections_count !== null && p.rejections_count !== undefined ? `${p.rejections_count} (${(p.rejection_rate_pct || 0).toFixed(1)}%)` : '--');
+
+  backdrop.classList.add('active');
+  drawer.classList.add('active');
+  drawer.setAttribute('aria-hidden', 'false');
+}
+
+function closePlatformDrawer() {
+  const drawer = document.getElementById('platform-drawer');
+  const backdrop = document.getElementById('drawer-backdrop');
+  if (drawer) {
+    drawer.classList.remove('active');
+    drawer.setAttribute('aria-hidden', 'true');
+  }
+  if (backdrop) {
+    backdrop.classList.remove('active');
+  }
+}
+
+// --- Dataset Upload Modal Controller ---
+function initUploadModal() {
+  const openBtn = document.getElementById('btn-open-upload');
+  const closeBtn = document.getElementById('upload-close-btn');
+  const backdrop = document.getElementById('upload-modal-backdrop');
+  const dropzone = document.getElementById('upload-dropzone');
+  const fileInput = document.getElementById('dataset-file-input');
+  const browseBtn = document.getElementById('btn-browse-file');
+
+  if (openBtn) openBtn.addEventListener('click', openUploadModal);
+  if (closeBtn) closeBtn.addEventListener('click', closeUploadModal);
+  if (backdrop) {
+    backdrop.addEventListener('click', (e) => {
+      if (e.target === backdrop) closeUploadModal();
+    });
+  }
+
+  if (browseBtn && fileInput) {
+    browseBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      fileInput.click();
+    });
+  }
+
+  if (fileInput) {
+    fileInput.addEventListener('change', (e) => {
+      if (e.target.files && e.target.files[0]) {
+        handleDatasetUpload(e.target.files[0]);
+      }
+    });
+  }
+
+  if (dropzone) {
+    dropzone.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      dropzone.classList.add('dragover');
+    });
+    dropzone.addEventListener('dragleave', () => {
+      dropzone.classList.remove('dragover');
+    });
+    dropzone.addEventListener('drop', (e) => {
+      e.preventDefault();
+      dropzone.classList.remove('dragover');
+      if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files[0]) {
+        handleDatasetUpload(e.dataTransfer.files[0]);
+      }
+    });
+    dropzone.addEventListener('click', (e) => {
+      if (e.target !== browseBtn && fileInput) {
+        fileInput.click();
+      }
+    });
+  }
+}
+
+function openUploadModal() {
+  const backdrop = document.getElementById('upload-modal-backdrop');
+  const statusEl = document.getElementById('upload-status');
+  if (statusEl) statusEl.style.display = 'none';
+  if (backdrop) backdrop.classList.add('active');
+}
+
+function closeUploadModal() {
+  const backdrop = document.getElementById('upload-modal-backdrop');
+  if (backdrop) backdrop.classList.remove('active');
+}
+
+async function handleDatasetUpload(file) {
+  const statusEl = document.getElementById('upload-status');
+  if (!statusEl) return;
+
+  statusEl.className = 'upload-status loading';
+  statusEl.textContent = `Validating and uploading ${file.name}...`;
+  statusEl.style.display = 'block';
+
+  try {
+    const isCsv = file.name.endsWith('.csv');
+    const textContent = await file.text();
+
+    const contentType = isCsv ? 'text/csv' : 'application/json';
+    const res = await fetch('/api/upload', {
+      method: 'POST',
+      headers: { 'Content-Type': contentType },
+      body: textContent,
+    });
+
+    if (!res.ok) {
+      const errData = await res.json().catch(() => ({}));
+      throw new Error(errData.error || `HTTP ${res.status}`);
+    }
+
+    const respData = await res.json();
+    statusEl.className = 'upload-status success';
+    statusEl.textContent = `Success! Ingested ${respData.valid_count} valid records (${respData.invalid_count} quarantined defects). Scoreboard refreshed.`;
+
+    if (respData.scoreboard) {
+      cachedScoreboardData = respData.scoreboard;
+      renderDashboard(respData.scoreboard);
+    }
+
+    setTimeout(() => {
+      closeUploadModal();
+    }, 1800);
+  } catch (err) {
+    statusEl.className = 'upload-status error';
+    statusEl.textContent = `Upload failed: ${err.message}`;
+  }
+}
+
 
 // --- Hardware-Accelerated Ambient Glow WebGL Shader ---
 function initAmbientShader() {

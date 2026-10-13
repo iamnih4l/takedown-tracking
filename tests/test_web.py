@@ -132,3 +132,23 @@ class TestWebServer:
             assert "initPlatformFilters" in body
             assert "initRetryButton" in body
 
+    def test_api_upload_dataset(self, web_server: str) -> None:
+        """POST /api/upload must accept json records and recalculate scoreboard."""
+        gen = SyntheticDataGenerator(seed=99)
+        records = [r.to_dict() for r in gen.generate(count=40)]
+        payload = json.dumps({"records": records}).encode("utf-8")
+
+        req = urllib.request.Request(
+            f"{web_server}/api/upload",
+            data=payload,
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+        with urllib.request.urlopen(req) as resp:
+            assert resp.status == 200
+            data = json.loads(resp.read().decode("utf-8"))
+            assert data["status"] == "success"
+            assert data["valid_count"] == 40
+            assert "scoreboard" in data
+
+
