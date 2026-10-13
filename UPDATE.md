@@ -21,14 +21,14 @@
 
 | Property | Current Value |
 | :--- | :--- |
-| **Assigned Workstream** | **Half 1 & Half 2 Unified** |
-| **Git Feature Branch** | `main` (integrated from `feat/requests-speed-metrics` & `annkollappallil:feat/verification-integrity`) |
+| **Assigned Workstream** | **Half 1 & Half 2 Unified + Frontend Redesign** |
+| **Git Feature Branch** | `main` |
 | **Target Merge Branch** | `main` |
 | **Pull Request Status** | **Merged — PR #1 & PR #2 Closed/Merged into Main** |
-| **Current Phase** | **Complete System Integration — Tested & Documented** |
-| **Overall Progress** | 100% Complete (128 / 128 tests passing across all suites) |
-| **Most Recent Milestone** | Integrated Half 1 and Half 2 into `main`; full test suite passed (128/128 tests in 9.24s) |
-| **Next Immediate Task** | Continuous deployment of transparency scoreboard and verifier scheduler |
+| **Current Phase** | **Minimal, Fast, and Reliable Frontend Implemented & Verified** |
+| **Overall Progress** | 100% Complete (131 / 131 tests passing across all suites) |
+| **Most Recent Milestone** | Redesigned law-enforcement accountability frontend with non-blocking 3D canvas and progressive disclosure |
+| **Next Immediate Task** | Deploy continuous monitoring service and public dashboard |
 | **Active Blockers** | **None** |
 
 ### Workstream Feature Status Matrix
@@ -45,6 +45,7 @@
 | **Separate Platform Rejections Metric** (`metrics/engine.py`) | `IMPLEMENTED` | `TESTED` | Item 13 (Rejections isolated from still-available) |
 | **Narrowed Gitleaks Allowlist** (`.gitleaks.toml`) | `IMPLEMENTED` | `TESTED` | Item 14 (Removed `tests/.*` broad exemption) |
 | **Documentation Link & Security Fixes** (`README.md`, `SECURITY.md`) | `IMPLEMENTED` | `TESTED` | Items 10, 11 (Relative paths, GitHub private advisory link) |
+| **Minimal & Reliable Law-Enforcement Frontend** (`web/static/`) | `IMPLEMENTED` | `TESTED` | Frontend Design (Warm orange, non-blocking 3D, progressive disclosure, resilient) |
 
 ---
 
@@ -147,10 +148,10 @@
   ```powershell
   $env:PYTHONPATH="src"; python -m pytest -v tests
   ```
-  - **Total Tests**: **128**
-  - **Passed**: **128** (100% pass rate)
+  - **Total Tests**: **131**
+  - **Passed**: **131** (100% pass rate)
   - **Failed**: **0**
-  - **Execution Time**: **~9.2 seconds**
+  - **Execution Time**: **~7.8 seconds**
 * **Test Suite Breakdown**:
   - `tests/test_deadlines_2026.py` (9 tests): Rule 3(1)(d)=3h, Rule 3(2)(b)=2h, qualifying categories, priority override prevention, 3-way conflict resolution.
   - `tests/test_censored_percentiles.py` (7 tests): Platform A vs Platform B survivorship bias avoidance, right-censoring boundary ranks, zero `Infinity`/`NaN`.
@@ -163,7 +164,7 @@
   - `tests/test_privacy.py` (9 tests): Generic reason validation, scope filtering without leakage, speed $k$-check without rejections, completed data $k$-check, small count redactions.
   - `tests/test_importer.py` (8 tests): Validation, temporal order, quarantine logging.
   - `tests/test_metrics.py` (11 tests): Percentile interpolation, compliance math, data request turnaround.
-  - `tests/test_web.py` (6 tests): Server endpoints, scoreboard API, static assets.
+  - `tests/test_web.py` (9 tests): Server endpoints, scoreboard API, static assets, hero canvas fallback, design tokens, tabs accessibility, and client-side resilience.
   - `tests/test_cli.py` (5 tests): Subcommands (`generate`, `import`, `metrics`, `export-scoreboard`, quarantine).
   - `tests/test_integrity_metrics.py` (23 tests): Contract validation, free-text note rejection, false claim rates, reupload rates & windows, disclosure gating on cohort size, summary formatting.
   - `tests/test_verifier.py` (18 tests): URL availability checker, status resolution, scheduled runner polling intervals, glitch filtering, ground truth simulation, differential privacy in observations.
@@ -190,3 +191,19 @@ As agreed in review feedback:
 ### 2. How to Feed Observations into Half 1
 When the Verifier Simulator runs, emit observations adhering to `schemas/observation.schema.json`. Half 1 binds them via the `--observations` CLI option or `filter_and_publish(records, observations=obs_map)`.
 If content is verified removed, `verified_removed_at` will automatically override platform status and compute empirical turnaround times.
+
+---
+
+## F. Frontend Architecture & Design Implementation
+
+* **Operational Law-Enforcement Principle**: Prioritized operational correctness, immediate access to information, privacy, accessibility, and zero-wait responsiveness over decorative complexity.
+* **Cinematic Dark Aesthetic**: Near-black obsidian (`#080b11`) and charcoal (`#0d121c`, `#131a29`) card surfaces with warm orange focal accents (`#ff6b2b`, `#ff8542`) and subtle border luminescence (`rgba(255, 107, 43, 0.22)`).
+* **Lightweight 3D Canvas Constellation**: Built with native HTML5 Canvas 2D and 3D perspective projection (< 100 lines of pure vanilla JS, zero external frameworks). Displays multi-party audit nodes (Police $\rightarrow$ Intermediary $\rightarrow$ External Verifier) with interactive mouse parallax and traveling optical pulse packets. Non-blocking initialization after DOM and data render; respects `prefers-reduced-motion: reduce` with a static fallback.
+* **Progressive Disclosure Navigation**:
+  1. *Overview & Executive Metrics*: Core bento cards (median removal, p90 tail, statutory compliance, still available, 72h data assistance, quarantined defects).
+  2. *Platform Comparisons*: Full table of fictional intermediaries (`Platform A` .. `Platform J`) with real-time text search, SLA filter buttons, and sample sizes.
+  3. *Harm Categories & SLAs*: Statutory breakdown (`CSAM`, `NonConsensualImagery`, `Impersonation`, `FinancialFraud`) with 2.0h / 3.0h / 72.0h legal rules.
+  4. *Verification & Integrity Audit*: Verification coverage %, false removal claims, and 7-day re-upload monitoring.
+  5. *Auditing Methodology*: Gazette Notification 269993 citations, right-censored mathematical definitions, and $k$-anonymity guarantees.
+* **Fault Tolerance & Reliability**: Live `/api/health` connectivity badge, honest disclosure of suppressed or censored cohorts, and a self-healing error state with a retry button if the backend is temporarily unreachable.
+

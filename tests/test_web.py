@@ -96,3 +96,39 @@ class TestWebServer:
         with pytest.raises(urllib.error.HTTPError) as exc_info:
             urllib.request.urlopen(req)
         assert exc_info.value.code == 404
+
+    def test_serve_index_html_contains_critical_components(self, web_server: str) -> None:
+        """GET / must include hero canvas, progressive tabs, error state, and accessibility roles."""
+        req = urllib.request.Request(f"{web_server}/")
+        with urllib.request.urlopen(req) as resp:
+            body = resp.read().decode("utf-8")
+            assert 'id="hero-canvas"' in body
+            assert 'id="canvas-fallback"' in body
+            assert 'id="error-state"' in body
+            assert 'role="tablist"' in body
+            assert 'id="tab-overview"' in body
+            assert 'id="tab-platforms"' in body
+            assert 'id="tab-integrity"' in body
+            assert 'id="tab-methodology"' in body
+            assert 'Platform A' in body or 'Platform Comparisons' in body
+
+    def test_serve_css_contains_design_tokens_and_accessibility(self, web_server: str) -> None:
+        """GET /styles.css must include warm orange tokens, near-black backgrounds, and reduced-motion guard."""
+        req = urllib.request.Request(f"{web_server}/styles.css")
+        with urllib.request.urlopen(req) as resp:
+            body = resp.read().decode("utf-8")
+            assert "--accent-orange" in body
+            assert "--bg-primary: #080b11" in body
+            assert "prefers-reduced-motion" in body
+            assert ":focus-visible" in body
+
+    def test_serve_javascript_contains_lightweight_canvas_and_resilience(self, web_server: str) -> None:
+        """GET /app.js must include canvas projection, reduced-motion check, error retry, and search filters."""
+        req = urllib.request.Request(f"{web_server}/app.js")
+        with urllib.request.urlopen(req) as resp:
+            body = resp.read().decode("utf-8")
+            assert "initHero3DCanvas" in body
+            assert "prefers-reduced-motion" in body
+            assert "initPlatformFilters" in body
+            assert "initRetryButton" in body
+

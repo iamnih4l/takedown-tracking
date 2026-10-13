@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Social Media Takedown Accountability Platform | Public Scoreboard</title>
-  <meta name="description" content="Independent open-source transparency platform tracking intermediary compliance with police takedown and data requests through verified response speed metrics and privacy-preserving aggregations.">
+  <meta name="description" content="Independent open-source transparency platform tracking intermediary compliance with police takedown and data requests through verified response speed metrics, right-censored survival percentiles, and privacy-preserving aggregations.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body class="dark-theme">
-  <!-- Top Demonstration Warning Banner -->
+  <!-- Top Statutory Demonstration Warning Banner -->
   <aside id="demo-banner" class="demo-banner" role="alert" aria-label="Demonstration Mode Notice">
     <div class="banner-content">
       <span class="banner-badge">DEMONSTRATION MODE</span>
       <p id="banner-text">
-        Synthetic test records active. Figures are generated from simulated models and harmless test fixtures for accountability demonstration. 
+        Synthetic test records active with fictional intermediaries (Platform A through Platform J). Figures are generated from simulated models and harmless test fixtures for accountability demonstration. 
         <strong>They do NOT represent actual platform performance or real police cases.</strong>
       </p>
     </div>
@@ -26,28 +26,37 @@
   <header class="app-header">
     <div class="header-container">
       <div class="brand">
-        <div class="brand-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <div class="brand-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
             <polyline points="9 12 11 14 15 10"/>
           </svg>
         </div>
         <div>
           <h1 class="brand-title">Takedown Accountability</h1>
-          <span class="brand-subtitle">Platform Response & Speed Transparency</span>
+          <span class="brand-subtitle">Independent Intermediary Speed &amp; Integrity Audit</span>
         </div>
       </div>
 
       <div class="header-actions">
-        <span id="privacy-badge" class="privacy-badge" title="k-anonymity privacy filter active">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <!-- Live Backend Health Indicator -->
+        <span id="health-badge" class="health-badge" title="Backend service connectivity status">
+          <span class="health-dot" aria-hidden="true"></span>
+          <span id="health-text">Connecting...</span>
+        </span>
+
+        <!-- Privacy k-Anonymity Guard Badge -->
+        <span id="privacy-badge" class="privacy-badge" title="k-anonymity privacy filter active (small cohorts < 10 redacted)">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
             <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
             <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
           </svg>
           k-Anonymity (k=10) Protected
         </span>
+
+        <!-- Theme Switcher -->
         <button id="theme-toggle" class="btn-icon" aria-label="Toggle visual theme" title="Toggle theme">
-          <svg id="theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <svg id="theme-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
             <circle cx="12" cy="12" r="5"/>
             <line x1="12" y1="1" x2="12" y2="3"/>
             <line x1="12" y1="21" x2="12" y2="23"/>
@@ -64,248 +73,446 @@
   </header>
 
   <main class="main-container">
-    <!-- Meta Summary Bar -->
-    <section class="meta-card" aria-label="Measurement Metadata">
+    <!-- Network Error State (Self-Healing) -->
+    <div id="error-state" class="error-state" role="alert">
+      <span id="error-message" class="error-message">Unable to load transparency metrics from API server.</span>
+      <button id="retry-btn" class="retry-btn">Retry Connection</button>
+    </div>
+
+    <!-- Hero Section: Understated Operational Context with Non-Blocking 3D Canvas -->
+    <section class="hero-section" aria-label="Audit Executive Briefing">
+      <div class="hero-content">
+        <span class="hero-tag">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+          </svg>
+          Statutory Accountability &bull; 2026 IT Rules Amendment
+        </span>
+        <h2 class="hero-title">Empirical Takedown Turnaround &amp; Verification Audit</h2>
+        <p class="hero-description">
+          Audits lawful police removal orders and metadata requests against statutory deadlines 
+          (Rule 3(1)(d) 3.0h court orders / govt intimations &bull; Rule 3(2)(b) 2.0h grievous harms). 
+          Eliminates platform survivorship bias via right-censored survival analysis and validates self-reported takedowns against independent verifier observations.
+        </p>
+        <div class="hero-stats-row">
+          <span class="hero-stat-pill">Scope: <strong>CSAM &bull; Non-Consensual Imagery &bull; Impersonation &bull; Fraud</strong></span>
+          <span class="hero-stat-pill">Platform Identities: <strong>Platform A .. Platform J (Fictional)</strong></span>
+          <span class="hero-stat-pill">Privacy: <strong>HMAC-SHA-256 + k-Anonymity (k=10)</strong></span>
+        </div>
+      </div>
+
+      <!-- Lightweight Interactive 3D Canvas (Zero External Dependencies, Graceful Fallback) -->
+      <div class="hero-canvas-wrapper" title="Interactive Verification Timeline Mesh (Move mouse to interact)">
+        <canvas id="hero-canvas" width="380" height="170" aria-hidden="true"></canvas>
+        <div id="canvas-fallback" class="canvas-fallback" aria-hidden="true">
+          <span>Verification Mesh Active &bull; Multi-party Audit Trail</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Operational Metadata Bar -->
+    <section class="meta-card" aria-label="Measurement Metadata & Cohort Scope">
       <div class="meta-item">
-        <span class="meta-label">Measurement Period</span>
+        <span class="meta-label">Measurement Window</span>
         <span id="meta-period" class="meta-value">Loading...</span>
+      </div>
+      <div class="meta-item">
+        <span class="meta-label">Statutory Cutoff (as_of)</span>
+        <span id="meta-as-of" class="meta-value">--</span>
       </div>
       <div class="meta-item">
         <span class="meta-label">Total Analyzed</span>
         <span id="meta-total-requests" class="meta-value">--</span>
       </div>
       <div class="meta-item">
-        <span class="meta-label">Excluded Incomplete Police Requests</span>
-        <span id="meta-incomplete-requests" class="meta-value">--</span>
+        <span class="meta-label">Excluded Procedural Defects</span>
+        <span id="meta-incomplete-requests" class="meta-value" title="Incomplete police requests excluded to prevent unfair platform penalty">--</span>
       </div>
       <div class="meta-item">
-        <span class="meta-label">Invalid/Quarantined Records</span>
-        <span id="meta-invalid-records" class="meta-value">--</span>
+        <span class="meta-label">Independent Verified Removals</span>
+        <span id="meta-verified-takedowns" class="meta-value" title="Confirmed down by independent external verifier">--</span>
       </div>
       <div class="meta-item">
-        <span class="meta-label">Standard Statutory SLA</span>
-        <span id="meta-default-deadline" class="meta-value">36h / 24h</span>
+        <span class="meta-label">Statutory SLA Framework</span>
+        <span id="meta-default-deadline" class="meta-value">2.0h / 3.0h / 72.0h</span>
       </div>
     </section>
 
-    <!-- Key Performance Overview Cards -->
-    <section class="metrics-grid" aria-label="Core Performance Metrics">
-      <!-- Card 1: Median Removal Time -->
-      <article class="metric-card" id="card-median-removal">
-        <div class="card-header">
-          <span class="card-title">Median Content Removal Time</span>
-          <span class="info-pill" title="50th percentile response time for verified content removals">Takedown</span>
-        </div>
-        <div class="card-body">
-          <div class="metric-number-group">
-            <span id="metric-median-removal" class="metric-number">--</span>
-            <span class="metric-unit">hours</span>
-          </div>
-          <p class="metric-subtext">Time elapsed from police dispatch to claimed content takedown.</p>
-        </div>
-        <div class="card-footer">
-          <span class="footer-label">Benchmark: &le; 24h statutory</span>
-          <span id="median-benchmark-status" class="status-indicator">--</span>
-        </div>
-      </article>
-
-      <!-- Card 2: 90th Percentile Removal Time -->
-      <article class="metric-card" id="card-p90-removal">
-        <div class="card-header">
-          <span class="card-title">90th Percentile (p90) Removal</span>
-          <span class="info-pill" title="Time within which 90% of removals were executed">Tail Speed</span>
-        </div>
-        <div class="card-body">
-          <div class="metric-number-group">
-            <span id="metric-p90-removal" class="metric-number">--</span>
-            <span class="metric-unit">hours</span>
-          </div>
-          <p class="metric-subtext">Captures long-tail delays and complex reviews across platforms.</p>
-        </div>
-        <div class="card-footer">
-          <span class="footer-label">Excludes outliers beyond p90</span>
-          <span class="badge-neutral">Strict SLA</span>
-        </div>
-      </article>
-
-      <!-- Card 3: Deadline Compliance Rate -->
-      <article class="metric-card" id="card-deadline-compliance">
-        <div class="card-header">
-          <span class="card-title">Deadline Compliance Rate</span>
-          <span class="info-pill" title="Eligible takedown requests completed within configured legal deadlines">SLA Metric</span>
-        </div>
-        <div class="card-body">
-          <div class="metric-number-group">
-            <span id="metric-deadline-compliance" class="metric-number">--</span>
-            <span class="metric-unit">%</span>
-          </div>
-          <div class="progress-bar-container">
-            <div id="compliance-progress-bar" class="progress-bar-fill" style="width: 0%;"></div>
-          </div>
-          <p class="metric-subtext">Eligible requests removed within applicable priority deadlines.</p>
-        </div>
-        <div class="card-footer">
-          <span class="footer-label">Emergency: 2h | Priority: 24h | Standard: 36h</span>
-        </div>
-      </article>
-
-      <!-- Card 4: Still Available Rate -->
-      <article class="metric-card" id="card-still-available">
-        <div class="card-header">
-          <span class="card-title">Content Still Available</span>
-          <span class="info-pill warning" title="Pending, unaddressed, expired, or rejected content">Non-Removal</span>
-        </div>
-        <div class="card-body">
-          <div class="metric-number-group">
-            <span id="metric-still-available" class="metric-number highlight-warning">--</span>
-            <span class="metric-unit">%</span>
-          </div>
-          <p class="metric-subtext">Proportion of eligible requests where content has not been removed.</p>
-        </div>
-        <div class="card-footer">
-          <span class="footer-label">Platform acknowledgement &ne; Removal</span>
-        </div>
-      </article>
-
-      <!-- Card 5: Data Request SLA -->
-      <article class="metric-card" id="card-data-requests">
-        <div class="card-header">
-          <span class="card-title">Data Request Response Time</span>
-          <span class="info-pill" title="Turnaround for subscriber / IP disclosure requests">Subpoena/Data</span>
-        </div>
-        <div class="card-body">
-          <div class="metric-number-group">
-            <span id="metric-median-data" class="metric-number">--</span>
-            <span class="metric-unit">hours</span>
-          </div>
-          <p class="metric-subtext">Median response turnaround for lawful assistance data requests.</p>
-        </div>
-        <div class="card-footer">
-          <span class="footer-label">Legal statutory SLA: 72 hours</span>
-          <span id="data-sla-status" class="status-indicator">--</span>
-        </div>
-      </article>
-
-      <!-- Card 6: Police-side Deficiency Rate -->
-      <article class="metric-card" id="card-police-deficiency">
-        <div class="card-header">
-          <span class="card-title">Incomplete Police Requests</span>
-          <span class="info-pill" title="Requests excluded due to procedural defects">Police Quality</span>
-        </div>
-        <div class="card-body">
-          <div class="metric-number-group">
-            <span id="metric-incomplete-count" class="metric-number">--</span>
-            <span class="metric-unit">cases</span>
-          </div>
-          <p class="metric-subtext">Excluded from platform penalty: missing court orders or invalid URLs.</p>
-        </div>
-        <div class="card-footer">
-          <span class="footer-label">Ensures platforms aren't penalized for defective orders</span>
-        </div>
-      </article>
-    </section>
-
-    <!-- Platform Breakdown Section -->
-    <section class="data-table-section" aria-label="Platform Responsiveness Breakdown">
-      <div class="section-header">
-        <div>
-          <h2 class="section-title">Platform Responsiveness Comparison</h2>
-          <p class="section-subtitle">Disaggregated response speeds and compliance rates by intermediary. Small groups (&lt; 10 cases) are suppressed for privacy.</p>
-        </div>
-        <div class="filter-controls">
-          <input type="text" id="platform-search" class="search-input" placeholder="Search platform..." aria-label="Search platform">
-        </div>
+    <!-- Progressive Disclosure Navigation Tabs -->
+    <nav class="tab-navigation-section" aria-label="Transparency Scoreboard Sections">
+      <div class="tab-bar" role="tablist">
+        <button id="tab-overview" class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-overview">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="3" y="3" width="7" height="7"/>
+            <rect x="14" y="3" width="7" height="7"/>
+            <rect x="14" y="14" width="7" height="7"/>
+            <rect x="3" y="14" width="7" height="7"/>
+          </svg>
+          Overview &amp; Executive Metrics
+        </button>
+        <button id="tab-platforms" class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-platforms">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+          Platform Comparisons
+          <span id="tab-platforms-count" class="tab-badge">--</span>
+        </button>
+        <button id="tab-categories" class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-categories">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+            <polyline points="2 17 12 22 22 17"/>
+            <polyline points="2 12 12 17 22 12"/>
+          </svg>
+          Harm Categories &amp; SLAs
+          <span id="tab-categories-count" class="tab-badge">--</span>
+        </button>
+        <button id="tab-integrity" class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-integrity">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+          Verification &amp; Integrity Audit
+        </button>
+        <button id="tab-methodology" class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-methodology">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="16" y1="13" x2="8" y2="13"/>
+            <line x1="16" y1="17" x2="8" y2="17"/>
+            <polyline points="10 9 9 9 8 9"/>
+          </svg>
+          Auditing Methodology
+        </button>
       </div>
+    </nav>
 
-      <div class="table-responsive">
-        <table id="platforms-table" class="data-table">
-          <thead>
-            <tr>
-              <th scope="col">Intermediary Platform</th>
-              <th scope="col">Status</th>
-              <th scope="col">Sample Size</th>
-              <th scope="col">Median Removal (hrs)</th>
-              <th scope="col">p90 Removal (hrs)</th>
-              <th scope="col">Compliance Rate</th>
-              <th scope="col">Still Available</th>
-              <th scope="col">Rejections</th>
-              <th scope="col">Data Req Turnaround</th>
-            </tr>
-          </thead>
-          <tbody id="platforms-table-body">
-            <tr>
-              <td colspan="8" class="text-center loading-cell">Loading platform metrics...</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+    <!-- PANEL 1: Overview & Core Metrics Bento Grid -->
+    <div id="panel-overview" class="tab-panel active" role="tabpanel" aria-labelledby="tab-overview">
+      <section class="metrics-grid" aria-label="Core Performance Metrics">
+        <!-- Card 1: Median Removal Time with Right-Censoring -->
+        <article class="metric-card" id="card-median-removal">
+          <div class="card-header">
+            <span class="card-title">Median Content Removal Time</span>
+            <span class="info-pill" title="50th percentile response time for verified content removals">Takedown Speed</span>
+          </div>
+          <div class="card-body">
+            <div class="metric-number-group">
+              <span id="metric-median-removal" class="metric-number">--</span>
+              <span id="metric-median-unit" class="metric-unit">hours</span>
+            </div>
+            <p class="metric-subtext">Empirical duration from police dispatch to content takedown, verified by external observation.</p>
+          </div>
+          <div class="card-footer">
+            <span class="footer-label">Benchmark: &le; 3h (Rule 3(1)(d)) / &le; 2h (Rule 3(2)(b))</span>
+            <span id="median-benchmark-status" class="status-indicator">--</span>
+          </div>
+        </article>
 
-    <!-- Harm Category Breakdown Section -->
-    <section class="data-table-section" aria-label="Category Response Breakdown">
-      <div class="section-header">
-        <div>
-          <h2 class="section-title">Harm Category Responsiveness</h2>
-          <p class="section-subtitle">Performance variation across statutory categories (CSAM, Non-consensual imagery, Hate Speech, Terrorism, Financial Fraud).</p>
-        </div>
-      </div>
+        <!-- Card 2: 90th Percentile Tail Removal Time -->
+        <article class="metric-card" id="card-p90-removal">
+          <div class="card-header">
+            <span class="card-title">90th Percentile (p90) Tail Removal</span>
+            <span class="info-pill neutral" title="Time within which 90% of removals were executed">Tail SLA</span>
+          </div>
+          <div class="card-body">
+            <div class="metric-number-group">
+              <span id="metric-p90-removal" class="metric-number">--</span>
+              <span id="metric-p90-unit" class="metric-unit">hours</span>
+            </div>
+            <p class="metric-subtext">Captures acute long-tail delays, review bottlenecks, and procedural friction.</p>
+          </div>
+          <div class="card-footer">
+            <span class="footer-label">Excludes outliers beyond 90% rank</span>
+            <span class="badge-neutral">Survival Method</span>
+          </div>
+        </article>
 
-      <div class="table-responsive">
-        <table id="categories-table" class="data-table">
-          <thead>
-            <tr>
-              <th scope="col">Harm Category</th>
-              <th scope="col">Privacy Status</th>
-              <th scope="col">Sample Size</th>
-              <th scope="col">Median Removal (hrs)</th>
-              <th scope="col">p90 Removal (hrs)</th>
-              <th scope="col">Deadline Compliance</th>
-            </tr>
-          </thead>
-          <tbody id="categories-table-body">
-            <tr>
-              <td colspan="6" class="text-center loading-cell">Loading category metrics...</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+        <!-- Card 3: Deadline Compliance Rate -->
+        <article class="metric-card" id="card-deadline-compliance">
+          <div class="card-header">
+            <span class="card-title">Statutory Deadline Compliance</span>
+            <span class="info-pill" title="Eligible takedown requests completed within configured legal deadlines">2026 SLA</span>
+          </div>
+          <div class="card-body">
+            <div class="metric-number-group">
+              <span id="metric-deadline-compliance" class="metric-number">--</span>
+              <span class="metric-unit">%</span>
+            </div>
+            <div class="progress-bar-container" aria-hidden="true">
+              <div id="compliance-progress-bar" class="progress-bar-fill" style="width: 0%;"></div>
+            </div>
+            <p class="metric-subtext">Mature requests removed strictly within statutory priority deadlines.</p>
+          </div>
+          <div class="card-footer">
+            <span class="footer-label">Strictest-wins SLA resolution</span>
+            <span id="compliance-status-pill" class="badge-neutral">Audited</span>
+          </div>
+        </article>
 
-    <!-- Methodology & Legal SLA Explanations -->
-    <section class="methodology-card" aria-label="Metric Explanations & Methodology">
-      <h2 class="methodology-title">Auditing Methodology & Scientific Standards</h2>
-      <div class="methodology-grid">
-        <div class="method-item">
-          <h3>Eligibility & Denominators</h3>
-          <p>
-            Removal compliance denominators include all formally completed police takedown requests. 
-            Procedurally incomplete requests (missing court orders, invalid URLs, unspecified jurisdiction) 
-            are quarantined to ensure platforms are evaluated only on actionable, legally complete demands.
-          </p>
+        <!-- Card 4: Still Available Rate -->
+        <article class="metric-card" id="card-still-available">
+          <div class="card-header">
+            <span class="card-title">Content Still Available</span>
+            <span class="info-pill warning" title="Pending, unaddressed, expired, or non-removed content">Non-Removal</span>
+          </div>
+          <div class="card-body">
+            <div class="metric-number-group">
+              <span id="metric-still-available" class="metric-number highlight-warning">--</span>
+              <span class="metric-unit">%</span>
+            </div>
+            <p class="metric-subtext">Proportion of mature actionable orders where illegal content remains accessible.</p>
+          </div>
+          <div class="card-footer">
+            <span class="footer-label"><strong>Platform acknowledgement &ne; Removal</strong></span>
+            <span class="badge-neutral">Empirical</span>
+          </div>
+        </article>
+
+        <!-- Card 5: Data Assistance SLA Turnaround -->
+        <article class="metric-card" id="card-data-requests">
+          <div class="card-header">
+            <span class="card-title">Data Assistance Turnaround</span>
+            <span class="info-pill" title="Turnaround for lawful subscriber identity or IP metadata disclosures">Section 79(3)(b)</span>
+          </div>
+          <div class="card-body">
+            <div class="metric-number-group">
+              <span id="metric-median-data" class="metric-number">--</span>
+              <span class="metric-unit">hours</span>
+            </div>
+            <p class="metric-subtext">Median response turnaround for lawful metadata and user assistance requests.</p>
+          </div>
+          <div class="card-footer">
+            <span class="footer-label">Statutory Benchmark: 72.0 hours</span>
+            <span id="data-sla-status" class="status-indicator">--</span>
+          </div>
+        </article>
+
+        <!-- Card 6: Procedural Defects Excluded -->
+        <article class="metric-card" id="card-police-deficiency">
+          <div class="card-header">
+            <span class="card-title">Quarantined Defective Demands</span>
+            <span class="info-pill neutral" title="Requests excluded from denominator due to police procedural defects">Procedural</span>
+          </div>
+          <div class="card-body">
+            <div class="metric-number-group">
+              <span id="metric-incomplete-count" class="metric-number">--</span>
+              <span class="metric-unit">cases</span>
+            </div>
+            <p class="metric-subtext">Excluded from platform penalty: missing court orders or defective target URLs.</p>
+          </div>
+          <div class="card-footer">
+            <span class="footer-label">Protects platforms from defective order penalties</span>
+            <span class="badge-neutral">Quarantined</span>
+          </div>
+        </article>
+      </section>
+    </div>
+
+    <!-- PANEL 2: Platform Responsiveness Breakdown -->
+    <div id="panel-platforms" class="tab-panel" role="tabpanel" aria-labelledby="tab-platforms">
+      <section class="data-table-section" aria-label="Platform Responsiveness Breakdown">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Intermediary Platform Responsiveness Audit</h2>
+            <p class="section-subtitle">
+              Disaggregated response speeds and compliance rates for fictional intermediaries (Platform A through Platform J). 
+              Small groups (&lt; 10 cases) are strictly suppressed under $k$-anonymity.
+            </p>
+          </div>
+          <div class="filter-controls">
+            <input type="text" id="platform-search" class="search-input" placeholder="Filter by platform name..." aria-label="Search platform">
+            <div class="filter-tag-group" role="group" aria-label="Filter status">
+              <button id="filter-all" class="filter-tag-btn active" data-filter="all">All</button>
+              <button id="filter-compliant" class="filter-tag-btn" data-filter="compliant">&ge; 80% SLA</button>
+              <button id="filter-overdue" class="filter-tag-btn" data-filter="overdue">&lt; 50% SLA</button>
+              <button id="filter-nonremoval" class="filter-tag-btn" data-filter="nonremoval">High Non-Removal</button>
+            </div>
+          </div>
         </div>
-        <div class="method-item">
-          <h3>No Acknowledgement as Removal</h3>
-          <p>
-            Intermediary confirmation of receipt is audited as acknowledgement speed, never as proof of content removal. 
-            Unresolved requests remain marked as still available and penalize the deadline compliance metric.
-          </p>
+
+        <div class="table-responsive">
+          <table id="platforms-table" class="data-table">
+            <thead>
+              <tr>
+                <th scope="col">Intermediary</th>
+                <th scope="col">Audit Status</th>
+                <th scope="col">Cohort Size</th>
+                <th scope="col">Median Removal</th>
+                <th scope="col">p90 Tail Removal</th>
+                <th scope="col">SLA Compliance</th>
+                <th scope="col">Still Available</th>
+                <th scope="col">Rejections</th>
+                <th scope="col">Data Response</th>
+                <th scope="col">Verified Takedowns</th>
+              </tr>
+            </thead>
+            <tbody id="platforms-table-body">
+              <tr>
+                <td colspan="10" class="loading-cell">Loading platform metrics...</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="method-item">
-          <h3>k-Anonymity (k=10) Protection</h3>
-          <p>
-            To eliminate victim re-identification or targeted correlation attacks, any category or platform 
-            cohort containing fewer than 10 records is automatically suppressed from public dashboards and API outputs.
-          </p>
+      </section>
+    </div>
+
+    <!-- PANEL 3: Harm Categories & Statutory SLAs -->
+    <div id="panel-categories" class="tab-panel" role="tabpanel" aria-labelledby="tab-categories">
+      <section class="data-table-section" aria-label="Harm Category Breakdown">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Harm Category Responsiveness Audit</h2>
+            <p class="section-subtitle">
+              Response turnaround times categorized by statutory harm type under 2026 IT Rules. 
+              Emergency categories carry strict statutory timelines (CSAM &amp; Non-Consensual Imagery: 2.0h; Section 69A: 3.0h).
+            </p>
+          </div>
         </div>
-        <div class="method-item">
-          <h3>Reproducible Calculations</h3>
-          <p>
-            All medians and 90th percentiles use standardized linear interpolation between closest ranks. 
-            Full metric formulas and mathematical proofs are published openly in <code>METHODOLOGY.md</code>.
-          </p>
+
+        <div class="table-responsive">
+          <table id="categories-table" class="data-table">
+            <thead>
+              <tr>
+                <th scope="col">Harm Category</th>
+                <th scope="col">Privacy Status</th>
+                <th scope="col">Sample Size</th>
+                <th scope="col">Median Removal</th>
+                <th scope="col">p90 Tail Removal</th>
+                <th scope="col">SLA Compliance</th>
+              </tr>
+            </thead>
+            <tbody id="categories-table-body">
+              <tr>
+                <td colspan="6" class="loading-cell">Loading category metrics...</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
+
+    <!-- PANEL 4: Verification & Integrity Audit (Half 2 Integration) -->
+    <div id="panel-integrity" class="tab-panel" role="tabpanel" aria-labelledby="tab-integrity">
+      <section class="data-table-section" aria-label="Independent Verification & Integrity Deep Dive">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Independent Verification &amp; Integrity Audit</h2>
+            <p class="section-subtitle">
+              Cross-examination of intermediary self-reported takedowns against independent verifier availability observations. 
+              Detects false removal claims, silent non-compliance, and content re-uploads within monitoring windows.
+            </p>
+          </div>
+        </div>
+
+        <div class="integrity-grid">
+          <div class="integrity-card">
+            <span class="integrity-title">Verified Takedowns</span>
+            <span id="int-verified-count" class="integrity-value" style="color: var(--accent-emerald);">--</span>
+            <span class="integrity-desc">Takedown orders independently confirmed removed via scheduled crawler checks.</span>
+          </div>
+          <div class="integrity-card">
+            <span class="integrity-title">False Removal Claims</span>
+            <span id="int-false-claims-count" class="integrity-value" style="color: var(--accent-rose);">--</span>
+            <span class="integrity-desc">Platform claimed content was removed, but verifier observed content live.</span>
+          </div>
+          <div class="integrity-card">
+            <span class="integrity-title">Observed Re-uploads</span>
+            <span id="int-reuploads-count" class="integrity-value" style="color: var(--accent-amber);">--</span>
+            <span class="integrity-desc">Content re-uploaded within the post-removal 7-day monitoring window.</span>
+          </div>
+          <div class="integrity-card">
+            <span class="integrity-title">Verification Coverage</span>
+            <span id="int-coverage-pct" class="integrity-value" style="color: var(--accent-orange);">--%</span>
+            <span class="integrity-desc">Proportion of actionable takedown orders subjected to independent crawling.</span>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th scope="col">Verification Metric</th>
+                <th scope="col">Auditing Rule</th>
+                <th scope="col">Current Demonstration Value</th>
+                <th scope="col">Operational Integrity Significance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>False Removal Claim Rate</strong></td>
+                <td>Claimed removed, but verified live at or after reported timestamp</td>
+                <td id="table-false-rate">--%</td>
+                <td>Identifies misleading compliance reports submitted to law enforcement.</td>
+              </tr>
+              <tr>
+                <td><strong>Re-upload Window Adherence</strong></td>
+                <td>Observation window: 7 days (168h) following verified takedown</td>
+                <td id="table-reupload-rate">--%</td>
+                <td>Measures platform effectiveness in preventing automated content re-propagation.</td>
+              </tr>
+              <tr>
+                <td><strong>Verifier Priority Rule</strong></td>
+                <td>Observation status <code>confirmed_removed</code> overrides platform status</td>
+                <td><span class="verified-pill">Active</span></td>
+                <td>Ensures platform delay or lack of status API does not obscure true removal.</td>
+              </tr>
+              <tr>
+                <td><strong>Privacy-Safe Observations</strong></td>
+                <td>Observation contract v2: URLs HMAC-SHA-256 keyed &bull; Structured error codes</td>
+                <td><span class="verified-pill">Enforced</span></td>
+                <td>Prevents microdata or free-text surveillance leaks into public audit outputs.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <!-- PANEL 5: Auditing Methodology & Statutory Standards -->
+    <div id="panel-methodology" class="tab-panel" role="tabpanel" aria-labelledby="tab-methodology">
+      <section class="methodology-card" aria-label="Metric Explanations & Methodology">
+        <h2 class="methodology-title">Auditing Methodology &amp; Statutory Legal Standards</h2>
+        <div class="methodology-grid">
+          <div class="method-item">
+            <h3>2026 IT Rules Statutory Deadlines</h3>
+            <p>
+              Under Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules 
+              (Gazette Notification 269993, effective 20 February 2026):
+              <br>&bull; <strong>Rule 3(1)(d)</strong>: <strong>3.0 hours</strong> for specified court orders or authorized government intimations.
+              <br>&bull; <strong>Rule 3(2)(b)</strong>: <strong>2.0 hours</strong> for qualifying grievance complaints (CSAM, non-consensual imagery, impersonation).
+              <br>&bull; <strong>Section 79(3)(b) Data Assistance</strong>: <strong>72.0 hours</strong> for lawful subscriber / IP disclosure requests.
+            </p>
+          </div>
+          <div class="method-item">
+            <h3>Right-Censored Survival Percentiles</h3>
+            <p>
+              Standard percentile calculations that drop unresolved requests create severe <em>survivorship bias</em>. 
+              Our engine applies survival analysis: unresolved overdue requests are ranked after finite durations. 
+              If the median or 90th percentile rank touches an unresolved case, the metric is right-censored 
+              (<code>&gt; measurement window</code>), preventing dishonest speed inflation.
+            </p>
+          </div>
+          <div class="method-item">
+            <h3>Measurement Cutoff (as_of) &amp; Maturity</h3>
+            <p>
+              To prevent unfair penalties against newly dispatched orders, requests dispatched close to the 
+              <code>as_of</code> cutoff whose statutory deadline has not yet elapsed are classified as <em>immature</em> 
+              and excluded from compliance-miss denominators.
+            </p>
+          </div>
+          <div class="method-item">
+            <h3>k-Anonymity (k=10) Privacy Protection</h3>
+            <p>
+              To protect crime victims from targeted re-identification or correlation attacks, all platform and category 
+              denominators are evaluated independently. Cohorts with fewer than 10 cases are suppressed from public outputs. 
+              Small counts of incomplete requests and rejections are redacted to <code>[Protected &lt; k]</code>.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="app-footer">
