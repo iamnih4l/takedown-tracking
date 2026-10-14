@@ -102,7 +102,8 @@ async function checkApiHealth() {
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
     healthBadge.classList.remove('offline');
-    healthText.textContent = `Operational (v${data.version || '0.1.0'})`;
+    const jurTag = data.jurisdiction ? ` • ${data.jurisdiction}` : '';
+    healthText.textContent = `Operational (v${data.version || '0.1.0'}${jurTag})`;
   } catch (err) {
     healthBadge.classList.add('offline');
     healthText.textContent = 'API Offline';
@@ -162,6 +163,17 @@ function renderDashboard(data) {
   }
 
   // 2. Render Context & Metadata Bar
+  if (meta.jurisdiction) {
+    renderText('meta-jurisdiction', `${meta.jurisdiction} State`);
+    const badgeSpan = document.querySelector('#jurisdiction-badge span');
+    if (badgeSpan) {
+      badgeSpan.textContent = `${meta.jurisdiction} Jurisdiction`;
+    }
+    const badgeEl = document.getElementById('jurisdiction-badge');
+    if (badgeEl && meta.jurisdiction_scope) {
+      badgeEl.title = `State Territorial Police Jurisdiction: ${meta.jurisdiction_scope}`;
+    }
+  }
   if (meta.measurement_period_start && meta.measurement_period_end) {
     const startStr = meta.measurement_period_start.split('T')[0];
     const endStr = meta.measurement_period_end.split('T')[0];

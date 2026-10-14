@@ -253,3 +253,49 @@ Each integrity figure is published only when the group it describes has at least
    Small counts of incomplete police requests ($< k$) and platform rejections ($< k$) are redacted (`null`) to eliminate indirect re-identification through subtraction.
 4. **Scope Filtering by Default Reporting Scope**:
    Default public reports are restricted to high-impact victim-protection categories (`CSAM`, `NonConsensualImagery`, `Impersonation`, `FinancialFraud`). The privacy filter scopes input records to `published_categories` before computing overall performance, platform breakdowns, and category rows, guaranteeing mutual consistency and eliminating out-of-scope counts.
+
+---
+
+## 9. Regional Territorial Jurisdiction & Law Enforcement Scope (Kerala State Police)
+
+### 9.1. Statutory Jurisdiction & Authority
+This deployment focuses specifically on the territorial jurisdiction of the **State of Kerala, India**, monitoring lawful notices and preservation requests originating from the **Kerala State Police**.
+
+```mermaid
+flowchart TD
+    subgraph KeralaPolice["Kerala Police Cyber Infrastructure"]
+        HQ["Cyber Operations Wing (HQ Thiruvananthapuram)"]
+        CD["Kerala Cyberdome (Tech Research & Proactive Intel)"]
+        SCPS["State Cyber Police Station (Statewide Jurisdiction)"]
+        CCPS["14 District Cyber Crime Police Stations (CCPS)"]
+    end
+
+    subgraph LegalDispatch["Lawful Intermediary Communications"]
+        HQ & CD & SCPS & CCPS -->|Rule 3(1)(d): 3h Takedown Notice| INT[Social Media Intermediaries]
+        HQ & CD & SCPS & CCPS -->|Rule 3(2)(b): 2h Grievance Order| INT
+        HQ & CD & SCPS & CCPS -->|IT Act § 79(3)(b): 72h Data Assistance| INT
+    end
+
+    subgraph RegionalAudit["Regional Accountability Pipeline"]
+        INT --> AUDIT[Takedown Tracking System]
+        AUDIT --> JUR{Territorial Filter: jurisdiction == 'Kerala'}
+        JUR -->|In-Jurisdiction| METRIC[Empirical SLA & Verification Engine]
+        JUR -->|Out-of-Region| DROP[Excluded from Regional Scoreboard]
+        METRIC --> PUB[Public Kerala Police Accountability Scoreboard]
+    end
+```
+
+### 9.2. Jurisdictional Units
+1. **Kerala Police Cyber Operations Wing**: Statewide apex body for cyber investigation, policy, and intermediary liaison.
+2. **Kerala Cyberdome**: High-technology collaborative centre for automated surveillance, digital forensics, and proactive identification of child abuse and financial crime.
+3. **State Cyber Crime Police Station (Thiruvananthapuram)**: Handles inter-district and international jurisdictional cyber crimes.
+4. **District Cyber Crime Police Stations (CCPS)**: 14 dedicated stations across Thiruvananthapuram, Ernakulam, Kozhikode, Thrissur, Kollam, Kannur, Palakkad, Malappuram, Kottayam, Alappuzha, Idukki, Pathanamthitta, Kasaragod, and Wayanad.
+
+### 9.3. Gating & Scoping Rules
+1. **Request Attribution**: Every `RequestRecord` contains explicit `jurisdiction` (e.g., `"Kerala"`) and optional `district` metadata (e.g., `"Thiruvananthapuram"`, `"Ernakulam"`).
+2. **Territorial Filtering**: `PrivacyFilter` automatically filters out non-target records when `target_jurisdiction` is configured (defaulting to `"Kerala"`), preventing cross-jurisdiction noise from diluting regional performance metrics.
+3. **Scoreboard Metadata**: The published scoreboard includes top-level metadata:
+   - `jurisdiction`: `"Kerala"`
+   - `jurisdiction_scope`: `"Kerala State Cyber Police Jurisdiction (Kerala Police Cyber Operations Wing & Cyberdome)"`
+4. **Legal Conformity**: Deadlines strictly adhere to Section 79(3)(b) of the Information Technology Act, 2000, and the IT (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021 as amended in February 2026.
+

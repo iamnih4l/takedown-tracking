@@ -156,6 +156,15 @@
       "type": ["string", "null"],
       "description": "Backward-compatibility alias for URL hash identifier.",
       "pattern": "^[a-f0-9]{64}$"
+    },
+    "jurisdiction": {
+      "type": ["string", "null"],
+      "description": "Territorial law enforcement jurisdiction (e.g. 'Kerala', 'Kerala Police Cyber Operations').",
+      "default": "Kerala"
+    },
+    "district": {
+      "type": ["string", "null"],
+      "description": "Administrative district within the jurisdiction (e.g. 'Thiruvananthapuram', 'Ernakulam', 'Kozhikode')."
     }
   },
   "additionalProperties": false

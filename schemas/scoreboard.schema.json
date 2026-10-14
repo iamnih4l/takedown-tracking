@@ -60,6 +60,14 @@
         "total_requests_analyzed": {
           "type": "integer",
           "minimum": 0
+        },
+        "jurisdiction": {
+          "type": "string",
+          "description": "Territorial law enforcement jurisdiction (e.g. 'Kerala')."
+        },
+        "jurisdiction_scope": {
+          "type": "string",
+          "description": "Organizational and regional scope of the reporting law enforcement agency."
         }
       }
     },

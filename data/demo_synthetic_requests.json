@@ -17,7 +17,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "3032844a694680998357a13c64d7808fdf80314f14ca9d92c01c8779090e6224",
-    "content_url_hash": "3032844a694680998357a13c64d7808fdf80314f14ca9d92c01c8779090e6224"
+    "content_url_hash": "3032844a694680998357a13c64d7808fdf80314f14ca9d92c01c8779090e6224",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00002",
@@ -37,7 +39,9 @@
     "status": "acknowledged",
     "rejection_reason": null,
     "content_url_hmac": "e2b96b6aa01c10149ef064c8cb6d9776cc4105bec6983fd7c34e17817b6942f6",
-    "content_url_hash": "e2b96b6aa01c10149ef064c8cb6d9776cc4105bec6983fd7c34e17817b6942f6"
+    "content_url_hash": "e2b96b6aa01c10149ef064c8cb6d9776cc4105bec6983fd7c34e17817b6942f6",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00003",
@@ -57,7 +61,9 @@
     "status": "expired",
     "rejection_reason": null,
     "content_url_hmac": "e9a3476e8447665839ab484824149c28e88b6a40105805d9a1c5da315529a195",
-    "content_url_hash": "e9a3476e8447665839ab484824149c28e88b6a40105805d9a1c5da315529a195"
+    "content_url_hash": "e9a3476e8447665839ab484824149c28e88b6a40105805d9a1c5da315529a195",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00004",
@@ -77,7 +83,9 @@
     "status": "acknowledged",
     "rejection_reason": null,
     "content_url_hmac": "973f1762b21efa8f0d470f8320703f93a7948f550da9d320c5906aff7dc7a919",
-    "content_url_hash": "973f1762b21efa8f0d470f8320703f93a7948f550da9d320c5906aff7dc7a919"
+    "content_url_hash": "973f1762b21efa8f0d470f8320703f93a7948f550da9d320c5906aff7dc7a919",
+    "jurisdiction": "Kerala",
+    "district": "Kannur"
   },
   {
     "request_id": "SYN-REQ-2026-00005",
@@ -97,7 +105,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "fc7dbfb90ee358ad2eb042d71f5740e20f3dc7819d8422b30108c26cdd335b42",
-    "content_url_hash": "fc7dbfb90ee358ad2eb042d71f5740e20f3dc7819d8422b30108c26cdd335b42"
+    "content_url_hash": "fc7dbfb90ee358ad2eb042d71f5740e20f3dc7819d8422b30108c26cdd335b42",
+    "jurisdiction": "Kerala",
+    "district": "Kannur"
   },
   {
     "request_id": "SYN-REQ-2026-00006",
@@ -117,7 +127,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "3805e36762e48d3ce9d164311af6c00388179ced6a1721c731a9fb4bcd7c56dc",
-    "content_url_hash": "3805e36762e48d3ce9d164311af6c00388179ced6a1721c731a9fb4bcd7c56dc"
+    "content_url_hash": "3805e36762e48d3ce9d164311af6c00388179ced6a1721c731a9fb4bcd7c56dc",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00007",
@@ -137,7 +149,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "9ad6872bd5b41097348ed42ee9b33f8db61107f1efe2f18e40387d843b4a0386",
-    "content_url_hash": "9ad6872bd5b41097348ed42ee9b33f8db61107f1efe2f18e40387d843b4a0386"
+    "content_url_hash": "9ad6872bd5b41097348ed42ee9b33f8db61107f1efe2f18e40387d843b4a0386",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00008",
@@ -157,7 +171,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "d473863fdfca10d470aab58f3a063eacffd3ac1559ab4a045004d35ee84a2635",
-    "content_url_hash": "d473863fdfca10d470aab58f3a063eacffd3ac1559ab4a045004d35ee84a2635"
+    "content_url_hash": "d473863fdfca10d470aab58f3a063eacffd3ac1559ab4a045004d35ee84a2635",
+    "jurisdiction": "Kerala",
+    "district": "Kozhikode"
   },
   {
     "request_id": "SYN-REQ-2026-00009",
@@ -177,7 +193,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "0557af9c7786ed8d1e385620446a7a50303290629203afb1d8ed2d2228e2042f",
-    "content_url_hash": "0557af9c7786ed8d1e385620446a7a50303290629203afb1d8ed2d2228e2042f"
+    "content_url_hash": "0557af9c7786ed8d1e385620446a7a50303290629203afb1d8ed2d2228e2042f",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00010",
@@ -197,7 +215,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "70bd0c7f1c2a77c35e636b88da311be356e335733a41b834f7783c74ecc7e387",
-    "content_url_hash": "70bd0c7f1c2a77c35e636b88da311be356e335733a41b834f7783c74ecc7e387"
+    "content_url_hash": "70bd0c7f1c2a77c35e636b88da311be356e335733a41b834f7783c74ecc7e387",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00011",
@@ -217,7 +237,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "c7188a0cd17a4f44f7d8f6feedc6595749174ee6e8227f8b70a097e3a02ec28a",
-    "content_url_hash": "c7188a0cd17a4f44f7d8f6feedc6595749174ee6e8227f8b70a097e3a02ec28a"
+    "content_url_hash": "c7188a0cd17a4f44f7d8f6feedc6595749174ee6e8227f8b70a097e3a02ec28a",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00012",
@@ -237,7 +259,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "4002952f1824fc39e7dc5e17ee4dbb764d7f5905596961b2356059c10fe16ff2",
-    "content_url_hash": "4002952f1824fc39e7dc5e17ee4dbb764d7f5905596961b2356059c10fe16ff2"
+    "content_url_hash": "4002952f1824fc39e7dc5e17ee4dbb764d7f5905596961b2356059c10fe16ff2",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00013",
@@ -257,7 +281,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "238c07aa69c50a1c64b7ea55d53a8ff686d4d77fd414d68f8a66d07302eca330",
-    "content_url_hash": "238c07aa69c50a1c64b7ea55d53a8ff686d4d77fd414d68f8a66d07302eca330"
+    "content_url_hash": "238c07aa69c50a1c64b7ea55d53a8ff686d4d77fd414d68f8a66d07302eca330",
+    "jurisdiction": "Kerala",
+    "district": "Kannur"
   },
   {
     "request_id": "SYN-REQ-2026-00014",
@@ -277,7 +303,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "75573ae231a8b28c961d0e4af54c0c9d6e409d94c993163d3dd312c0086553f0",
-    "content_url_hash": "75573ae231a8b28c961d0e4af54c0c9d6e409d94c993163d3dd312c0086553f0"
+    "content_url_hash": "75573ae231a8b28c961d0e4af54c0c9d6e409d94c993163d3dd312c0086553f0",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00015",
@@ -297,7 +325,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "172e9d55c4099ee8511c9efc08f2a524fa813802f74e43f3922710b4591b6214",
-    "content_url_hash": "172e9d55c4099ee8511c9efc08f2a524fa813802f74e43f3922710b4591b6214"
+    "content_url_hash": "172e9d55c4099ee8511c9efc08f2a524fa813802f74e43f3922710b4591b6214",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00016",
@@ -317,7 +347,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "ee06f71be8a97f506ee67ee8d7b96483c4ff0da69240a606cd0cbb43a1456a0a",
-    "content_url_hash": "ee06f71be8a97f506ee67ee8d7b96483c4ff0da69240a606cd0cbb43a1456a0a"
+    "content_url_hash": "ee06f71be8a97f506ee67ee8d7b96483c4ff0da69240a606cd0cbb43a1456a0a",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00017",
@@ -337,7 +369,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "e6908b975fd404c7a9abac8322cb05b582d5f49f1f0f51a582364ac3b323895b",
-    "content_url_hash": "e6908b975fd404c7a9abac8322cb05b582d5f49f1f0f51a582364ac3b323895b"
+    "content_url_hash": "e6908b975fd404c7a9abac8322cb05b582d5f49f1f0f51a582364ac3b323895b",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00018",
@@ -357,7 +391,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "c767f4485c473c95ac7293bac9cd07845bfa9a40823404dc72a01966ecc54912",
-    "content_url_hash": "c767f4485c473c95ac7293bac9cd07845bfa9a40823404dc72a01966ecc54912"
+    "content_url_hash": "c767f4485c473c95ac7293bac9cd07845bfa9a40823404dc72a01966ecc54912",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00019",
@@ -377,7 +413,9 @@
     "status": "expired",
     "rejection_reason": null,
     "content_url_hmac": "aa347101a02aed88aa0c3ef82bbc91f32d2add560467f7b64680c4837542821b",
-    "content_url_hash": "aa347101a02aed88aa0c3ef82bbc91f32d2add560467f7b64680c4837542821b"
+    "content_url_hash": "aa347101a02aed88aa0c3ef82bbc91f32d2add560467f7b64680c4837542821b",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00020",
@@ -397,7 +435,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "35ad09046de0d1db88aa2eff3c9c5b7fa111e974fe4bf4090d6175f59ee4cfce",
-    "content_url_hash": "35ad09046de0d1db88aa2eff3c9c5b7fa111e974fe4bf4090d6175f59ee4cfce"
+    "content_url_hash": "35ad09046de0d1db88aa2eff3c9c5b7fa111e974fe4bf4090d6175f59ee4cfce",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00021",
@@ -417,7 +457,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "2f4c8c381bb30deb19b71349746f05ef4d6d0fdd5a6113b88beed2982f2d0812",
-    "content_url_hash": "2f4c8c381bb30deb19b71349746f05ef4d6d0fdd5a6113b88beed2982f2d0812"
+    "content_url_hash": "2f4c8c381bb30deb19b71349746f05ef4d6d0fdd5a6113b88beed2982f2d0812",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00022",
@@ -437,7 +479,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "afef6262ce8f40092902302b6ddf79f72182a775ca86d7ceb80e83ff47568fd8",
-    "content_url_hash": "afef6262ce8f40092902302b6ddf79f72182a775ca86d7ceb80e83ff47568fd8"
+    "content_url_hash": "afef6262ce8f40092902302b6ddf79f72182a775ca86d7ceb80e83ff47568fd8",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00023",
@@ -457,7 +501,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "0da2bc3cf67f6a01a63cf51dcff0fff32360b88551d85d238b075034165973d5",
-    "content_url_hash": "0da2bc3cf67f6a01a63cf51dcff0fff32360b88551d85d238b075034165973d5"
+    "content_url_hash": "0da2bc3cf67f6a01a63cf51dcff0fff32360b88551d85d238b075034165973d5",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00024",
@@ -477,7 +523,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "fdd6115529042e0fd0d381456bdce456543ec6cfae9c12e1a98545d410f024fd",
-    "content_url_hash": "fdd6115529042e0fd0d381456bdce456543ec6cfae9c12e1a98545d410f024fd"
+    "content_url_hash": "fdd6115529042e0fd0d381456bdce456543ec6cfae9c12e1a98545d410f024fd",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00025",
@@ -497,7 +545,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "5710e95987973172c29da31e19567b3212468787257e089ee109f45dc194363b",
-    "content_url_hash": "5710e95987973172c29da31e19567b3212468787257e089ee109f45dc194363b"
+    "content_url_hash": "5710e95987973172c29da31e19567b3212468787257e089ee109f45dc194363b",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00026",
@@ -517,7 +567,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "f7db4923e7371a434249bb09bd4c003f8166ecaff840ec23fe2519ce3345c94f",
-    "content_url_hash": "f7db4923e7371a434249bb09bd4c003f8166ecaff840ec23fe2519ce3345c94f"
+    "content_url_hash": "f7db4923e7371a434249bb09bd4c003f8166ecaff840ec23fe2519ce3345c94f",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00027",
@@ -537,7 +589,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "f306fa265060cc3813fd4354c7ec6e80f86a0a95a24dc71854e4e5f50131265a",
-    "content_url_hash": "f306fa265060cc3813fd4354c7ec6e80f86a0a95a24dc71854e4e5f50131265a"
+    "content_url_hash": "f306fa265060cc3813fd4354c7ec6e80f86a0a95a24dc71854e4e5f50131265a",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00028",
@@ -557,7 +611,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "fb3fe13b029a781f10e9af0dea1a4309f65256a0609560d66f3a22d3ab2e8406",
-    "content_url_hash": "fb3fe13b029a781f10e9af0dea1a4309f65256a0609560d66f3a22d3ab2e8406"
+    "content_url_hash": "fb3fe13b029a781f10e9af0dea1a4309f65256a0609560d66f3a22d3ab2e8406",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00029",
@@ -577,7 +633,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "c926da324831ff37e366238bd4868fe4a883a28252b7d12a20895e0ecfb5cdfd",
-    "content_url_hash": "c926da324831ff37e366238bd4868fe4a883a28252b7d12a20895e0ecfb5cdfd"
+    "content_url_hash": "c926da324831ff37e366238bd4868fe4a883a28252b7d12a20895e0ecfb5cdfd",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00030",
@@ -597,7 +655,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "4823bd3971dd03af4671d54deae4f7dadb34bbd761d810ae0dcd9df2872a24da",
-    "content_url_hash": "4823bd3971dd03af4671d54deae4f7dadb34bbd761d810ae0dcd9df2872a24da"
+    "content_url_hash": "4823bd3971dd03af4671d54deae4f7dadb34bbd761d810ae0dcd9df2872a24da",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00031",
@@ -617,7 +677,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "68e8fbf5f1e1d53e07ba3f195f74bdfba50882853ee7a4b9e7d8e77ad89fa972",
-    "content_url_hash": "68e8fbf5f1e1d53e07ba3f195f74bdfba50882853ee7a4b9e7d8e77ad89fa972"
+    "content_url_hash": "68e8fbf5f1e1d53e07ba3f195f74bdfba50882853ee7a4b9e7d8e77ad89fa972",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00032",
@@ -637,7 +699,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "3d5d70efd4ba79e7bf64329c730880be5d198bc21ded55015713c705c7ddc6e9",
-    "content_url_hash": "3d5d70efd4ba79e7bf64329c730880be5d198bc21ded55015713c705c7ddc6e9"
+    "content_url_hash": "3d5d70efd4ba79e7bf64329c730880be5d198bc21ded55015713c705c7ddc6e9",
+    "jurisdiction": "Kerala",
+    "district": "Kozhikode"
   },
   {
     "request_id": "SYN-REQ-2026-00033",
@@ -657,7 +721,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "b43638ebb08f463886ad9cf86a0949fe83665962e4411d7aeadd7983bca1baf7",
-    "content_url_hash": "b43638ebb08f463886ad9cf86a0949fe83665962e4411d7aeadd7983bca1baf7"
+    "content_url_hash": "b43638ebb08f463886ad9cf86a0949fe83665962e4411d7aeadd7983bca1baf7",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00034",
@@ -677,7 +743,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "059b8f2d5dd32789b9b103c389965ba2f99047e852b942ca1247c8256db529a5",
-    "content_url_hash": "059b8f2d5dd32789b9b103c389965ba2f99047e852b942ca1247c8256db529a5"
+    "content_url_hash": "059b8f2d5dd32789b9b103c389965ba2f99047e852b942ca1247c8256db529a5",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00035",
@@ -697,7 +765,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "9843a09b443f2c1db89ff1c7b1cc27db813d77882c0e2792db9ffa44b0f0880f",
-    "content_url_hash": "9843a09b443f2c1db89ff1c7b1cc27db813d77882c0e2792db9ffa44b0f0880f"
+    "content_url_hash": "9843a09b443f2c1db89ff1c7b1cc27db813d77882c0e2792db9ffa44b0f0880f",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00036",
@@ -717,7 +787,9 @@
     "status": "rejected",
     "rejection_reason": "PlatformPolicy: Request exceeds statutory scope or lacks judicial warrant.",
     "content_url_hmac": "cae894cb2ce6151fb654543701e0f0ed9356a71544ff3c18d900a78f12a44f56",
-    "content_url_hash": "cae894cb2ce6151fb654543701e0f0ed9356a71544ff3c18d900a78f12a44f56"
+    "content_url_hash": "cae894cb2ce6151fb654543701e0f0ed9356a71544ff3c18d900a78f12a44f56",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00037",
@@ -737,7 +809,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "1065a1d8d58ad4099820747048b9d1b2842149fc17944cdba445269b0db774e6",
-    "content_url_hash": "1065a1d8d58ad4099820747048b9d1b2842149fc17944cdba445269b0db774e6"
+    "content_url_hash": "1065a1d8d58ad4099820747048b9d1b2842149fc17944cdba445269b0db774e6",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00038",
@@ -757,7 +831,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "2a9a8979df65eedf09e891a8cb3b7924c0932afa440bf7035bc03bcec2f6389c",
-    "content_url_hash": "2a9a8979df65eedf09e891a8cb3b7924c0932afa440bf7035bc03bcec2f6389c"
+    "content_url_hash": "2a9a8979df65eedf09e891a8cb3b7924c0932afa440bf7035bc03bcec2f6389c",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00039",
@@ -777,7 +853,9 @@
     "status": "rejected",
     "rejection_reason": "PlatformPolicy: Request exceeds statutory scope or lacks judicial warrant.",
     "content_url_hmac": "877e44ecb999e911bbf26a9ab899b4ed90bb8dbb3ed361e9f4407bdfd3c06060",
-    "content_url_hash": "877e44ecb999e911bbf26a9ab899b4ed90bb8dbb3ed361e9f4407bdfd3c06060"
+    "content_url_hash": "877e44ecb999e911bbf26a9ab899b4ed90bb8dbb3ed361e9f4407bdfd3c06060",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00040",
@@ -797,7 +875,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "0c82768105490e738b8b1fcfe5c7cbd6fd0cf029ce0e4347140d69381322d9e0",
-    "content_url_hash": "0c82768105490e738b8b1fcfe5c7cbd6fd0cf029ce0e4347140d69381322d9e0"
+    "content_url_hash": "0c82768105490e738b8b1fcfe5c7cbd6fd0cf029ce0e4347140d69381322d9e0",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00041",
@@ -817,7 +897,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "e17287550cf0a17fa8de1a9ef80e73b47e564809ddcfafa1b7d1bd5c706216fe",
-    "content_url_hash": "e17287550cf0a17fa8de1a9ef80e73b47e564809ddcfafa1b7d1bd5c706216fe"
+    "content_url_hash": "e17287550cf0a17fa8de1a9ef80e73b47e564809ddcfafa1b7d1bd5c706216fe",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00042",
@@ -837,7 +919,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "b9472fe55d5e29e84f0819ffb0556ce02c9ee8ca62508e012496135c5c372b3b",
-    "content_url_hash": "b9472fe55d5e29e84f0819ffb0556ce02c9ee8ca62508e012496135c5c372b3b"
+    "content_url_hash": "b9472fe55d5e29e84f0819ffb0556ce02c9ee8ca62508e012496135c5c372b3b",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00043",
@@ -857,7 +941,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "d48789b8e2d0bc8d148e83799adef0dc15871900e09244bcc43b5f1ef7d6db23",
-    "content_url_hash": "d48789b8e2d0bc8d148e83799adef0dc15871900e09244bcc43b5f1ef7d6db23"
+    "content_url_hash": "d48789b8e2d0bc8d148e83799adef0dc15871900e09244bcc43b5f1ef7d6db23",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00044",
@@ -877,7 +963,9 @@
     "status": "rejected",
     "rejection_reason": "DeficientRequest: Procedural or jurisdictional prerequisite unmet.",
     "content_url_hmac": "147e5cd723b7b2e15351ff95c13b292a9b3e4019afb9d213f94f5cfaaa3910c3",
-    "content_url_hash": "147e5cd723b7b2e15351ff95c13b292a9b3e4019afb9d213f94f5cfaaa3910c3"
+    "content_url_hash": "147e5cd723b7b2e15351ff95c13b292a9b3e4019afb9d213f94f5cfaaa3910c3",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00045",
@@ -897,7 +985,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "ed4e60343404fb732ed95d2f63c15cedadb12475d38df7a7e5485ff28aec5916",
-    "content_url_hash": "ed4e60343404fb732ed95d2f63c15cedadb12475d38df7a7e5485ff28aec5916"
+    "content_url_hash": "ed4e60343404fb732ed95d2f63c15cedadb12475d38df7a7e5485ff28aec5916",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00046",
@@ -917,7 +1007,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "42a77e95c0d0a75fea07c90a3691a5af45026055c5c3b297d4e62abc71d35449",
-    "content_url_hash": "42a77e95c0d0a75fea07c90a3691a5af45026055c5c3b297d4e62abc71d35449"
+    "content_url_hash": "42a77e95c0d0a75fea07c90a3691a5af45026055c5c3b297d4e62abc71d35449",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00047",
@@ -937,7 +1029,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "df77c0d74806d1fd42beb6262bdb6fb86f462629e56a54d394c9d7d2804cc19c",
-    "content_url_hash": "df77c0d74806d1fd42beb6262bdb6fb86f462629e56a54d394c9d7d2804cc19c"
+    "content_url_hash": "df77c0d74806d1fd42beb6262bdb6fb86f462629e56a54d394c9d7d2804cc19c",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00048",
@@ -957,7 +1051,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "1b707f5beefe5b460c4fb95e41948fef4952d97c0e0f06c377157046f8b7d4f3",
-    "content_url_hash": "1b707f5beefe5b460c4fb95e41948fef4952d97c0e0f06c377157046f8b7d4f3"
+    "content_url_hash": "1b707f5beefe5b460c4fb95e41948fef4952d97c0e0f06c377157046f8b7d4f3",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00049",
@@ -977,7 +1073,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "721d3b75e4c7680465c5fe7848369d847202449ff5547ad60e912bcfb9262f4b",
-    "content_url_hash": "721d3b75e4c7680465c5fe7848369d847202449ff5547ad60e912bcfb9262f4b"
+    "content_url_hash": "721d3b75e4c7680465c5fe7848369d847202449ff5547ad60e912bcfb9262f4b",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00050",
@@ -997,7 +1095,9 @@
     "status": "rejected",
     "rejection_reason": "DeficientRequest: Procedural or jurisdictional prerequisite unmet.",
     "content_url_hmac": "57730cafa1ad9c8ebb82cc39bc6a0ba4214876960e4e3d427f7e826596096621",
-    "content_url_hash": "57730cafa1ad9c8ebb82cc39bc6a0ba4214876960e4e3d427f7e826596096621"
+    "content_url_hash": "57730cafa1ad9c8ebb82cc39bc6a0ba4214876960e4e3d427f7e826596096621",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00051",
@@ -1017,7 +1117,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "f721d7fced605283c229f0f931dd26b8dd79cb9676f8f5c9f8ee8af8d7217094",
-    "content_url_hash": "f721d7fced605283c229f0f931dd26b8dd79cb9676f8f5c9f8ee8af8d7217094"
+    "content_url_hash": "f721d7fced605283c229f0f931dd26b8dd79cb9676f8f5c9f8ee8af8d7217094",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00052",
@@ -1037,7 +1139,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "28efe53f195e40fced290d2f48e3e2d7772c67efc06138b7041856c7e917e4af",
-    "content_url_hash": "28efe53f195e40fced290d2f48e3e2d7772c67efc06138b7041856c7e917e4af"
+    "content_url_hash": "28efe53f195e40fced290d2f48e3e2d7772c67efc06138b7041856c7e917e4af",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00053",
@@ -1057,7 +1161,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "aff7e7d1d0b1bea25a84a033989a64e4f5376eb66bb3458c32afdcfb3106f952",
-    "content_url_hash": "aff7e7d1d0b1bea25a84a033989a64e4f5376eb66bb3458c32afdcfb3106f952"
+    "content_url_hash": "aff7e7d1d0b1bea25a84a033989a64e4f5376eb66bb3458c32afdcfb3106f952",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00054",
@@ -1077,7 +1183,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "876b7ac3c48a0f24307c8707edf71ec95e1c3248360cae5a32a89f9e0df1cc6a",
-    "content_url_hash": "876b7ac3c48a0f24307c8707edf71ec95e1c3248360cae5a32a89f9e0df1cc6a"
+    "content_url_hash": "876b7ac3c48a0f24307c8707edf71ec95e1c3248360cae5a32a89f9e0df1cc6a",
+    "jurisdiction": "Kerala",
+    "district": "Kozhikode"
   },
   {
     "request_id": "SYN-REQ-2026-00055",
@@ -1097,7 +1205,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "698514832f6f33dc8be4f67918fb28660f89d500e3070ddb2954b0269f2b8305",
-    "content_url_hash": "698514832f6f33dc8be4f67918fb28660f89d500e3070ddb2954b0269f2b8305"
+    "content_url_hash": "698514832f6f33dc8be4f67918fb28660f89d500e3070ddb2954b0269f2b8305",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00056",
@@ -1117,7 +1227,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "4c74b02cf970192e0cb2deb3a024a3d9645ffeeedbcb08d0b1d0dc78a17aa3d8",
-    "content_url_hash": "4c74b02cf970192e0cb2deb3a024a3d9645ffeeedbcb08d0b1d0dc78a17aa3d8"
+    "content_url_hash": "4c74b02cf970192e0cb2deb3a024a3d9645ffeeedbcb08d0b1d0dc78a17aa3d8",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00057",
@@ -1137,7 +1249,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "f53962589000ba10ea8af4d3698002557c280f4344917dc68c38bcd7f7ca2aeb",
-    "content_url_hash": "f53962589000ba10ea8af4d3698002557c280f4344917dc68c38bcd7f7ca2aeb"
+    "content_url_hash": "f53962589000ba10ea8af4d3698002557c280f4344917dc68c38bcd7f7ca2aeb",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00058",
@@ -1157,7 +1271,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "357f4bdf6d4d1189dc840bdec6b7370d7e4fdf5af709eb6a2d370c5f30d87904",
-    "content_url_hash": "357f4bdf6d4d1189dc840bdec6b7370d7e4fdf5af709eb6a2d370c5f30d87904"
+    "content_url_hash": "357f4bdf6d4d1189dc840bdec6b7370d7e4fdf5af709eb6a2d370c5f30d87904",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00059",
@@ -1177,7 +1293,9 @@
     "status": "acknowledged",
     "rejection_reason": null,
     "content_url_hmac": "50fa95b039029cfc26746f0464a62c803848974d19a27e7669f9fe3c4690f57e",
-    "content_url_hash": "50fa95b039029cfc26746f0464a62c803848974d19a27e7669f9fe3c4690f57e"
+    "content_url_hash": "50fa95b039029cfc26746f0464a62c803848974d19a27e7669f9fe3c4690f57e",
+    "jurisdiction": "Kerala",
+    "district": "Kannur"
   },
   {
     "request_id": "SYN-REQ-2026-00060",
@@ -1197,7 +1315,9 @@
     "status": "expired",
     "rejection_reason": null,
     "content_url_hmac": "7802ed80cda0cefafd8da7b08d375e81ee93d968a034841fc9c90a4939d8a75b",
-    "content_url_hash": "7802ed80cda0cefafd8da7b08d375e81ee93d968a034841fc9c90a4939d8a75b"
+    "content_url_hash": "7802ed80cda0cefafd8da7b08d375e81ee93d968a034841fc9c90a4939d8a75b",
+    "jurisdiction": "Kerala",
+    "district": "Kannur"
   },
   {
     "request_id": "SYN-REQ-2026-00061",
@@ -1217,7 +1337,9 @@
     "status": "expired",
     "rejection_reason": null,
     "content_url_hmac": "77ae1dfdec1b64f66bcbe30c28d342a873a6880b2878bcea6e29f72be17ea48d",
-    "content_url_hash": "77ae1dfdec1b64f66bcbe30c28d342a873a6880b2878bcea6e29f72be17ea48d"
+    "content_url_hash": "77ae1dfdec1b64f66bcbe30c28d342a873a6880b2878bcea6e29f72be17ea48d",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00062",
@@ -1237,7 +1359,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "1357bf9730979feea728034043f136d6cd9733ed14dc532e04c6ee1188e06024",
-    "content_url_hash": "1357bf9730979feea728034043f136d6cd9733ed14dc532e04c6ee1188e06024"
+    "content_url_hash": "1357bf9730979feea728034043f136d6cd9733ed14dc532e04c6ee1188e06024",
+    "jurisdiction": "Kerala",
+    "district": "Kozhikode"
   },
   {
     "request_id": "SYN-REQ-2026-00063",
@@ -1257,7 +1381,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "cfa2c59160c863143c8cf6ad49f69bc5f2257ae90ef9bbbafb0dc14056a6838b",
-    "content_url_hash": "cfa2c59160c863143c8cf6ad49f69bc5f2257ae90ef9bbbafb0dc14056a6838b"
+    "content_url_hash": "cfa2c59160c863143c8cf6ad49f69bc5f2257ae90ef9bbbafb0dc14056a6838b",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00064",
@@ -1277,7 +1403,9 @@
     "status": "expired",
     "rejection_reason": null,
     "content_url_hmac": "b3d9669ac752f8ec3a47863c5257f8939e6b9025369075f3d48d131ac00f0438",
-    "content_url_hash": "b3d9669ac752f8ec3a47863c5257f8939e6b9025369075f3d48d131ac00f0438"
+    "content_url_hash": "b3d9669ac752f8ec3a47863c5257f8939e6b9025369075f3d48d131ac00f0438",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00065",
@@ -1297,7 +1425,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "1ef6830fef2f066d69d467c7fa30a3024dd263a95953de6534f7b0856aa1e2b7",
-    "content_url_hash": "1ef6830fef2f066d69d467c7fa30a3024dd263a95953de6534f7b0856aa1e2b7"
+    "content_url_hash": "1ef6830fef2f066d69d467c7fa30a3024dd263a95953de6534f7b0856aa1e2b7",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00066",
@@ -1317,7 +1447,9 @@
     "status": "rejected",
     "rejection_reason": "DeficientRequest: Procedural or jurisdictional prerequisite unmet.",
     "content_url_hmac": "85f449321582ff826c3e57ad9cc277a363e26eb4110ac5b1535503e13f16f4d2",
-    "content_url_hash": "85f449321582ff826c3e57ad9cc277a363e26eb4110ac5b1535503e13f16f4d2"
+    "content_url_hash": "85f449321582ff826c3e57ad9cc277a363e26eb4110ac5b1535503e13f16f4d2",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00067",
@@ -1337,7 +1469,9 @@
     "status": "rejected",
     "rejection_reason": "PlatformPolicy: Request exceeds statutory scope or lacks judicial warrant.",
     "content_url_hmac": "4343630f0d76818a3b2b51b5085348fdc34188b0cb7675f531d0a01e3ca03e18",
-    "content_url_hash": "4343630f0d76818a3b2b51b5085348fdc34188b0cb7675f531d0a01e3ca03e18"
+    "content_url_hash": "4343630f0d76818a3b2b51b5085348fdc34188b0cb7675f531d0a01e3ca03e18",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00068",
@@ -1357,7 +1491,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "5458f0a99af4b8c759adc7959ecec8a7b9fc690feb7125f98a5c68f6e926da62",
-    "content_url_hash": "5458f0a99af4b8c759adc7959ecec8a7b9fc690feb7125f98a5c68f6e926da62"
+    "content_url_hash": "5458f0a99af4b8c759adc7959ecec8a7b9fc690feb7125f98a5c68f6e926da62",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00069",
@@ -1377,7 +1513,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "87bb1892df24806c1dd782b6ba0e5f57ca204dbf0ce2a04d45fa99efeb523202",
-    "content_url_hash": "87bb1892df24806c1dd782b6ba0e5f57ca204dbf0ce2a04d45fa99efeb523202"
+    "content_url_hash": "87bb1892df24806c1dd782b6ba0e5f57ca204dbf0ce2a04d45fa99efeb523202",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00070",
@@ -1397,7 +1535,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "7bd5e7dce37064c950b2cc9b2319463c3db8ae0b7d126b3905b834b3f857a7e2",
-    "content_url_hash": "7bd5e7dce37064c950b2cc9b2319463c3db8ae0b7d126b3905b834b3f857a7e2"
+    "content_url_hash": "7bd5e7dce37064c950b2cc9b2319463c3db8ae0b7d126b3905b834b3f857a7e2",
+    "jurisdiction": "Kerala",
+    "district": "Kozhikode"
   },
   {
     "request_id": "SYN-REQ-2026-00071",
@@ -1417,7 +1557,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "fe1f9c359426112fe6656f61b7a0ccfc4dccdd2d7aa52c7dc41559ce78e5e735",
-    "content_url_hash": "fe1f9c359426112fe6656f61b7a0ccfc4dccdd2d7aa52c7dc41559ce78e5e735"
+    "content_url_hash": "fe1f9c359426112fe6656f61b7a0ccfc4dccdd2d7aa52c7dc41559ce78e5e735",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00072",
@@ -1437,7 +1579,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "47474af9557b7d9afa4bf6393f020efcadcaf592ce61753f7bd33a72ac4be9d9",
-    "content_url_hash": "47474af9557b7d9afa4bf6393f020efcadcaf592ce61753f7bd33a72ac4be9d9"
+    "content_url_hash": "47474af9557b7d9afa4bf6393f020efcadcaf592ce61753f7bd33a72ac4be9d9",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00073",
@@ -1457,7 +1601,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "e17f50a0897d999948ee51e6d996edd0770e6bf47a241d505802881809e47c50",
-    "content_url_hash": "e17f50a0897d999948ee51e6d996edd0770e6bf47a241d505802881809e47c50"
+    "content_url_hash": "e17f50a0897d999948ee51e6d996edd0770e6bf47a241d505802881809e47c50",
+    "jurisdiction": "Kerala",
+    "district": "Kannur"
   },
   {
     "request_id": "SYN-REQ-2026-00074",
@@ -1477,7 +1623,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "03a5912f4e353394ff81fb5a9f8e233f98b1b82fa629b6fc4179753115554233",
-    "content_url_hash": "03a5912f4e353394ff81fb5a9f8e233f98b1b82fa629b6fc4179753115554233"
+    "content_url_hash": "03a5912f4e353394ff81fb5a9f8e233f98b1b82fa629b6fc4179753115554233",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00075",
@@ -1497,7 +1645,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "d3202295ddd7955f38e66b0e6f7fd5c0fe263a52372c4600871db87041e395f6",
-    "content_url_hash": "d3202295ddd7955f38e66b0e6f7fd5c0fe263a52372c4600871db87041e395f6"
+    "content_url_hash": "d3202295ddd7955f38e66b0e6f7fd5c0fe263a52372c4600871db87041e395f6",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00076",
@@ -1517,7 +1667,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "18e3b9496fc4350a78562753f783c6278f5325ebda78699722896b8a67c8cb54",
-    "content_url_hash": "18e3b9496fc4350a78562753f783c6278f5325ebda78699722896b8a67c8cb54"
+    "content_url_hash": "18e3b9496fc4350a78562753f783c6278f5325ebda78699722896b8a67c8cb54",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00077",
@@ -1537,7 +1689,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "7d4142fe3f2611f1138be92fe8d4290f5627167cfd943d3aa95b42250340d220",
-    "content_url_hash": "7d4142fe3f2611f1138be92fe8d4290f5627167cfd943d3aa95b42250340d220"
+    "content_url_hash": "7d4142fe3f2611f1138be92fe8d4290f5627167cfd943d3aa95b42250340d220",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00078",
@@ -1557,7 +1711,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "f763e8ad4dff53260f8593129172d92ccef954a1857511e384ec2e03ba2817e9",
-    "content_url_hash": "f763e8ad4dff53260f8593129172d92ccef954a1857511e384ec2e03ba2817e9"
+    "content_url_hash": "f763e8ad4dff53260f8593129172d92ccef954a1857511e384ec2e03ba2817e9",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00079",
@@ -1577,7 +1733,9 @@
     "status": "rejected",
     "rejection_reason": "DeficientRequest: Procedural or jurisdictional prerequisite unmet.",
     "content_url_hmac": "05c79afa062598d2f4571b85d38ef1d3be5a2423ea674d16cbab1d2bb38206ba",
-    "content_url_hash": "05c79afa062598d2f4571b85d38ef1d3be5a2423ea674d16cbab1d2bb38206ba"
+    "content_url_hash": "05c79afa062598d2f4571b85d38ef1d3be5a2423ea674d16cbab1d2bb38206ba",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00080",
@@ -1597,7 +1755,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "b43306db6e9e8f547673c61196aef15c4c55bc0f806861e18dab03f33e122a49",
-    "content_url_hash": "b43306db6e9e8f547673c61196aef15c4c55bc0f806861e18dab03f33e122a49"
+    "content_url_hash": "b43306db6e9e8f547673c61196aef15c4c55bc0f806861e18dab03f33e122a49",
+    "jurisdiction": "Kerala",
+    "district": "Kannur"
   },
   {
     "request_id": "SYN-REQ-2026-00081",
@@ -1617,7 +1777,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "d5b851d25ea2fed169d3aa6b566f83602ceeca9f9a8365b1d96236959097f962",
-    "content_url_hash": "d5b851d25ea2fed169d3aa6b566f83602ceeca9f9a8365b1d96236959097f962"
+    "content_url_hash": "d5b851d25ea2fed169d3aa6b566f83602ceeca9f9a8365b1d96236959097f962",
+    "jurisdiction": "Kerala",
+    "district": "Kannur"
   },
   {
     "request_id": "SYN-REQ-2026-00082",
@@ -1637,7 +1799,9 @@
     "status": "rejected",
     "rejection_reason": "PlatformPolicy: Request exceeds statutory scope or lacks judicial warrant.",
     "content_url_hmac": "885cd8db7b7278e07acd75dd0c6ffcdcdccff0435f5c541cc94d842b93d51059",
-    "content_url_hash": "885cd8db7b7278e07acd75dd0c6ffcdcdccff0435f5c541cc94d842b93d51059"
+    "content_url_hash": "885cd8db7b7278e07acd75dd0c6ffcdcdccff0435f5c541cc94d842b93d51059",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00083",
@@ -1657,7 +1821,9 @@
     "status": "rejected",
     "rejection_reason": "DeficientRequest: Procedural or jurisdictional prerequisite unmet.",
     "content_url_hmac": "f70788e7b818c1a9ccb812309c50be170f89880aea9d43eea9fc9362f722cbb9",
-    "content_url_hash": "f70788e7b818c1a9ccb812309c50be170f89880aea9d43eea9fc9362f722cbb9"
+    "content_url_hash": "f70788e7b818c1a9ccb812309c50be170f89880aea9d43eea9fc9362f722cbb9",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00084",
@@ -1677,7 +1843,9 @@
     "status": "expired",
     "rejection_reason": null,
     "content_url_hmac": "5fe2760c263e6c89de5d4320731513c12089961d89d380a33c77e2139260d69a",
-    "content_url_hash": "5fe2760c263e6c89de5d4320731513c12089961d89d380a33c77e2139260d69a"
+    "content_url_hash": "5fe2760c263e6c89de5d4320731513c12089961d89d380a33c77e2139260d69a",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00085",
@@ -1697,7 +1865,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "3619649841e60280bc7889aabbaac6a233e1683616e709d4f7b4e71cea82a513",
-    "content_url_hash": "3619649841e60280bc7889aabbaac6a233e1683616e709d4f7b4e71cea82a513"
+    "content_url_hash": "3619649841e60280bc7889aabbaac6a233e1683616e709d4f7b4e71cea82a513",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00086",
@@ -1717,7 +1887,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "e31a0c6a08dcec086aa7781434e702f3adf2807e7ad751e191c9dbe69ab08eff",
-    "content_url_hash": "e31a0c6a08dcec086aa7781434e702f3adf2807e7ad751e191c9dbe69ab08eff"
+    "content_url_hash": "e31a0c6a08dcec086aa7781434e702f3adf2807e7ad751e191c9dbe69ab08eff",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00087",
@@ -1737,7 +1909,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "fb9c9c5ff7500e1d20afbf95eb5d939c095e821002955ba1148dc972a02decca",
-    "content_url_hash": "fb9c9c5ff7500e1d20afbf95eb5d939c095e821002955ba1148dc972a02decca"
+    "content_url_hash": "fb9c9c5ff7500e1d20afbf95eb5d939c095e821002955ba1148dc972a02decca",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00088",
@@ -1757,7 +1931,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "0882bf4d17710ef024acc50129adb5b659949fe5a4b66e314e46b5c601b491c1",
-    "content_url_hash": "0882bf4d17710ef024acc50129adb5b659949fe5a4b66e314e46b5c601b491c1"
+    "content_url_hash": "0882bf4d17710ef024acc50129adb5b659949fe5a4b66e314e46b5c601b491c1",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00089",
@@ -1777,7 +1953,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "0ff0e0fd60d2972a4e1009a3dd58ba3b052548b2493925c3b7bce9d4381c130f",
-    "content_url_hash": "0ff0e0fd60d2972a4e1009a3dd58ba3b052548b2493925c3b7bce9d4381c130f"
+    "content_url_hash": "0ff0e0fd60d2972a4e1009a3dd58ba3b052548b2493925c3b7bce9d4381c130f",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00090",
@@ -1797,7 +1975,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "574446ea95e864df075866b1eaa5e23e7fcb20c3b43a9bf565b28888deaa296b",
-    "content_url_hash": "574446ea95e864df075866b1eaa5e23e7fcb20c3b43a9bf565b28888deaa296b"
+    "content_url_hash": "574446ea95e864df075866b1eaa5e23e7fcb20c3b43a9bf565b28888deaa296b",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00091",
@@ -1817,7 +1997,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "1707989526f93ab56e395fd85201639f4addf56c42fc7b05d8a7fdbf7d95f9c9",
-    "content_url_hash": "1707989526f93ab56e395fd85201639f4addf56c42fc7b05d8a7fdbf7d95f9c9"
+    "content_url_hash": "1707989526f93ab56e395fd85201639f4addf56c42fc7b05d8a7fdbf7d95f9c9",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00092",
@@ -1837,7 +2019,9 @@
     "status": "rejected",
     "rejection_reason": "DeficientRequest: Procedural or jurisdictional prerequisite unmet.",
     "content_url_hmac": "b9b6bc00fe55a3091c22431767e04d7cc6df481f27249057e9f2fa1fa387dd31",
-    "content_url_hash": "b9b6bc00fe55a3091c22431767e04d7cc6df481f27249057e9f2fa1fa387dd31"
+    "content_url_hash": "b9b6bc00fe55a3091c22431767e04d7cc6df481f27249057e9f2fa1fa387dd31",
+    "jurisdiction": "Kerala",
+    "district": "Kozhikode"
   },
   {
     "request_id": "SYN-REQ-2026-00093",
@@ -1857,7 +2041,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "b33da827ef5d4b8816ae128d923643432a65f251a4475faaec31393102876a6e",
-    "content_url_hash": "b33da827ef5d4b8816ae128d923643432a65f251a4475faaec31393102876a6e"
+    "content_url_hash": "b33da827ef5d4b8816ae128d923643432a65f251a4475faaec31393102876a6e",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00094",
@@ -1877,7 +2063,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "a5f0a01b4feceaf91ae7f2b6e3910bd19528d3d9fba07eef9ceb58a5e58a6ee2",
-    "content_url_hash": "a5f0a01b4feceaf91ae7f2b6e3910bd19528d3d9fba07eef9ceb58a5e58a6ee2"
+    "content_url_hash": "a5f0a01b4feceaf91ae7f2b6e3910bd19528d3d9fba07eef9ceb58a5e58a6ee2",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00095",
@@ -1897,7 +2085,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "eab3639a68806206f4556a4dad8b6dd1457ef0d3fcdc81ee9b568b7de587bc53",
-    "content_url_hash": "eab3639a68806206f4556a4dad8b6dd1457ef0d3fcdc81ee9b568b7de587bc53"
+    "content_url_hash": "eab3639a68806206f4556a4dad8b6dd1457ef0d3fcdc81ee9b568b7de587bc53",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00096",
@@ -1917,7 +2107,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "6281a9a0cef0877a836a4abc02432957f3343755463d804e6b49068f2dd56e72",
-    "content_url_hash": "6281a9a0cef0877a836a4abc02432957f3343755463d804e6b49068f2dd56e72"
+    "content_url_hash": "6281a9a0cef0877a836a4abc02432957f3343755463d804e6b49068f2dd56e72",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00097",
@@ -1937,7 +2129,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "e2ec1d1eb6dc678e11f8b98cd48f6b2820d67d3c16e5e63ed8f035823816640c",
-    "content_url_hash": "e2ec1d1eb6dc678e11f8b98cd48f6b2820d67d3c16e5e63ed8f035823816640c"
+    "content_url_hash": "e2ec1d1eb6dc678e11f8b98cd48f6b2820d67d3c16e5e63ed8f035823816640c",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00098",
@@ -1957,7 +2151,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "c7f51c7c2e8edeebfa55de57609566b05229b4843b1de57c959d6b1be83d6385",
-    "content_url_hash": "c7f51c7c2e8edeebfa55de57609566b05229b4843b1de57c959d6b1be83d6385"
+    "content_url_hash": "c7f51c7c2e8edeebfa55de57609566b05229b4843b1de57c959d6b1be83d6385",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00099",
@@ -1977,7 +2173,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "1949c81207f77b3d942e0f58591a6ec59653cb4ce76486b9d167ba8522163b11",
-    "content_url_hash": "1949c81207f77b3d942e0f58591a6ec59653cb4ce76486b9d167ba8522163b11"
+    "content_url_hash": "1949c81207f77b3d942e0f58591a6ec59653cb4ce76486b9d167ba8522163b11",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00100",
@@ -1997,7 +2195,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "e7659bfec452ace2123de86454d4616fc8c0b5b6c9c8b68c124be76461eb704e",
-    "content_url_hash": "e7659bfec452ace2123de86454d4616fc8c0b5b6c9c8b68c124be76461eb704e"
+    "content_url_hash": "e7659bfec452ace2123de86454d4616fc8c0b5b6c9c8b68c124be76461eb704e",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00101",
@@ -2017,7 +2217,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "063f296623abe575de9d1e476ee4cf25e692df764c239161e6bb42a85187d684",
-    "content_url_hash": "063f296623abe575de9d1e476ee4cf25e692df764c239161e6bb42a85187d684"
+    "content_url_hash": "063f296623abe575de9d1e476ee4cf25e692df764c239161e6bb42a85187d684",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00102",
@@ -2037,7 +2239,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "589e4811bf7d8869cfa0557ff601c38d3f65f02aecb0ccd273d61c286e4bb388",
-    "content_url_hash": "589e4811bf7d8869cfa0557ff601c38d3f65f02aecb0ccd273d61c286e4bb388"
+    "content_url_hash": "589e4811bf7d8869cfa0557ff601c38d3f65f02aecb0ccd273d61c286e4bb388",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00103",
@@ -2057,7 +2261,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "42e872359a0b85531b1e6c5514230f20800668f1ebc7c2477e4dc3bc0f5ebffd",
-    "content_url_hash": "42e872359a0b85531b1e6c5514230f20800668f1ebc7c2477e4dc3bc0f5ebffd"
+    "content_url_hash": "42e872359a0b85531b1e6c5514230f20800668f1ebc7c2477e4dc3bc0f5ebffd",
+    "jurisdiction": "Kerala",
+    "district": "Kozhikode"
   },
   {
     "request_id": "SYN-REQ-2026-00104",
@@ -2077,7 +2283,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "c0fae2ebb5479742c96e4b4e27c8be52d5ff325320856f39faf5445aaba981ca",
-    "content_url_hash": "c0fae2ebb5479742c96e4b4e27c8be52d5ff325320856f39faf5445aaba981ca"
+    "content_url_hash": "c0fae2ebb5479742c96e4b4e27c8be52d5ff325320856f39faf5445aaba981ca",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00105",
@@ -2097,7 +2305,9 @@
     "status": "rejected",
     "rejection_reason": "DeficientRequest: Procedural or jurisdictional prerequisite unmet.",
     "content_url_hmac": "2e60176e28150b4b723099f555742f4b8075e7dec05be47fe33854d1da917d3f",
-    "content_url_hash": "2e60176e28150b4b723099f555742f4b8075e7dec05be47fe33854d1da917d3f"
+    "content_url_hash": "2e60176e28150b4b723099f555742f4b8075e7dec05be47fe33854d1da917d3f",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00106",
@@ -2117,7 +2327,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "763090d219e0bc1487bebd1fe145714493479eb366e97b601f8776dacf3f21a7",
-    "content_url_hash": "763090d219e0bc1487bebd1fe145714493479eb366e97b601f8776dacf3f21a7"
+    "content_url_hash": "763090d219e0bc1487bebd1fe145714493479eb366e97b601f8776dacf3f21a7",
+    "jurisdiction": "Kerala",
+    "district": "Kozhikode"
   },
   {
     "request_id": "SYN-REQ-2026-00107",
@@ -2137,7 +2349,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "8d167d3911d79e6e72437856a9718fd9f79219040bf635039df1595845ab6112",
-    "content_url_hash": "8d167d3911d79e6e72437856a9718fd9f79219040bf635039df1595845ab6112"
+    "content_url_hash": "8d167d3911d79e6e72437856a9718fd9f79219040bf635039df1595845ab6112",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00108",
@@ -2157,7 +2371,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "250f8e61c726618f36e14222d9e2d3cd24471b09c31950a6001cdd53a6eb6b4f",
-    "content_url_hash": "250f8e61c726618f36e14222d9e2d3cd24471b09c31950a6001cdd53a6eb6b4f"
+    "content_url_hash": "250f8e61c726618f36e14222d9e2d3cd24471b09c31950a6001cdd53a6eb6b4f",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00109",
@@ -2177,7 +2393,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "bac740235a50ab82c276d2ef520060a1cef8e8f1e0c663c3f5a7d28e2a0bc42e",
-    "content_url_hash": "bac740235a50ab82c276d2ef520060a1cef8e8f1e0c663c3f5a7d28e2a0bc42e"
+    "content_url_hash": "bac740235a50ab82c276d2ef520060a1cef8e8f1e0c663c3f5a7d28e2a0bc42e",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00110",
@@ -2197,7 +2415,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "4d0b915a660b661d39b9a881e593c36f9270d9a75e1c6eacac87c47192dd2975",
-    "content_url_hash": "4d0b915a660b661d39b9a881e593c36f9270d9a75e1c6eacac87c47192dd2975"
+    "content_url_hash": "4d0b915a660b661d39b9a881e593c36f9270d9a75e1c6eacac87c47192dd2975",
+    "jurisdiction": "Kerala",
+    "district": "Kannur"
   },
   {
     "request_id": "SYN-REQ-2026-00111",
@@ -2217,7 +2437,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "e10c0e62f43035d9cc090e6abf0f04699e25b4b2358752bbf18b6e9f24b8c919",
-    "content_url_hash": "e10c0e62f43035d9cc090e6abf0f04699e25b4b2358752bbf18b6e9f24b8c919"
+    "content_url_hash": "e10c0e62f43035d9cc090e6abf0f04699e25b4b2358752bbf18b6e9f24b8c919",
+    "jurisdiction": "Kerala",
+    "district": "Kozhikode"
   },
   {
     "request_id": "SYN-REQ-2026-00112",
@@ -2237,7 +2459,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "501f5e0dc96c38773108483c52355bfaa552d6f0885002e2be52b6e6702bf901",
-    "content_url_hash": "501f5e0dc96c38773108483c52355bfaa552d6f0885002e2be52b6e6702bf901"
+    "content_url_hash": "501f5e0dc96c38773108483c52355bfaa552d6f0885002e2be52b6e6702bf901",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00113",
@@ -2257,7 +2481,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "db5b844879a118e40d09849b4b05e6a3a8880102924e919306ea3f96bc1f1773",
-    "content_url_hash": "db5b844879a118e40d09849b4b05e6a3a8880102924e919306ea3f96bc1f1773"
+    "content_url_hash": "db5b844879a118e40d09849b4b05e6a3a8880102924e919306ea3f96bc1f1773",
+    "jurisdiction": "Kerala",
+    "district": "Kannur"
   },
   {
     "request_id": "SYN-REQ-2026-00114",
@@ -2277,7 +2503,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "f39446c8a83adea7730f7b72e20828bb7dd731b0d33e173c9294b98f6da9410b",
-    "content_url_hash": "f39446c8a83adea7730f7b72e20828bb7dd731b0d33e173c9294b98f6da9410b"
+    "content_url_hash": "f39446c8a83adea7730f7b72e20828bb7dd731b0d33e173c9294b98f6da9410b",
+    "jurisdiction": "Kerala",
+    "district": "Kannur"
   },
   {
     "request_id": "SYN-REQ-2026-00115",
@@ -2297,7 +2525,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "164e78c57283ccb39ab6532a4bcf2053d250fd3b8cc8a502f80e279dc2e2a22d",
-    "content_url_hash": "164e78c57283ccb39ab6532a4bcf2053d250fd3b8cc8a502f80e279dc2e2a22d"
+    "content_url_hash": "164e78c57283ccb39ab6532a4bcf2053d250fd3b8cc8a502f80e279dc2e2a22d",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00116",
@@ -2317,7 +2547,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "00bcde722affa86d000cb91e21152494bca9d6d595e9f3749e95d06157ddebf4",
-    "content_url_hash": "00bcde722affa86d000cb91e21152494bca9d6d595e9f3749e95d06157ddebf4"
+    "content_url_hash": "00bcde722affa86d000cb91e21152494bca9d6d595e9f3749e95d06157ddebf4",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00117",
@@ -2337,7 +2569,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "f0d7cb940fa9637c547cad12513c1fa57bdcf3ce369c006f9ddf91d01d06b5a0",
-    "content_url_hash": "f0d7cb940fa9637c547cad12513c1fa57bdcf3ce369c006f9ddf91d01d06b5a0"
+    "content_url_hash": "f0d7cb940fa9637c547cad12513c1fa57bdcf3ce369c006f9ddf91d01d06b5a0",
+    "jurisdiction": "Kerala",
+    "district": "Kannur"
   },
   {
     "request_id": "SYN-REQ-2026-00118",
@@ -2357,7 +2591,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "043af8c1eb349b8da58c686021ea471d814ca170c741b140fe74a8a295aa4f2b",
-    "content_url_hash": "043af8c1eb349b8da58c686021ea471d814ca170c741b140fe74a8a295aa4f2b"
+    "content_url_hash": "043af8c1eb349b8da58c686021ea471d814ca170c741b140fe74a8a295aa4f2b",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00119",
@@ -2377,7 +2613,9 @@
     "status": "acknowledged",
     "rejection_reason": null,
     "content_url_hmac": "fef4b6edba56dde256c7cafdeaaf17c72518b8cf5f1a9a9677ff58dfb45d5b3d",
-    "content_url_hash": "fef4b6edba56dde256c7cafdeaaf17c72518b8cf5f1a9a9677ff58dfb45d5b3d"
+    "content_url_hash": "fef4b6edba56dde256c7cafdeaaf17c72518b8cf5f1a9a9677ff58dfb45d5b3d",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00120",
@@ -2397,7 +2635,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "6136e1a56ffc3d808782c303cf02b17d482318a4ef24067b377b64bb3b2fdda4",
-    "content_url_hash": "6136e1a56ffc3d808782c303cf02b17d482318a4ef24067b377b64bb3b2fdda4"
+    "content_url_hash": "6136e1a56ffc3d808782c303cf02b17d482318a4ef24067b377b64bb3b2fdda4",
+    "jurisdiction": "Kerala",
+    "district": "Kannur"
   },
   {
     "request_id": "SYN-REQ-2026-00121",
@@ -2417,7 +2657,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "8d0ea4b13348e8eb3f7a78088f0d92a9aaa63878269fa0f68f37c30974500ffd",
-    "content_url_hash": "8d0ea4b13348e8eb3f7a78088f0d92a9aaa63878269fa0f68f37c30974500ffd"
+    "content_url_hash": "8d0ea4b13348e8eb3f7a78088f0d92a9aaa63878269fa0f68f37c30974500ffd",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00122",
@@ -2437,7 +2679,9 @@
     "status": "rejected",
     "rejection_reason": "PlatformPolicy: Request exceeds statutory scope or lacks judicial warrant.",
     "content_url_hmac": "62431849e3bbf215d9ebf0985131c7a3491de380b6d463d55473ce35e385ba38",
-    "content_url_hash": "62431849e3bbf215d9ebf0985131c7a3491de380b6d463d55473ce35e385ba38"
+    "content_url_hash": "62431849e3bbf215d9ebf0985131c7a3491de380b6d463d55473ce35e385ba38",
+    "jurisdiction": "Kerala",
+    "district": "Kannur"
   },
   {
     "request_id": "SYN-REQ-2026-00123",
@@ -2457,7 +2701,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "7b94fa09dbcceb81e821415ab3c53e42c80acb38734d16f0ecea49fb38b50b3f",
-    "content_url_hash": "7b94fa09dbcceb81e821415ab3c53e42c80acb38734d16f0ecea49fb38b50b3f"
+    "content_url_hash": "7b94fa09dbcceb81e821415ab3c53e42c80acb38734d16f0ecea49fb38b50b3f",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00124",
@@ -2477,7 +2723,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "d372e04708d1fa58d3df74837e7cdb9b9fb9cee297f3daf0aa707803debee2f8",
-    "content_url_hash": "d372e04708d1fa58d3df74837e7cdb9b9fb9cee297f3daf0aa707803debee2f8"
+    "content_url_hash": "d372e04708d1fa58d3df74837e7cdb9b9fb9cee297f3daf0aa707803debee2f8",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00125",
@@ -2497,7 +2745,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "3d1bac1a8e7fc708ce189b6c1a66feee00ca88c7d8c58010c8c66eb9730004eb",
-    "content_url_hash": "3d1bac1a8e7fc708ce189b6c1a66feee00ca88c7d8c58010c8c66eb9730004eb"
+    "content_url_hash": "3d1bac1a8e7fc708ce189b6c1a66feee00ca88c7d8c58010c8c66eb9730004eb",
+    "jurisdiction": "Kerala",
+    "district": "Kozhikode"
   },
   {
     "request_id": "SYN-REQ-2026-00126",
@@ -2517,7 +2767,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "07d0935960c01d06c7e44cf0657e1af8c4e8bad6cc94e7e9cac064a0e425381b",
-    "content_url_hash": "07d0935960c01d06c7e44cf0657e1af8c4e8bad6cc94e7e9cac064a0e425381b"
+    "content_url_hash": "07d0935960c01d06c7e44cf0657e1af8c4e8bad6cc94e7e9cac064a0e425381b",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00127",
@@ -2537,7 +2789,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "09d1d4348f50a8431b0e9d84c5b53243cf8e4aa3f2ca62b9f1d7cc341c933521",
-    "content_url_hash": "09d1d4348f50a8431b0e9d84c5b53243cf8e4aa3f2ca62b9f1d7cc341c933521"
+    "content_url_hash": "09d1d4348f50a8431b0e9d84c5b53243cf8e4aa3f2ca62b9f1d7cc341c933521",
+    "jurisdiction": "Kerala",
+    "district": "Kannur"
   },
   {
     "request_id": "SYN-REQ-2026-00128",
@@ -2557,7 +2811,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "ada20ed725cbc6a21cb40f722ceb3fc941a5e4f5e2c61d374bd4d7fd27cbb110",
-    "content_url_hash": "ada20ed725cbc6a21cb40f722ceb3fc941a5e4f5e2c61d374bd4d7fd27cbb110"
+    "content_url_hash": "ada20ed725cbc6a21cb40f722ceb3fc941a5e4f5e2c61d374bd4d7fd27cbb110",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00129",
@@ -2577,7 +2833,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "2fb79ad8089f22aefef9f64814ef952c823e1fcbec46ed3c8f026eefe6923c02",
-    "content_url_hash": "2fb79ad8089f22aefef9f64814ef952c823e1fcbec46ed3c8f026eefe6923c02"
+    "content_url_hash": "2fb79ad8089f22aefef9f64814ef952c823e1fcbec46ed3c8f026eefe6923c02",
+    "jurisdiction": "Kerala",
+    "district": "Kozhikode"
   },
   {
     "request_id": "SYN-REQ-2026-00130",
@@ -2597,7 +2855,9 @@
     "status": "acknowledged",
     "rejection_reason": null,
     "content_url_hmac": "3eb56ca51ce2c1607d54d355a703f8f0544f0c56c7ae47b725ee510db9e7a9d8",
-    "content_url_hash": "3eb56ca51ce2c1607d54d355a703f8f0544f0c56c7ae47b725ee510db9e7a9d8"
+    "content_url_hash": "3eb56ca51ce2c1607d54d355a703f8f0544f0c56c7ae47b725ee510db9e7a9d8",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00131",
@@ -2617,7 +2877,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "8156b1d7f39cd45c43e33da7eaeeccddc57fc2206232cf59bd1aabb2602d911e",
-    "content_url_hash": "8156b1d7f39cd45c43e33da7eaeeccddc57fc2206232cf59bd1aabb2602d911e"
+    "content_url_hash": "8156b1d7f39cd45c43e33da7eaeeccddc57fc2206232cf59bd1aabb2602d911e",
+    "jurisdiction": "Kerala",
+    "district": "Kozhikode"
   },
   {
     "request_id": "SYN-REQ-2026-00132",
@@ -2637,7 +2899,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "95f9aea10b234f559f4969dc26ae3c1e66449cba276cb0108b1d8fae937a7fc3",
-    "content_url_hash": "95f9aea10b234f559f4969dc26ae3c1e66449cba276cb0108b1d8fae937a7fc3"
+    "content_url_hash": "95f9aea10b234f559f4969dc26ae3c1e66449cba276cb0108b1d8fae937a7fc3",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00133",
@@ -2657,7 +2921,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "c5ae44cb9e345d95501590bb3664161bd1ec1e170b0c01f7c489a067a22b64b9",
-    "content_url_hash": "c5ae44cb9e345d95501590bb3664161bd1ec1e170b0c01f7c489a067a22b64b9"
+    "content_url_hash": "c5ae44cb9e345d95501590bb3664161bd1ec1e170b0c01f7c489a067a22b64b9",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00134",
@@ -2677,7 +2943,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "a186e5bef12ab63a37aec9b439d9939849a1f2dcf73801cf03ed2a21e4be77fe",
-    "content_url_hash": "a186e5bef12ab63a37aec9b439d9939849a1f2dcf73801cf03ed2a21e4be77fe"
+    "content_url_hash": "a186e5bef12ab63a37aec9b439d9939849a1f2dcf73801cf03ed2a21e4be77fe",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00135",
@@ -2697,7 +2965,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "854d7c964e5a211c45d183ddddccde0d5dd070e28146ec6a9fbb999378f3e854",
-    "content_url_hash": "854d7c964e5a211c45d183ddddccde0d5dd070e28146ec6a9fbb999378f3e854"
+    "content_url_hash": "854d7c964e5a211c45d183ddddccde0d5dd070e28146ec6a9fbb999378f3e854",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00136",
@@ -2717,7 +2987,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "be235a64d2ef7842e1c5b7d9a56939cda3747e21c833e38c216ce8a768286fde",
-    "content_url_hash": "be235a64d2ef7842e1c5b7d9a56939cda3747e21c833e38c216ce8a768286fde"
+    "content_url_hash": "be235a64d2ef7842e1c5b7d9a56939cda3747e21c833e38c216ce8a768286fde",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00137",
@@ -2737,7 +3009,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "994fdec983141be373efb34cfa45f3fe0d7391f69e9b63870df8b19ffe95124b",
-    "content_url_hash": "994fdec983141be373efb34cfa45f3fe0d7391f69e9b63870df8b19ffe95124b"
+    "content_url_hash": "994fdec983141be373efb34cfa45f3fe0d7391f69e9b63870df8b19ffe95124b",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00138",
@@ -2757,7 +3031,9 @@
     "status": "acknowledged",
     "rejection_reason": null,
     "content_url_hmac": "08ef824459e97c503c23fce5b5a34f3b983e7459fa5cea6ba0268f159f971101",
-    "content_url_hash": "08ef824459e97c503c23fce5b5a34f3b983e7459fa5cea6ba0268f159f971101"
+    "content_url_hash": "08ef824459e97c503c23fce5b5a34f3b983e7459fa5cea6ba0268f159f971101",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00139",
@@ -2777,7 +3053,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "15d2fe04c466f31199111ea42ef02c4b35916315709adbb991081089255d0631",
-    "content_url_hash": "15d2fe04c466f31199111ea42ef02c4b35916315709adbb991081089255d0631"
+    "content_url_hash": "15d2fe04c466f31199111ea42ef02c4b35916315709adbb991081089255d0631",
+    "jurisdiction": "Kerala",
+    "district": "Kannur"
   },
   {
     "request_id": "SYN-REQ-2026-00140",
@@ -2797,7 +3075,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "be66cf1c9a6e30f3bdfc554a1692586287c73642b5016dd9f84c27616b30b061",
-    "content_url_hash": "be66cf1c9a6e30f3bdfc554a1692586287c73642b5016dd9f84c27616b30b061"
+    "content_url_hash": "be66cf1c9a6e30f3bdfc554a1692586287c73642b5016dd9f84c27616b30b061",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00141",
@@ -2817,7 +3097,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "7da64035590c46391d2cdb899a87169be6b89821333732671ebbc0b526bfb97d",
-    "content_url_hash": "7da64035590c46391d2cdb899a87169be6b89821333732671ebbc0b526bfb97d"
+    "content_url_hash": "7da64035590c46391d2cdb899a87169be6b89821333732671ebbc0b526bfb97d",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00142",
@@ -2837,7 +3119,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "760e9ea2703ef05c04623e31f5fda20db07b0dba86547d6c6f961a539a36d73b",
-    "content_url_hash": "760e9ea2703ef05c04623e31f5fda20db07b0dba86547d6c6f961a539a36d73b"
+    "content_url_hash": "760e9ea2703ef05c04623e31f5fda20db07b0dba86547d6c6f961a539a36d73b",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00143",
@@ -2857,7 +3141,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "33538bace36f0a82cb2485696d77ecea1ea1a01ba28ba4e02f474ac03b2e222f",
-    "content_url_hash": "33538bace36f0a82cb2485696d77ecea1ea1a01ba28ba4e02f474ac03b2e222f"
+    "content_url_hash": "33538bace36f0a82cb2485696d77ecea1ea1a01ba28ba4e02f474ac03b2e222f",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00144",
@@ -2877,7 +3163,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "987cd5764aca9b4afc904b4164f4c7cf657e88a55d6fc763804e7a6e4b646a83",
-    "content_url_hash": "987cd5764aca9b4afc904b4164f4c7cf657e88a55d6fc763804e7a6e4b646a83"
+    "content_url_hash": "987cd5764aca9b4afc904b4164f4c7cf657e88a55d6fc763804e7a6e4b646a83",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00145",
@@ -2897,7 +3185,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "56f3393a2e16f70a488d0bf3c25bd7008a89488a6655507d5b1196382e726f99",
-    "content_url_hash": "56f3393a2e16f70a488d0bf3c25bd7008a89488a6655507d5b1196382e726f99"
+    "content_url_hash": "56f3393a2e16f70a488d0bf3c25bd7008a89488a6655507d5b1196382e726f99",
+    "jurisdiction": "Kerala",
+    "district": "Kozhikode"
   },
   {
     "request_id": "SYN-REQ-2026-00146",
@@ -2917,7 +3207,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "d759500b1ef9c6bce624c1b07701ae3070df7a50eeac035072dbacf9f61234de",
-    "content_url_hash": "d759500b1ef9c6bce624c1b07701ae3070df7a50eeac035072dbacf9f61234de"
+    "content_url_hash": "d759500b1ef9c6bce624c1b07701ae3070df7a50eeac035072dbacf9f61234de",
+    "jurisdiction": "Kerala",
+    "district": "Kannur"
   },
   {
     "request_id": "SYN-REQ-2026-00147",
@@ -2937,7 +3229,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "a42cbd34c21c4b2d9d6380168666c9f71e98ac69c8b9c787dc5d1024cce16848",
-    "content_url_hash": "a42cbd34c21c4b2d9d6380168666c9f71e98ac69c8b9c787dc5d1024cce16848"
+    "content_url_hash": "a42cbd34c21c4b2d9d6380168666c9f71e98ac69c8b9c787dc5d1024cce16848",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00148",
@@ -2957,7 +3251,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "de6435363ebe00b0dd23d4bdee54aafe8020cc2908a51f53ac9942815b44364b",
-    "content_url_hash": "de6435363ebe00b0dd23d4bdee54aafe8020cc2908a51f53ac9942815b44364b"
+    "content_url_hash": "de6435363ebe00b0dd23d4bdee54aafe8020cc2908a51f53ac9942815b44364b",
+    "jurisdiction": "Kerala",
+    "district": "Kozhikode"
   },
   {
     "request_id": "SYN-REQ-2026-00149",
@@ -2977,7 +3273,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "788ca2869420751bd8be3f5a052f416da6877c7208ddcc2fc38c14a9ee24c61a",
-    "content_url_hash": "788ca2869420751bd8be3f5a052f416da6877c7208ddcc2fc38c14a9ee24c61a"
+    "content_url_hash": "788ca2869420751bd8be3f5a052f416da6877c7208ddcc2fc38c14a9ee24c61a",
+    "jurisdiction": "Kerala",
+    "district": "Kozhikode"
   },
   {
     "request_id": "SYN-REQ-2026-00150",
@@ -2997,7 +3295,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "99ff7a122f81844a4a3b053b58ccbbcc900992e1ad7cfb64a9a32a559c121a54",
-    "content_url_hash": "99ff7a122f81844a4a3b053b58ccbbcc900992e1ad7cfb64a9a32a559c121a54"
+    "content_url_hash": "99ff7a122f81844a4a3b053b58ccbbcc900992e1ad7cfb64a9a32a559c121a54",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00151",
@@ -3017,7 +3317,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "5bb4856cdb793173a7ad6ed1b2adcdf9207a5b131541a793ac876d999fc00e59",
-    "content_url_hash": "5bb4856cdb793173a7ad6ed1b2adcdf9207a5b131541a793ac876d999fc00e59"
+    "content_url_hash": "5bb4856cdb793173a7ad6ed1b2adcdf9207a5b131541a793ac876d999fc00e59",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00152",
@@ -3037,7 +3339,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "70eb4c05b730b8a217efb688ec196683e0e5628bde7d53f6349645d81b6a0f19",
-    "content_url_hash": "70eb4c05b730b8a217efb688ec196683e0e5628bde7d53f6349645d81b6a0f19"
+    "content_url_hash": "70eb4c05b730b8a217efb688ec196683e0e5628bde7d53f6349645d81b6a0f19",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00153",
@@ -3057,7 +3361,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "5d414821d7331a36710ea02e6c54d5b187d84ed90606e9e917a73ee9e6bca681",
-    "content_url_hash": "5d414821d7331a36710ea02e6c54d5b187d84ed90606e9e917a73ee9e6bca681"
+    "content_url_hash": "5d414821d7331a36710ea02e6c54d5b187d84ed90606e9e917a73ee9e6bca681",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00154",
@@ -3077,7 +3383,9 @@
     "status": "expired",
     "rejection_reason": null,
     "content_url_hmac": "af86bc59cf7749b82e87d2252af2faf60b913195ca3286e7df5ead9e37f8bc61",
-    "content_url_hash": "af86bc59cf7749b82e87d2252af2faf60b913195ca3286e7df5ead9e37f8bc61"
+    "content_url_hash": "af86bc59cf7749b82e87d2252af2faf60b913195ca3286e7df5ead9e37f8bc61",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00155",
@@ -3097,7 +3405,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "6855e521f9c403a47d90c146fc3034d8595198766d44cde4f3f6627946d5817a",
-    "content_url_hash": "6855e521f9c403a47d90c146fc3034d8595198766d44cde4f3f6627946d5817a"
+    "content_url_hash": "6855e521f9c403a47d90c146fc3034d8595198766d44cde4f3f6627946d5817a",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00156",
@@ -3117,7 +3427,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "2d71aace071e361598e64b59cb8c455e3487db8f87cdfa43bcffa93184d202cc",
-    "content_url_hash": "2d71aace071e361598e64b59cb8c455e3487db8f87cdfa43bcffa93184d202cc"
+    "content_url_hash": "2d71aace071e361598e64b59cb8c455e3487db8f87cdfa43bcffa93184d202cc",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00157",
@@ -3137,7 +3449,9 @@
     "status": "expired",
     "rejection_reason": null,
     "content_url_hmac": "e57084d045caa809d05cd1078aa614155c0fafd0b9e5f72f378133a6e33635d6",
-    "content_url_hash": "e57084d045caa809d05cd1078aa614155c0fafd0b9e5f72f378133a6e33635d6"
+    "content_url_hash": "e57084d045caa809d05cd1078aa614155c0fafd0b9e5f72f378133a6e33635d6",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00158",
@@ -3157,7 +3471,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "0cd9b4aaa8f9d73cb12a82b958607f5ebcfe4d07dfbcd52a9a993712c5b41327",
-    "content_url_hash": "0cd9b4aaa8f9d73cb12a82b958607f5ebcfe4d07dfbcd52a9a993712c5b41327"
+    "content_url_hash": "0cd9b4aaa8f9d73cb12a82b958607f5ebcfe4d07dfbcd52a9a993712c5b41327",
+    "jurisdiction": "Kerala",
+    "district": "Kannur"
   },
   {
     "request_id": "SYN-REQ-2026-00159",
@@ -3177,7 +3493,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "96fe5ee192d97986e13c01b968f8636e7bd8688d6d5facf616bf221f72d2e3a8",
-    "content_url_hash": "96fe5ee192d97986e13c01b968f8636e7bd8688d6d5facf616bf221f72d2e3a8"
+    "content_url_hash": "96fe5ee192d97986e13c01b968f8636e7bd8688d6d5facf616bf221f72d2e3a8",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00160",
@@ -3197,7 +3515,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "7653258826ed6d84a273c6807f680c9644e8ace9e05fe6d26fc294d494e166fd",
-    "content_url_hash": "7653258826ed6d84a273c6807f680c9644e8ace9e05fe6d26fc294d494e166fd"
+    "content_url_hash": "7653258826ed6d84a273c6807f680c9644e8ace9e05fe6d26fc294d494e166fd",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00161",
@@ -3217,7 +3537,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "0219d16e2dd1b77d1dbc2abd0552d1771e7b8e8d241e77352395857cb99dd425",
-    "content_url_hash": "0219d16e2dd1b77d1dbc2abd0552d1771e7b8e8d241e77352395857cb99dd425"
+    "content_url_hash": "0219d16e2dd1b77d1dbc2abd0552d1771e7b8e8d241e77352395857cb99dd425",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00162",
@@ -3237,7 +3559,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "78f3d4e4228bb821480dfccd36e6d3a56852088acacad4a1b01a2566e5282a2a",
-    "content_url_hash": "78f3d4e4228bb821480dfccd36e6d3a56852088acacad4a1b01a2566e5282a2a"
+    "content_url_hash": "78f3d4e4228bb821480dfccd36e6d3a56852088acacad4a1b01a2566e5282a2a",
+    "jurisdiction": "Kerala",
+    "district": "Kannur"
   },
   {
     "request_id": "SYN-REQ-2026-00163",
@@ -3257,7 +3581,9 @@
     "status": "rejected",
     "rejection_reason": "PlatformPolicy: Request exceeds statutory scope or lacks judicial warrant.",
     "content_url_hmac": "e0f0fff55df0218cf7d8f12a4ee0c26788a10f5d2bdcf7f5cd0cf4943b3584ed",
-    "content_url_hash": "e0f0fff55df0218cf7d8f12a4ee0c26788a10f5d2bdcf7f5cd0cf4943b3584ed"
+    "content_url_hash": "e0f0fff55df0218cf7d8f12a4ee0c26788a10f5d2bdcf7f5cd0cf4943b3584ed",
+    "jurisdiction": "Kerala",
+    "district": "Kannur"
   },
   {
     "request_id": "SYN-REQ-2026-00164",
@@ -3277,7 +3603,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "947de6e3f5f94a4bd5c4c0312d61709f58f746b092a3eb4e4889712371a94a8c",
-    "content_url_hash": "947de6e3f5f94a4bd5c4c0312d61709f58f746b092a3eb4e4889712371a94a8c"
+    "content_url_hash": "947de6e3f5f94a4bd5c4c0312d61709f58f746b092a3eb4e4889712371a94a8c",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00165",
@@ -3297,7 +3625,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "1221733f394485f48077e0485a50cd758b9ae7224c88aa6ba91cbf305d649608",
-    "content_url_hash": "1221733f394485f48077e0485a50cd758b9ae7224c88aa6ba91cbf305d649608"
+    "content_url_hash": "1221733f394485f48077e0485a50cd758b9ae7224c88aa6ba91cbf305d649608",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00166",
@@ -3317,7 +3647,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "e29dc4ead1d63a62d20fc90aac15ec70a7b78a37c7c18f0ba9f82d1412d619fa",
-    "content_url_hash": "e29dc4ead1d63a62d20fc90aac15ec70a7b78a37c7c18f0ba9f82d1412d619fa"
+    "content_url_hash": "e29dc4ead1d63a62d20fc90aac15ec70a7b78a37c7c18f0ba9f82d1412d619fa",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00167",
@@ -3337,7 +3669,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "08a65d680b7eb99ac2982f5db58cc23e446ec000e64ae610a5e5e8f58541dec4",
-    "content_url_hash": "08a65d680b7eb99ac2982f5db58cc23e446ec000e64ae610a5e5e8f58541dec4"
+    "content_url_hash": "08a65d680b7eb99ac2982f5db58cc23e446ec000e64ae610a5e5e8f58541dec4",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00168",
@@ -3357,7 +3691,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "c6ced60955f08ed5a089ff45b8d81ccb411ae5638aef8a2048e1e4e69f118f69",
-    "content_url_hash": "c6ced60955f08ed5a089ff45b8d81ccb411ae5638aef8a2048e1e4e69f118f69"
+    "content_url_hash": "c6ced60955f08ed5a089ff45b8d81ccb411ae5638aef8a2048e1e4e69f118f69",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00169",
@@ -3377,7 +3713,9 @@
     "status": "expired",
     "rejection_reason": null,
     "content_url_hmac": "430148344dbbf69cb15f9f9870179e4929e920474b8c55abb6e029b42cd4dd57",
-    "content_url_hash": "430148344dbbf69cb15f9f9870179e4929e920474b8c55abb6e029b42cd4dd57"
+    "content_url_hash": "430148344dbbf69cb15f9f9870179e4929e920474b8c55abb6e029b42cd4dd57",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00170",
@@ -3397,7 +3735,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "e79163b1f906ac913e8740a6fe8eeb10f7b0b7e600e40d918c5d2311c9e47295",
-    "content_url_hash": "e79163b1f906ac913e8740a6fe8eeb10f7b0b7e600e40d918c5d2311c9e47295"
+    "content_url_hash": "e79163b1f906ac913e8740a6fe8eeb10f7b0b7e600e40d918c5d2311c9e47295",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00171",
@@ -3417,7 +3757,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "6d7e52c5571d8f9ac5efbdb4bfb833ebd4f7cee292d6bc163981771300bb4b60",
-    "content_url_hash": "6d7e52c5571d8f9ac5efbdb4bfb833ebd4f7cee292d6bc163981771300bb4b60"
+    "content_url_hash": "6d7e52c5571d8f9ac5efbdb4bfb833ebd4f7cee292d6bc163981771300bb4b60",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00172",
@@ -3437,7 +3779,9 @@
     "status": "expired",
     "rejection_reason": null,
     "content_url_hmac": "965ae8df40ee3f7ba9cff00554e4e878692666109408d54b53cdc1d604a9b12f",
-    "content_url_hash": "965ae8df40ee3f7ba9cff00554e4e878692666109408d54b53cdc1d604a9b12f"
+    "content_url_hash": "965ae8df40ee3f7ba9cff00554e4e878692666109408d54b53cdc1d604a9b12f",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00173",
@@ -3457,7 +3801,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "978905349a24e720403ffd9c930eab789daf07c4ccc9cbeb1eca7a767b982fe5",
-    "content_url_hash": "978905349a24e720403ffd9c930eab789daf07c4ccc9cbeb1eca7a767b982fe5"
+    "content_url_hash": "978905349a24e720403ffd9c930eab789daf07c4ccc9cbeb1eca7a767b982fe5",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00174",
@@ -3477,7 +3823,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "7ba896c0c1721b44734d3e5178a24473b9f2e9efe187bffef8e6b4034567a994",
-    "content_url_hash": "7ba896c0c1721b44734d3e5178a24473b9f2e9efe187bffef8e6b4034567a994"
+    "content_url_hash": "7ba896c0c1721b44734d3e5178a24473b9f2e9efe187bffef8e6b4034567a994",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00175",
@@ -3497,7 +3845,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "23c30c4eaad5f8ac49090a13aa637380d6ee4695a91b4ac11b52e3d095a8be09",
-    "content_url_hash": "23c30c4eaad5f8ac49090a13aa637380d6ee4695a91b4ac11b52e3d095a8be09"
+    "content_url_hash": "23c30c4eaad5f8ac49090a13aa637380d6ee4695a91b4ac11b52e3d095a8be09",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00176",
@@ -3517,7 +3867,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "5d538487eafd5ae422dc55bdb288e5395f4191c0b7e28505eebaf508e94834a5",
-    "content_url_hash": "5d538487eafd5ae422dc55bdb288e5395f4191c0b7e28505eebaf508e94834a5"
+    "content_url_hash": "5d538487eafd5ae422dc55bdb288e5395f4191c0b7e28505eebaf508e94834a5",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00177",
@@ -3537,7 +3889,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "42c36524e7ed61a7915d3aabff4163c4077a77564338f91b525fe6cdfb166f7a",
-    "content_url_hash": "42c36524e7ed61a7915d3aabff4163c4077a77564338f91b525fe6cdfb166f7a"
+    "content_url_hash": "42c36524e7ed61a7915d3aabff4163c4077a77564338f91b525fe6cdfb166f7a",
+    "jurisdiction": "Kerala",
+    "district": "Kozhikode"
   },
   {
     "request_id": "SYN-REQ-2026-00178",
@@ -3557,7 +3911,9 @@
     "status": "rejected",
     "rejection_reason": "PlatformPolicy: Request exceeds statutory scope or lacks judicial warrant.",
     "content_url_hmac": "47a6f4a51b0b89d935b0f530a0a3d32ab4066a0ce77e7b8703ddac7dc29d6e0c",
-    "content_url_hash": "47a6f4a51b0b89d935b0f530a0a3d32ab4066a0ce77e7b8703ddac7dc29d6e0c"
+    "content_url_hash": "47a6f4a51b0b89d935b0f530a0a3d32ab4066a0ce77e7b8703ddac7dc29d6e0c",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00179",
@@ -3577,7 +3933,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "b3fdfa13df9ee17cbc11ca7e44d96bfd1d121c6f70c9b2a2411f698911a61e39",
-    "content_url_hash": "b3fdfa13df9ee17cbc11ca7e44d96bfd1d121c6f70c9b2a2411f698911a61e39"
+    "content_url_hash": "b3fdfa13df9ee17cbc11ca7e44d96bfd1d121c6f70c9b2a2411f698911a61e39",
+    "jurisdiction": "Kerala",
+    "district": "Kannur"
   },
   {
     "request_id": "SYN-REQ-2026-00180",
@@ -3597,7 +3955,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "6eb66abff4517fb7195c30b1d1812a5014d65d0aff34be0c70e9423d01dcbff3",
-    "content_url_hash": "6eb66abff4517fb7195c30b1d1812a5014d65d0aff34be0c70e9423d01dcbff3"
+    "content_url_hash": "6eb66abff4517fb7195c30b1d1812a5014d65d0aff34be0c70e9423d01dcbff3",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00181",
@@ -3617,7 +3977,9 @@
     "status": "acknowledged",
     "rejection_reason": null,
     "content_url_hmac": "18809bf524c36c633e367ba4bc6f85766d832bd166a95088fbaa560aada4eeb8",
-    "content_url_hash": "18809bf524c36c633e367ba4bc6f85766d832bd166a95088fbaa560aada4eeb8"
+    "content_url_hash": "18809bf524c36c633e367ba4bc6f85766d832bd166a95088fbaa560aada4eeb8",
+    "jurisdiction": "Kerala",
+    "district": "Kozhikode"
   },
   {
     "request_id": "SYN-REQ-2026-00182",
@@ -3637,7 +3999,9 @@
     "status": "expired",
     "rejection_reason": null,
     "content_url_hmac": "601ba2ba276332c9b667662bb35cb742ab228b7436a065c6ddb6b546d2e8eabc",
-    "content_url_hash": "601ba2ba276332c9b667662bb35cb742ab228b7436a065c6ddb6b546d2e8eabc"
+    "content_url_hash": "601ba2ba276332c9b667662bb35cb742ab228b7436a065c6ddb6b546d2e8eabc",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00183",
@@ -3657,7 +4021,9 @@
     "status": "rejected",
     "rejection_reason": "DeficientRequest: Procedural or jurisdictional prerequisite unmet.",
     "content_url_hmac": "e44007fdfbb73e25a4ff2d4198b5fce0c91c34fc3599b0b7e963b84bb6381317",
-    "content_url_hash": "e44007fdfbb73e25a4ff2d4198b5fce0c91c34fc3599b0b7e963b84bb6381317"
+    "content_url_hash": "e44007fdfbb73e25a4ff2d4198b5fce0c91c34fc3599b0b7e963b84bb6381317",
+    "jurisdiction": "Kerala",
+    "district": "Kannur"
   },
   {
     "request_id": "SYN-REQ-2026-00184",
@@ -3677,7 +4043,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "02ae1a3619ecfeb14441362b775c87f8d666162ef5137bdcbbd1fe458b577fd8",
-    "content_url_hash": "02ae1a3619ecfeb14441362b775c87f8d666162ef5137bdcbbd1fe458b577fd8"
+    "content_url_hash": "02ae1a3619ecfeb14441362b775c87f8d666162ef5137bdcbbd1fe458b577fd8",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00185",
@@ -3697,7 +4065,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "e2ae9640707a550becd997e0d229857be843e41a135a7a8b3a6cda0c117f5685",
-    "content_url_hash": "e2ae9640707a550becd997e0d229857be843e41a135a7a8b3a6cda0c117f5685"
+    "content_url_hash": "e2ae9640707a550becd997e0d229857be843e41a135a7a8b3a6cda0c117f5685",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00186",
@@ -3717,7 +4087,9 @@
     "status": "expired",
     "rejection_reason": null,
     "content_url_hmac": "26d8f0b85fe6d91deaeae4f7e71ef5008e66eac4825797a8776077ede60602d9",
-    "content_url_hash": "26d8f0b85fe6d91deaeae4f7e71ef5008e66eac4825797a8776077ede60602d9"
+    "content_url_hash": "26d8f0b85fe6d91deaeae4f7e71ef5008e66eac4825797a8776077ede60602d9",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00187",
@@ -3737,7 +4109,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "fde3a2521162168ffdbff3c84879af6a9d6bf93bbc959496e1562de7ab5e7b01",
-    "content_url_hash": "fde3a2521162168ffdbff3c84879af6a9d6bf93bbc959496e1562de7ab5e7b01"
+    "content_url_hash": "fde3a2521162168ffdbff3c84879af6a9d6bf93bbc959496e1562de7ab5e7b01",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00188",
@@ -3757,7 +4131,9 @@
     "status": "acknowledged",
     "rejection_reason": null,
     "content_url_hmac": "49ceea4995616447dcc27504722782f52ff87bad5646fb505197271f68653c61",
-    "content_url_hash": "49ceea4995616447dcc27504722782f52ff87bad5646fb505197271f68653c61"
+    "content_url_hash": "49ceea4995616447dcc27504722782f52ff87bad5646fb505197271f68653c61",
+    "jurisdiction": "Kerala",
+    "district": "Thrissur"
   },
   {
     "request_id": "SYN-REQ-2026-00189",
@@ -3777,7 +4153,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "879120f5eed3db290a69686bf651d88ff735e5ebac1d2c71d05a58732b287750",
-    "content_url_hash": "879120f5eed3db290a69686bf651d88ff735e5ebac1d2c71d05a58732b287750"
+    "content_url_hash": "879120f5eed3db290a69686bf651d88ff735e5ebac1d2c71d05a58732b287750",
+    "jurisdiction": "Kerala",
+    "district": "Kozhikode"
   },
   {
     "request_id": "SYN-REQ-2026-00190",
@@ -3797,7 +4175,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "c2c1607d2e4e15a9da19bb107659dfb0321b2a0c20150eff611cff338af2afe2",
-    "content_url_hash": "c2c1607d2e4e15a9da19bb107659dfb0321b2a0c20150eff611cff338af2afe2"
+    "content_url_hash": "c2c1607d2e4e15a9da19bb107659dfb0321b2a0c20150eff611cff338af2afe2",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00191",
@@ -3817,7 +4197,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "f7970c42c9fa1a7dce024165f1eec7e984ac636b491ed9190bc2a26b3edc6cf8",
-    "content_url_hash": "f7970c42c9fa1a7dce024165f1eec7e984ac636b491ed9190bc2a26b3edc6cf8"
+    "content_url_hash": "f7970c42c9fa1a7dce024165f1eec7e984ac636b491ed9190bc2a26b3edc6cf8",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00192",
@@ -3837,7 +4219,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "2bd03995e5be04994813eb281e6c74d0b4e7e84a5f5f27c26d873bd48da31b44",
-    "content_url_hash": "2bd03995e5be04994813eb281e6c74d0b4e7e84a5f5f27c26d873bd48da31b44"
+    "content_url_hash": "2bd03995e5be04994813eb281e6c74d0b4e7e84a5f5f27c26d873bd48da31b44",
+    "jurisdiction": "Kerala",
+    "district": "Kannur"
   },
   {
     "request_id": "SYN-REQ-2026-00193",
@@ -3857,7 +4241,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "c85a748967eee7c50e97438c7b5ca07f0270651d35ef35ad046fa024bfca40f2",
-    "content_url_hash": "c85a748967eee7c50e97438c7b5ca07f0270651d35ef35ad046fa024bfca40f2"
+    "content_url_hash": "c85a748967eee7c50e97438c7b5ca07f0270651d35ef35ad046fa024bfca40f2",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00194",
@@ -3877,7 +4263,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "9d313dfba0e5f3ca4bb4ac2105f55cbed4e451e134af9c71b1ff1954c25bedb8",
-    "content_url_hash": "9d313dfba0e5f3ca4bb4ac2105f55cbed4e451e134af9c71b1ff1954c25bedb8"
+    "content_url_hash": "9d313dfba0e5f3ca4bb4ac2105f55cbed4e451e134af9c71b1ff1954c25bedb8",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00195",
@@ -3897,7 +4285,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "6e8fad690ab964235d8d98993ef81644dbb2d091fd7e6835029e6c939478e35a",
-    "content_url_hash": "6e8fad690ab964235d8d98993ef81644dbb2d091fd7e6835029e6c939478e35a"
+    "content_url_hash": "6e8fad690ab964235d8d98993ef81644dbb2d091fd7e6835029e6c939478e35a",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   },
   {
     "request_id": "SYN-REQ-2026-00196",
@@ -3917,7 +4307,9 @@
     "status": "data_provided",
     "rejection_reason": null,
     "content_url_hmac": "bf1a9bd106beaaeaad008e6aa2fe119e7df148be6f162ea1e772ec65f6dc7ae1",
-    "content_url_hash": "bf1a9bd106beaaeaad008e6aa2fe119e7df148be6f162ea1e772ec65f6dc7ae1"
+    "content_url_hash": "bf1a9bd106beaaeaad008e6aa2fe119e7df148be6f162ea1e772ec65f6dc7ae1",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00197",
@@ -3937,7 +4329,9 @@
     "status": "acknowledged",
     "rejection_reason": null,
     "content_url_hmac": "5132475e7a84007ce03b28fd707356e91d90bca46528125903d82a36324c33d7",
-    "content_url_hash": "5132475e7a84007ce03b28fd707356e91d90bca46528125903d82a36324c33d7"
+    "content_url_hash": "5132475e7a84007ce03b28fd707356e91d90bca46528125903d82a36324c33d7",
+    "jurisdiction": "Kerala",
+    "district": "Kollam"
   },
   {
     "request_id": "SYN-REQ-2026-00198",
@@ -3957,7 +4351,9 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "77a6710478f153dc592ef8958e096dca35326fb261feecee8fc1fb420fa00071",
-    "content_url_hash": "77a6710478f153dc592ef8958e096dca35326fb261feecee8fc1fb420fa00071"
+    "content_url_hash": "77a6710478f153dc592ef8958e096dca35326fb261feecee8fc1fb420fa00071",
+    "jurisdiction": "Kerala",
+    "district": "Kozhikode"
   },
   {
     "request_id": "SYN-REQ-2026-00199",
@@ -3977,7 +4373,9 @@
     "status": "rejected",
     "rejection_reason": "PlatformPolicy: Request exceeds statutory scope or lacks judicial warrant.",
     "content_url_hmac": "863de99e120faf056576d56f4de35b5255c7a03810579c599367cfc0c380bd3b",
-    "content_url_hash": "863de99e120faf056576d56f4de35b5255c7a03810579c599367cfc0c380bd3b"
+    "content_url_hash": "863de99e120faf056576d56f4de35b5255c7a03810579c599367cfc0c380bd3b",
+    "jurisdiction": "Kerala",
+    "district": "Ernakulam"
   },
   {
     "request_id": "SYN-REQ-2026-00200",
@@ -3997,1006 +4395,8 @@
     "status": "claimed_removed",
     "rejection_reason": null,
     "content_url_hmac": "5946b58e1f6956ceca09ed4d54cb5ed40a06bafc6fce4103ce5ac8a27e36f71a",
-    "content_url_hash": "5946b58e1f6956ceca09ed4d54cb5ed40a06bafc6fce4103ce5ac8a27e36f71a"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00201",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform D",
-    "category": "FinancialFraud",
-    "priority": "urgent",
-    "legal_route": "routine_police_inquiry",
-    "sent_at": "2026-09-17T09:30:47+00:00",
-    "acknowledged_at": "2026-09-17T12:56:15.012971+00:00",
-    "claimed_removal_at": "2026-09-17T10:35:44.307997+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-08",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "de66706b32f9db48cd217d1722c1e9691ce612e78524785ae78e4542ec6f444b",
-    "content_url_hash": "de66706b32f9db48cd217d1722c1e9691ce612e78524785ae78e4542ec6f444b"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00202",
-    "is_synthetic": true,
-    "request_type": "data_request",
-    "platform": "Platform E",
-    "category": "CSAM",
-    "priority": "urgent",
-    "legal_route": "data_assistance_order",
-    "sent_at": "2026-09-09T00:51:02+00:00",
-    "acknowledged_at": "2026-09-09T03:53:45.459485+00:00",
-    "claimed_removal_at": null,
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-05",
-    "is_complete_request": false,
-    "incompletion_reason": "UnspecifiedJurisdiction",
-    "status": "rejected",
-    "rejection_reason": "DeficientRequest: Procedural or jurisdictional prerequisite unmet.",
-    "content_url_hmac": "f94e0f4f5582e1ea79bf481af390659cc007c47f296127651efe40678ddfb616",
-    "content_url_hash": "f94e0f4f5582e1ea79bf481af390659cc007c47f296127651efe40678ddfb616"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00203",
-    "is_synthetic": true,
-    "request_type": "data_request",
-    "platform": "Platform B",
-    "category": "CSAM",
-    "priority": "routine",
-    "legal_route": "data_assistance_order",
-    "sent_at": "2026-09-29T19:41:12+00:00",
-    "acknowledged_at": "2026-09-29T19:49:22.388744+00:00",
-    "claimed_removal_at": null,
-    "data_provided_at": "2026-10-01T05:01:33.075493+00:00",
-    "police_unit_id": "SYN-UNIT-KL-CYBER-08",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "data_provided",
-    "rejection_reason": null,
-    "content_url_hmac": "87ea3c873984057ba56e17fb6ae5595b3031b7612c623f5fcc449913cd008608",
-    "content_url_hash": "87ea3c873984057ba56e17fb6ae5595b3031b7612c623f5fcc449913cd008608"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00204",
-    "is_synthetic": true,
-    "request_type": "data_request",
-    "platform": "Platform B",
-    "category": "NonConsensualImagery",
-    "priority": "routine",
-    "legal_route": "data_assistance_order",
-    "sent_at": "2026-09-18T20:14:25+00:00",
-    "acknowledged_at": "2026-09-18T23:21:24.385190+00:00",
-    "claimed_removal_at": null,
-    "data_provided_at": "2026-09-19T14:59:12.569848+00:00",
-    "police_unit_id": "SYN-UNIT-KL-CYBER-02",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "data_provided",
-    "rejection_reason": null,
-    "content_url_hmac": "6f5744a96d8a2850f32920c0e6e4a7c3fbdb241460a3dc2e6c0839c4987633dd",
-    "content_url_hash": "6f5744a96d8a2850f32920c0e6e4a7c3fbdb241460a3dc2e6c0839c4987633dd"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00205",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform A",
-    "category": "NonConsensualImagery",
-    "priority": "routine",
-    "legal_route": "grievance_complaint_3_2_b",
-    "sent_at": "2026-09-20T23:40:36+00:00",
-    "acknowledged_at": "2026-09-21T00:37:26.115278+00:00",
-    "claimed_removal_at": "2026-09-21T05:18:07.347763+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-04",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "c9bffec3cb0d79da28f20dbc87a0d5ece202ca2ace0b890f40b44d7e9f138054",
-    "content_url_hash": "c9bffec3cb0d79da28f20dbc87a0d5ece202ca2ace0b890f40b44d7e9f138054"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00206",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform G",
-    "category": "Impersonation",
-    "priority": "emergency_life_threat",
-    "legal_route": "grievance_complaint_3_2_b",
-    "sent_at": "2026-09-05T02:09:24+00:00",
-    "acknowledged_at": "2026-09-05T02:39:24+00:00",
-    "claimed_removal_at": "2026-09-05T03:39:30.362844+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-06",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "ee37e30e67379c1a34e69bfa88b942ce03989f30c6d6a7d6c0095b4d610cc048",
-    "content_url_hash": "ee37e30e67379c1a34e69bfa88b942ce03989f30c6d6a7d6c0095b4d610cc048"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00207",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform D",
-    "category": "FinancialFraud",
-    "priority": "routine",
-    "legal_route": "routine_police_inquiry",
-    "sent_at": "2026-09-12T14:51:09+00:00",
-    "acknowledged_at": "2026-09-12T16:54:03.138879+00:00",
-    "claimed_removal_at": "2026-09-16T01:24:10.641298+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-01",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "10d0dbf693c7dc17457cbb609d4ef2791d40c1ee5f4c84052f663cf2e752a16e",
-    "content_url_hash": "10d0dbf693c7dc17457cbb609d4ef2791d40c1ee5f4c84052f663cf2e752a16e"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00208",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform F",
-    "category": "Impersonation",
-    "priority": "routine",
-    "legal_route": "routine_police_inquiry",
-    "sent_at": "2026-09-23T20:46:18+00:00",
-    "acknowledged_at": "2026-09-23T20:56:12.319201+00:00",
-    "claimed_removal_at": "2026-09-24T21:21:54.393841+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-07",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "bd54da04e4e90d929ccd48211fc49ecf06ffacff12ae291fde437532a247ab24",
-    "content_url_hash": "bd54da04e4e90d929ccd48211fc49ecf06ffacff12ae291fde437532a247ab24"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00209",
-    "is_synthetic": true,
-    "request_type": "data_request",
-    "platform": "Platform I",
-    "category": "FinancialFraud",
-    "priority": "routine",
-    "legal_route": "data_assistance_order",
-    "sent_at": "2026-09-27T01:08:35+00:00",
-    "acknowledged_at": "2026-09-27T01:34:08.702916+00:00",
-    "claimed_removal_at": null,
-    "data_provided_at": "2026-09-28T02:55:42.354406+00:00",
-    "police_unit_id": "SYN-UNIT-KL-CYBER-07",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "data_provided",
-    "rejection_reason": null,
-    "content_url_hmac": "ce90f607bdad2b5f804a26fa3242bceaa2a13bbdd481499ed3d653b557b14751",
-    "content_url_hash": "ce90f607bdad2b5f804a26fa3242bceaa2a13bbdd481499ed3d653b557b14751"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00210",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform J",
-    "category": "CSAM",
-    "priority": "routine",
-    "legal_route": "routine_police_inquiry",
-    "sent_at": "2026-09-03T19:27:55+00:00",
-    "acknowledged_at": "2026-09-03T20:01:03.451605+00:00",
-    "claimed_removal_at": "2026-09-04T23:09:40.163530+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-07",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "5caa68a062b8610e906a53a2a3788c44cbe719095feef8b011ac93e44103c60d",
-    "content_url_hash": "5caa68a062b8610e906a53a2a3788c44cbe719095feef8b011ac93e44103c60d"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00211",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform A",
-    "category": "NonConsensualImagery",
-    "priority": "urgent",
-    "legal_route": "grievance_complaint_3_2_b",
-    "sent_at": "2026-09-26T02:36:29+00:00",
-    "acknowledged_at": "2026-09-26T03:21:33.159877+00:00",
-    "claimed_removal_at": "2026-09-26T07:03:29.234056+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-03",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "c1d66b017a81049347d9fa1f189405d0c68ae9ada0749c2080505f5ed87359e6",
-    "content_url_hash": "c1d66b017a81049347d9fa1f189405d0c68ae9ada0749c2080505f5ed87359e6"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00212",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform B",
-    "category": "CSAM",
-    "priority": "routine",
-    "legal_route": "grievance_complaint_3_2_b",
-    "sent_at": "2026-09-28T23:50:52+00:00",
-    "acknowledged_at": "2026-09-29T01:56:23.377587+00:00",
-    "claimed_removal_at": "2026-09-29T18:33:17.016942+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-07",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "e1cf166b41353d87855ea1860fa45680c90ef39bdcc19427af38939bf90db371",
-    "content_url_hash": "e1cf166b41353d87855ea1860fa45680c90ef39bdcc19427af38939bf90db371"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00213",
-    "is_synthetic": true,
-    "request_type": "data_request",
-    "platform": "Platform C",
-    "category": "Impersonation",
-    "priority": "urgent",
-    "legal_route": "data_assistance_order",
-    "sent_at": "2026-09-25T16:49:26+00:00",
-    "acknowledged_at": "2026-09-25T18:45:49.574838+00:00",
-    "claimed_removal_at": null,
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-02",
-    "is_complete_request": false,
-    "incompletion_reason": "MissingCourtOrder",
-    "status": "rejected",
-    "rejection_reason": "DeficientRequest: Procedural or jurisdictional prerequisite unmet.",
-    "content_url_hmac": "3038028e82b7c1694f9c72e18028a0f5810f2698bde45a99e022bf76621b7f4a",
-    "content_url_hash": "3038028e82b7c1694f9c72e18028a0f5810f2698bde45a99e022bf76621b7f4a"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00214",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform C",
-    "category": "NonConsensualImagery",
-    "priority": "emergency_life_threat",
-    "legal_route": "other",
-    "sent_at": "2026-09-21T08:36:02+00:00",
-    "acknowledged_at": "2026-09-21T09:06:02+00:00",
-    "claimed_removal_at": "2026-09-21T13:51:09.496505+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-01",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "cdeebefbc06ee83e5cb20620f6795043e38aa8da600ea940d2a5945aef0d0f7b",
-    "content_url_hash": "cdeebefbc06ee83e5cb20620f6795043e38aa8da600ea940d2a5945aef0d0f7b"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00215",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform B",
-    "category": "CSAM",
-    "priority": "routine",
-    "legal_route": "grievance_complaint_3_2_b",
-    "sent_at": "2026-09-23T13:52:26+00:00",
-    "acknowledged_at": "2026-09-23T15:11:08.196748+00:00",
-    "claimed_removal_at": "2026-09-24T01:03:23.320130+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-01",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "0546d8e573dc1ffcb7f5aa3e284b6fec61ef2ca6b326212a50058b6595191485",
-    "content_url_hash": "0546d8e573dc1ffcb7f5aa3e284b6fec61ef2ca6b326212a50058b6595191485"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00216",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform E",
-    "category": "Impersonation",
-    "priority": "urgent",
-    "legal_route": "court_order_or_govt_intimation",
-    "sent_at": "2026-09-24T22:48:24+00:00",
-    "acknowledged_at": "2026-09-25T01:45:47.785248+00:00",
-    "claimed_removal_at": "2026-09-25T10:57:47.578793+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-04",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "3637543b6f9f3fbf9aedd716bb89629e53d5fc9c193e8efdc6430d5906aec644",
-    "content_url_hash": "3637543b6f9f3fbf9aedd716bb89629e53d5fc9c193e8efdc6430d5906aec644"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00217",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform G",
-    "category": "CSAM",
-    "priority": "routine",
-    "legal_route": "routine_police_inquiry",
-    "sent_at": "2026-09-01T11:10:43+00:00",
-    "acknowledged_at": "2026-09-01T13:50:31.546056+00:00",
-    "claimed_removal_at": null,
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-06",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "acknowledged",
-    "rejection_reason": null,
-    "content_url_hmac": "3e5ea31e26150591147a61e2f691207ae4c8e4a337bd1e0181b1cb7d82c7abfc",
-    "content_url_hash": "3e5ea31e26150591147a61e2f691207ae4c8e4a337bd1e0181b1cb7d82c7abfc"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00218",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform E",
-    "category": "CSAM",
-    "priority": "routine",
-    "legal_route": "other",
-    "sent_at": "2026-09-07T21:52:37+00:00",
-    "acknowledged_at": "2026-09-08T01:34:11.692618+00:00",
-    "claimed_removal_at": null,
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-04",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "acknowledged",
-    "rejection_reason": null,
-    "content_url_hmac": "b9359bd12ac1f2ccc115b2408efcc3f6179f2256cee6c85a1e273d1c3b33a19a",
-    "content_url_hash": "b9359bd12ac1f2ccc115b2408efcc3f6179f2256cee6c85a1e273d1c3b33a19a"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00219",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform I",
-    "category": "FinancialFraud",
-    "priority": "urgent",
-    "legal_route": "routine_police_inquiry",
-    "sent_at": "2026-09-29T04:38:48+00:00",
-    "acknowledged_at": "2026-09-29T07:56:40.279002+00:00",
-    "claimed_removal_at": "2026-09-29T10:51:14.293275+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-06",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "afff2fc27997532eb13baf61cf9acc2814b20492414e5edacb8c5afa98c58ef0",
-    "content_url_hash": "afff2fc27997532eb13baf61cf9acc2814b20492414e5edacb8c5afa98c58ef0"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00220",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform C",
-    "category": "NonConsensualImagery",
-    "priority": "routine",
-    "legal_route": "grievance_complaint_3_2_b",
-    "sent_at": "2026-09-16T20:06:38+00:00",
-    "acknowledged_at": "2026-09-16T20:30:06.611599+00:00",
-    "claimed_removal_at": "2026-09-18T04:07:57.180884+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-06",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "ff1f702de83abce3c055af2c55f59cbdb87f178c6139e8b796fb45c43ca2b05e",
-    "content_url_hash": "ff1f702de83abce3c055af2c55f59cbdb87f178c6139e8b796fb45c43ca2b05e"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00221",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform C",
-    "category": "CSAM",
-    "priority": "routine",
-    "legal_route": "grievance_complaint_3_2_b",
-    "sent_at": "2026-09-18T09:26:06+00:00",
-    "acknowledged_at": "2026-09-18T10:44:14.640364+00:00",
-    "claimed_removal_at": "2026-09-18T19:29:27.184268+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-08",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "01a6132db5ffff41836744db801a0e408989ffd3342eb8becc020093864ed5b7",
-    "content_url_hash": "01a6132db5ffff41836744db801a0e408989ffd3342eb8becc020093864ed5b7"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00222",
-    "is_synthetic": true,
-    "request_type": "data_request",
-    "platform": "Platform E",
-    "category": "CSAM",
-    "priority": "routine",
-    "legal_route": "data_assistance_order",
-    "sent_at": "2026-09-13T01:11:45+00:00",
-    "acknowledged_at": "2026-09-13T01:29:12.266671+00:00",
-    "claimed_removal_at": null,
-    "data_provided_at": "2026-09-16T01:41:45.684209+00:00",
-    "police_unit_id": "SYN-UNIT-KL-CYBER-06",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "data_provided",
-    "rejection_reason": null,
-    "content_url_hmac": "1d34749b15c64280e47174c30b2518ccfd9020e637021643c95755c1c51cae35",
-    "content_url_hash": "1d34749b15c64280e47174c30b2518ccfd9020e637021643c95755c1c51cae35"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00223",
-    "is_synthetic": true,
-    "request_type": "data_request",
-    "platform": "Platform G",
-    "category": "FinancialFraud",
-    "priority": "routine",
-    "legal_route": "data_assistance_order",
-    "sent_at": "2026-09-05T22:43:50+00:00",
-    "acknowledged_at": "2026-09-05T22:52:37.875201+00:00",
-    "claimed_removal_at": null,
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-04",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "acknowledged",
-    "rejection_reason": null,
-    "content_url_hmac": "e59ecb7267efdf2caac92765ca652139eea2370dc9b669f621bf17678d85a69a",
-    "content_url_hash": "e59ecb7267efdf2caac92765ca652139eea2370dc9b669f621bf17678d85a69a"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00224",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform D",
-    "category": "NonConsensualImagery",
-    "priority": "routine",
-    "legal_route": "court_order_or_govt_intimation",
-    "sent_at": "2026-09-05T01:54:46+00:00",
-    "acknowledged_at": "2026-09-05T05:10:56.969166+00:00",
-    "claimed_removal_at": "2026-09-05T18:33:45.254159+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-07",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "e4e2560f179788e975c493ae0bdcd458449ea221a71eeae7ac0cb39aa3d4d282",
-    "content_url_hash": "e4e2560f179788e975c493ae0bdcd458449ea221a71eeae7ac0cb39aa3d4d282"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00225",
-    "is_synthetic": true,
-    "request_type": "data_request",
-    "platform": "Platform F",
-    "category": "CSAM",
-    "priority": "routine",
-    "legal_route": "data_assistance_order",
-    "sent_at": "2026-09-28T20:37:24+00:00",
-    "acknowledged_at": "2026-09-28T22:39:29.614533+00:00",
-    "claimed_removal_at": null,
-    "data_provided_at": "2026-10-01T01:14:32.058816+00:00",
-    "police_unit_id": "SYN-UNIT-KL-CYBER-08",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "data_provided",
-    "rejection_reason": null,
-    "content_url_hmac": "9392d6d352b50f2d1da392a778c3b8e54d9cac588859a7b78e016ee0b8a30e94",
-    "content_url_hash": "9392d6d352b50f2d1da392a778c3b8e54d9cac588859a7b78e016ee0b8a30e94"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00226",
-    "is_synthetic": true,
-    "request_type": "data_request",
-    "platform": "Platform C",
-    "category": "Impersonation",
-    "priority": "routine",
-    "legal_route": "data_assistance_order",
-    "sent_at": "2026-09-30T22:49:49+00:00",
-    "acknowledged_at": "2026-10-01T00:32:13.370576+00:00",
-    "claimed_removal_at": null,
-    "data_provided_at": "2026-10-02T00:54:52.111124+00:00",
-    "police_unit_id": "SYN-UNIT-KL-CYBER-03",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "data_provided",
-    "rejection_reason": null,
-    "content_url_hmac": "8d58c15813c35a38242c01fde8ce5d7f40881e959174bc0abf1abf9a0546d1b9",
-    "content_url_hash": "8d58c15813c35a38242c01fde8ce5d7f40881e959174bc0abf1abf9a0546d1b9"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00227",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform C",
-    "category": "FinancialFraud",
-    "priority": "routine",
-    "legal_route": "routine_police_inquiry",
-    "sent_at": "2026-09-01T22:45:14+00:00",
-    "acknowledged_at": "2026-09-02T00:15:15.934022+00:00",
-    "claimed_removal_at": "2026-09-02T12:06:37.184891+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-04",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "184b20c60c11d799c77e00009d62a8636952a59de520a1d5e2b3aa7021a993bc",
-    "content_url_hash": "184b20c60c11d799c77e00009d62a8636952a59de520a1d5e2b3aa7021a993bc"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00228",
-    "is_synthetic": true,
-    "request_type": "data_request",
-    "platform": "Platform I",
-    "category": "Impersonation",
-    "priority": "routine",
-    "legal_route": "data_assistance_order",
-    "sent_at": "2026-09-29T23:41:27+00:00",
-    "acknowledged_at": "2026-09-30T02:49:37.677470+00:00",
-    "claimed_removal_at": null,
-    "data_provided_at": "2026-10-01T23:44:41.400740+00:00",
-    "police_unit_id": "SYN-UNIT-KL-CYBER-03",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "data_provided",
-    "rejection_reason": null,
-    "content_url_hmac": "cacdba4badc83bfc70aa5b4edd3cae67bb51be383dd51286725bacc57c4e8580",
-    "content_url_hash": "cacdba4badc83bfc70aa5b4edd3cae67bb51be383dd51286725bacc57c4e8580"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00229",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform A",
-    "category": "NonConsensualImagery",
-    "priority": "routine",
-    "legal_route": "routine_police_inquiry",
-    "sent_at": "2026-09-09T10:23:21+00:00",
-    "acknowledged_at": "2026-09-09T13:38:00.191564+00:00",
-    "claimed_removal_at": "2026-09-09T19:27:11.788315+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-07",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "9b945a94530f8a702e5460680930d1fe9c75c76b64e66c3cb0cda72af8096948",
-    "content_url_hash": "9b945a94530f8a702e5460680930d1fe9c75c76b64e66c3cb0cda72af8096948"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00230",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform D",
-    "category": "FinancialFraud",
-    "priority": "routine",
-    "legal_route": "court_order_or_govt_intimation",
-    "sent_at": "2026-09-12T07:01:33+00:00",
-    "acknowledged_at": "2026-09-12T08:59:23.965394+00:00",
-    "claimed_removal_at": "2026-09-13T19:34:08.811767+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-03",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "16a4b2b07aab3cfe950985bd52b31f58e582342e93961e4249576dd2ae48e454",
-    "content_url_hash": "16a4b2b07aab3cfe950985bd52b31f58e582342e93961e4249576dd2ae48e454"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00231",
-    "is_synthetic": true,
-    "request_type": "data_request",
-    "platform": "Platform F",
-    "category": "NonConsensualImagery",
-    "priority": "emergency_life_threat",
-    "legal_route": "data_assistance_order",
-    "sent_at": "2026-09-08T04:05:49+00:00",
-    "acknowledged_at": "2026-09-08T04:35:49+00:00",
-    "claimed_removal_at": null,
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-06",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "acknowledged",
-    "rejection_reason": null,
-    "content_url_hmac": "72d2eb7514db6befa2ab0acc0079fb4a2a878da075ddf59a331d6b1ae84b3f6f",
-    "content_url_hash": "72d2eb7514db6befa2ab0acc0079fb4a2a878da075ddf59a331d6b1ae84b3f6f"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00232",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform F",
-    "category": "CSAM",
-    "priority": "routine",
-    "legal_route": "grievance_complaint_3_2_b",
-    "sent_at": "2026-09-16T15:51:35+00:00",
-    "acknowledged_at": "2026-09-16T19:39:34.657190+00:00",
-    "claimed_removal_at": null,
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-07",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "rejected",
-    "rejection_reason": "PlatformPolicy: Request exceeds statutory scope or lacks judicial warrant.",
-    "content_url_hmac": "f72af2eba2aa14f31de445b4573dabff46644189671a123c2ee414bfa6beda13",
-    "content_url_hash": "f72af2eba2aa14f31de445b4573dabff46644189671a123c2ee414bfa6beda13"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00233",
-    "is_synthetic": true,
-    "request_type": "data_request",
-    "platform": "Platform H",
-    "category": "Impersonation",
-    "priority": "routine",
-    "legal_route": "data_assistance_order",
-    "sent_at": "2026-09-29T14:10:35+00:00",
-    "acknowledged_at": "2026-09-29T17:08:20.289426+00:00",
-    "claimed_removal_at": null,
-    "data_provided_at": "2026-10-04T02:11:43.237497+00:00",
-    "police_unit_id": "SYN-UNIT-KL-CYBER-06",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "data_provided",
-    "rejection_reason": null,
-    "content_url_hmac": "7fed5a0a5971621477c208a5090bf93413f61ca7cb4fe736909a1f8bfff0cf2c",
-    "content_url_hash": "7fed5a0a5971621477c208a5090bf93413f61ca7cb4fe736909a1f8bfff0cf2c"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00234",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform J",
-    "category": "CSAM",
-    "priority": "routine",
-    "legal_route": "other",
-    "sent_at": "2026-09-11T17:21:41+00:00",
-    "acknowledged_at": "2026-09-11T19:23:47.438213+00:00",
-    "claimed_removal_at": "2026-09-12T03:29:05.364071+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-06",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "bb8880653a8725d79fd22d2f5f3c33b59eea3e26463416cf3a1a2f02eaae3c58",
-    "content_url_hash": "bb8880653a8725d79fd22d2f5f3c33b59eea3e26463416cf3a1a2f02eaae3c58"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00235",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform F",
-    "category": "NonConsensualImagery",
-    "priority": "routine",
-    "legal_route": "routine_police_inquiry",
-    "sent_at": "2026-09-17T07:10:35+00:00",
-    "acknowledged_at": "2026-09-17T08:14:58.553718+00:00",
-    "claimed_removal_at": "2026-09-17T23:40:51.354197+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-02",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "650196bcd355c9a61fb4a1d581da4a5a91c436e093c47c6cd9d65031cebb3ada",
-    "content_url_hash": "650196bcd355c9a61fb4a1d581da4a5a91c436e093c47c6cd9d65031cebb3ada"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00236",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform A",
-    "category": "CSAM",
-    "priority": "routine",
-    "legal_route": "other",
-    "sent_at": "2026-09-24T22:28:55+00:00",
-    "acknowledged_at": "2026-09-25T00:02:44.879888+00:00",
-    "claimed_removal_at": "2026-09-25T12:52:11.870343+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-07",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "cba989f46fe24d99c059c96af983cb65ad6b2caad4b9c6bb9d1f84c1cf29785f",
-    "content_url_hash": "cba989f46fe24d99c059c96af983cb65ad6b2caad4b9c6bb9d1f84c1cf29785f"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00237",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform D",
-    "category": "NonConsensualImagery",
-    "priority": "routine",
-    "legal_route": "grievance_complaint_3_2_b",
-    "sent_at": "2026-09-06T02:00:48+00:00",
-    "acknowledged_at": "2026-09-06T03:34:39.428692+00:00",
-    "claimed_removal_at": "2026-09-07T09:21:16.292878+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-01",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "167cae4c804f0283c57eb7ccfcca184db67f211231248cab5e8b549b6ccbebbb",
-    "content_url_hash": "167cae4c804f0283c57eb7ccfcca184db67f211231248cab5e8b549b6ccbebbb"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00238",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform B",
-    "category": "Impersonation",
-    "priority": "routine",
-    "legal_route": "court_order_or_govt_intimation",
-    "sent_at": "2026-09-09T00:14:08+00:00",
-    "acknowledged_at": "2026-09-09T00:32:39.922627+00:00",
-    "claimed_removal_at": "2026-09-10T03:39:45.929664+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-08",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "c1d259f2d5de61c34af86192a1c40f64f94ca70545376fc2c68cfd7967772cab",
-    "content_url_hash": "c1d259f2d5de61c34af86192a1c40f64f94ca70545376fc2c68cfd7967772cab"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00239",
-    "is_synthetic": true,
-    "request_type": "data_request",
-    "platform": "Platform I",
-    "category": "Impersonation",
-    "priority": "urgent",
-    "legal_route": "data_assistance_order",
-    "sent_at": "2026-09-03T09:49:46+00:00",
-    "acknowledged_at": "2026-09-03T11:50:38.913793+00:00",
-    "claimed_removal_at": null,
-    "data_provided_at": "2026-09-06T21:45:18.643185+00:00",
-    "police_unit_id": "SYN-UNIT-KL-CYBER-05",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "data_provided",
-    "rejection_reason": null,
-    "content_url_hmac": "ca118d975cb8c89bf3ae0f5c03c5434b86cf36a5d1854e911d579afde6979ef1",
-    "content_url_hash": "ca118d975cb8c89bf3ae0f5c03c5434b86cf36a5d1854e911d579afde6979ef1"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00240",
-    "is_synthetic": true,
-    "request_type": "data_request",
-    "platform": "Platform H",
-    "category": "NonConsensualImagery",
-    "priority": "routine",
-    "legal_route": "data_assistance_order",
-    "sent_at": "2026-09-15T03:59:05+00:00",
-    "acknowledged_at": "2026-09-15T04:32:06.745289+00:00",
-    "claimed_removal_at": null,
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-04",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "acknowledged",
-    "rejection_reason": null,
-    "content_url_hmac": "cde3a8b1f5f644bd44754519095411fdd919213db771e77fa35ed18b1fc2f3b9",
-    "content_url_hash": "cde3a8b1f5f644bd44754519095411fdd919213db771e77fa35ed18b1fc2f3b9"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00241",
-    "is_synthetic": true,
-    "request_type": "data_request",
-    "platform": "Platform H",
-    "category": "FinancialFraud",
-    "priority": "urgent",
-    "legal_route": "data_assistance_order",
-    "sent_at": "2026-09-27T09:57:09+00:00",
-    "acknowledged_at": "2026-09-27T11:32:24.490427+00:00",
-    "claimed_removal_at": null,
-    "data_provided_at": "2026-09-28T21:48:25.237145+00:00",
-    "police_unit_id": "SYN-UNIT-KL-CYBER-05",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "data_provided",
-    "rejection_reason": null,
-    "content_url_hmac": "bbaf459b08f7002784de50cac62f17bf53eae644b6151650ecda68bcbd81bf10",
-    "content_url_hash": "bbaf459b08f7002784de50cac62f17bf53eae644b6151650ecda68bcbd81bf10"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00242",
-    "is_synthetic": true,
-    "request_type": "data_request",
-    "platform": "Platform E",
-    "category": "NonConsensualImagery",
-    "priority": "urgent",
-    "legal_route": "data_assistance_order",
-    "sent_at": "2026-09-05T16:40:00+00:00",
-    "acknowledged_at": "2026-09-05T18:52:41.944044+00:00",
-    "claimed_removal_at": null,
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-01",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "expired",
-    "rejection_reason": null,
-    "content_url_hmac": "64a97158b60a96a7181792196e7d0d5e86212e77382168985a31cef802cda22e",
-    "content_url_hash": "64a97158b60a96a7181792196e7d0d5e86212e77382168985a31cef802cda22e"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00243",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform J",
-    "category": "NonConsensualImagery",
-    "priority": "routine",
-    "legal_route": "court_order_or_govt_intimation",
-    "sent_at": "2026-09-26T23:55:10+00:00",
-    "acknowledged_at": "2026-09-27T02:15:10.908640+00:00",
-    "claimed_removal_at": "2026-09-27T14:40:45.500928+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-07",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "62ad4245d592fcc83c8aa9c564d08df2996e5f024ced684afec3f789b7fe3102",
-    "content_url_hash": "62ad4245d592fcc83c8aa9c564d08df2996e5f024ced684afec3f789b7fe3102"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00244",
-    "is_synthetic": true,
-    "request_type": "data_request",
-    "platform": "Platform A",
-    "category": "NonConsensualImagery",
-    "priority": "routine",
-    "legal_route": "data_assistance_order",
-    "sent_at": "2026-09-09T02:45:39+00:00",
-    "acknowledged_at": "2026-09-09T03:21:10.651421+00:00",
-    "claimed_removal_at": null,
-    "data_provided_at": "2026-09-11T17:45:09.300143+00:00",
-    "police_unit_id": "SYN-UNIT-KL-CYBER-08",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "data_provided",
-    "rejection_reason": null,
-    "content_url_hmac": "f690ebbd49ea5121b9f202496144417ec911f8d41edbb9eeab13407de79147c0",
-    "content_url_hash": "f690ebbd49ea5121b9f202496144417ec911f8d41edbb9eeab13407de79147c0"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00245",
-    "is_synthetic": true,
-    "request_type": "data_request",
-    "platform": "Platform C",
-    "category": "Impersonation",
-    "priority": "routine",
-    "legal_route": "data_assistance_order",
-    "sent_at": "2026-09-28T00:12:40+00:00",
-    "acknowledged_at": "2026-09-28T01:23:17.859511+00:00",
-    "claimed_removal_at": null,
-    "data_provided_at": "2026-09-30T07:05:52.937399+00:00",
-    "police_unit_id": "SYN-UNIT-KL-CYBER-02",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "data_provided",
-    "rejection_reason": null,
-    "content_url_hmac": "15b2892a92df857d3ef3343a4ddebc79e80c00da4701c8307c4260567e0f63b4",
-    "content_url_hash": "15b2892a92df857d3ef3343a4ddebc79e80c00da4701c8307c4260567e0f63b4"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00246",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform G",
-    "category": "CSAM",
-    "priority": "routine",
-    "legal_route": "court_order_or_govt_intimation",
-    "sent_at": "2026-09-05T20:44:46+00:00",
-    "acknowledged_at": "2026-09-05T21:14:23.905817+00:00",
-    "claimed_removal_at": "2026-09-07T02:54:46.123908+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-03",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "acd1935ea58835e473f07ac6568ab6b6f3a9e8912e4f417ed923df6948f1f6a7",
-    "content_url_hash": "acd1935ea58835e473f07ac6568ab6b6f3a9e8912e4f417ed923df6948f1f6a7"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00247",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform G",
-    "category": "Impersonation",
-    "priority": "routine",
-    "legal_route": "court_order_or_govt_intimation",
-    "sent_at": "2026-09-09T08:37:38+00:00",
-    "acknowledged_at": "2026-09-09T11:06:03.519908+00:00",
-    "claimed_removal_at": "2026-09-10T05:18:04.595040+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-08",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "df0fe3ff1c662b77d9ed61bd2b215a217b7e141a23f665f911b1c54585089d1e",
-    "content_url_hash": "df0fe3ff1c662b77d9ed61bd2b215a217b7e141a23f665f911b1c54585089d1e"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00248",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform H",
-    "category": "Impersonation",
-    "priority": "urgent",
-    "legal_route": "routine_police_inquiry",
-    "sent_at": "2026-09-16T02:16:55+00:00",
-    "acknowledged_at": "2026-09-16T05:05:49.407139+00:00",
-    "claimed_removal_at": "2026-09-17T02:59:51.901804+00:00",
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-01",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "claimed_removed",
-    "rejection_reason": null,
-    "content_url_hmac": "59816bbdd50c2879c31378ff49a30aa69ad52d205a28503af609177484611da8",
-    "content_url_hash": "59816bbdd50c2879c31378ff49a30aa69ad52d205a28503af609177484611da8"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00249",
-    "is_synthetic": true,
-    "request_type": "takedown",
-    "platform": "Platform H",
-    "category": "Impersonation",
-    "priority": "routine",
-    "legal_route": "grievance_complaint_3_2_b",
-    "sent_at": "2026-09-22T10:38:13+00:00",
-    "acknowledged_at": "2026-09-22T13:37:35.864977+00:00",
-    "claimed_removal_at": null,
-    "data_provided_at": null,
-    "police_unit_id": "SYN-UNIT-KL-CYBER-07",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "rejected",
-    "rejection_reason": "PlatformPolicy: Request exceeds statutory scope or lacks judicial warrant.",
-    "content_url_hmac": "55fb03feed875b6313e3f3131ae2ed66e4c697a198afc79110dfa3a000bddd9b",
-    "content_url_hash": "55fb03feed875b6313e3f3131ae2ed66e4c697a198afc79110dfa3a000bddd9b"
-  },
-  {
-    "request_id": "SYN-REQ-2026-00250",
-    "is_synthetic": true,
-    "request_type": "data_request",
-    "platform": "Platform F",
-    "category": "CSAM",
-    "priority": "routine",
-    "legal_route": "data_assistance_order",
-    "sent_at": "2026-09-25T14:27:33+00:00",
-    "acknowledged_at": "2026-09-25T16:36:13.978488+00:00",
-    "claimed_removal_at": null,
-    "data_provided_at": "2026-09-27T16:24:11.494096+00:00",
-    "police_unit_id": "SYN-UNIT-KL-CYBER-03",
-    "is_complete_request": true,
-    "incompletion_reason": null,
-    "status": "data_provided",
-    "rejection_reason": null,
-    "content_url_hmac": "1f99a060b099d4d2bae8ae9679bc88f9eaafcf626038090be8af7a38e9170985",
-    "content_url_hash": "1f99a060b099d4d2bae8ae9679bc88f9eaafcf626038090be8af7a38e9170985"
+    "content_url_hash": "5946b58e1f6956ceca09ed4d54cb5ed40a06bafc6fce4103ce5ac8a27e36f71a",
+    "jurisdiction": "Kerala",
+    "district": "Thiruvananthapuram"
   }
 ]

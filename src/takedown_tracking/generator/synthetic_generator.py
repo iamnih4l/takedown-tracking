@@ -129,14 +129,23 @@ class SyntheticDataGenerator:
         ]
         priorities = [Priority.ROUTINE, Priority.URGENT, Priority.EMERGENCY_LIFE_THREAT]
         priority_weights = [0.65, 0.25, 0.10]
-        units = [f"SYN-UNIT-KL-CYBER-{i:02d}" for i in range(1, 9)]
+        kerala_units = [
+            ("SYN-UNIT-KL-CYBER-01", "Thiruvananthapuram"),  # Kerala Cyberdome / State Cyber Cell
+            ("SYN-UNIT-KL-CYBER-02", "Ernakulam"),           # Kochi City Cyber Crime Police Station
+            ("SYN-UNIT-KL-CYBER-03", "Kozhikode"),           # Kozhikode City Cyber Crime Police Station
+            ("SYN-UNIT-KL-CYBER-04", "Thrissur"),            # Thrissur City Cyber Crime Police Station
+            ("SYN-UNIT-KL-CYBER-05", "Kollam"),              # Kollam City Cyber Crime Police Station
+            ("SYN-UNIT-KL-CYBER-06", "Kannur"),              # Kannur City Cyber Crime Police Station
+            ("SYN-UNIT-KL-CYBER-07", "Ernakulam"),           # Ernakulam Rural Cyber Crime PS
+            ("SYN-UNIT-KL-CYBER-08", "Thiruvananthapuram"),  # Kerala Cyber Operations Wing
+        ]
 
         for idx in range(1, count + 1):
             req_id = f"SYN-REQ-2026-{idx:05d}"
             platform = self.rng.choice(fictional_platforms)
             category = self.rng.choice(categories)
             priority = self.rng.choices(priorities, weights=priority_weights, k=1)[0]
-            police_unit = self.rng.choice(units)
+            police_unit, district = self.rng.choice(kerala_units)
 
             # 75% takedown requests, 25% data requests
             is_data_req = self.rng.random() < 0.25
@@ -258,6 +267,8 @@ class SyntheticDataGenerator:
                 rejection_reason=rejection_reason,
                 content_url_hmac=url_hmac,
                 content_url_hash=url_hmac,
+                jurisdiction="Kerala",
+                district=district,
             )
             records.append(record)
 

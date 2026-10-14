@@ -492,6 +492,32 @@ body {
   border-radius: var(--radius-full);
 }
 
+.jurisdiction-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 122, 26, 0.12);
+  border: 1px solid rgba(255, 122, 26, 0.35);
+  color: var(--accent-orange);
+  letter-spacing: 0.02em;
+  box-shadow: 0 0 10px rgba(255, 122, 26, 0.1);
+  transition: var(--transition-fast);
+}
+
+.jurisdiction-badge:hover {
+  background: rgba(255, 122, 26, 0.2);
+  border-color: rgba(255, 122, 26, 0.55);
+}
+
+.jurisdiction-badge svg {
+  color: var(--accent-orange);
+  flex-shrink: 0;
+}
+
 .btn-icon {
   width: 36px;
   height: 36px;

@@ -167,6 +167,8 @@ class RequestRecord:
     rejection_reason: Optional[str] = None
     content_url_hmac: Optional[str] = None
     content_url_hash: Optional[str] = None  # Backward-compatibility alias
+    jurisdiction: str = "Kerala"
+    district: Optional[str] = None
 
     def to_dict(self) -> Dict[str, Any]:
         """Convert record to JSON/dictionary compliant with the request_log schema."""
@@ -192,6 +194,8 @@ class RequestRecord:
             "rejection_reason": self.rejection_reason,
             "content_url_hmac": effective_hmac,
             "content_url_hash": effective_hmac,  # preserved for compatibility
+            "jurisdiction": self.jurisdiction,
+            "district": self.district,
         }
 
     @classmethod
@@ -220,6 +224,8 @@ class RequestRecord:
             is_comp = bool(is_comp)
 
         hmac_val = data.get("content_url_hmac") or data.get("content_url_hash")
+        jurisdiction_val = str(data.get("jurisdiction") or "Kerala").strip()
+        district_val = str(data["district"]).strip() if data.get("district") else None
 
         return cls(
             request_id=str(data["request_id"]).strip(),
@@ -240,4 +246,6 @@ class RequestRecord:
             rejection_reason=data.get("rejection_reason"),
             content_url_hmac=hmac_val,
             content_url_hash=hmac_val,
+            jurisdiction=jurisdiction_val,
+            district=district_val,
         )

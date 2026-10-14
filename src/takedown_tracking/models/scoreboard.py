@@ -102,6 +102,8 @@ class ScoreboardMetadata:
     disclaimer: str
     k_anonymity_threshold: int
     total_requests_analyzed: int
+    jurisdiction: str = "Kerala"
+    jurisdiction_scope: str = "Kerala State Cyber Police Jurisdiction (Kerala Police Cyber Operations Wing & Cyberdome)"
 
     def to_dict(self) -> Dict[str, Any]:
         return {
@@ -113,6 +115,8 @@ class ScoreboardMetadata:
             "disclaimer": self.disclaimer,
             "k_anonymity_threshold": self.k_anonymity_threshold,
             "total_requests_analyzed": self.total_requests_analyzed,
+            "jurisdiction": self.jurisdiction,
+            "jurisdiction_scope": self.jurisdiction_scope,
         }
 
 

@@ -343,6 +343,9 @@ class RequestValidator:
 
         # Construct and return validated record
         assert sent_at is not None
+        jurisdiction_val = str(row.get("jurisdiction") or "Kerala").strip()
+        district_val = str(row["district"]).strip() if row.get("district") else None
+
         record = RequestRecord(
             request_id=req_id,
             is_synthetic=is_synth,
@@ -362,5 +365,7 @@ class RequestValidator:
             rejection_reason=row.get("rejection_reason"),
             content_url_hmac=url_identifier,
             content_url_hash=url_identifier,
+            jurisdiction=jurisdiction_val,
+            district=district_val,
         )
         return record, []

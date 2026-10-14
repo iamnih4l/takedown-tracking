@@ -70,7 +70,13 @@ class TakedownRequestHandler(BaseHTTPRequestHandler):
                 self.scoreboard = filter_engine.filter_and_publish(records)
             self.send_json(200, self.scoreboard.to_dict())
         elif path == "/api/health":
-            self.send_json(200, {"status": "healthy", "service": "takedown-tracking", "version": "0.1.0"})
+            self.send_json(200, {
+                "status": "healthy",
+                "service": "takedown-tracking",
+                "version": "0.1.0",
+                "jurisdiction": "Kerala",
+                "jurisdiction_scope": "Kerala State Cyber Police Jurisdiction (Kerala Police Cyber Operations Wing & Cyberdome)",
+            })
         else:
             self.send_error(404, "Not Found")
 
@@ -111,7 +117,7 @@ class TakedownRequestHandler(BaseHTTPRequestHandler):
                         csv_text = raw_body.decode("utf-8", errors="replace")
                         result = RequestImporter.from_csv_string(csv_text)
 
-                pfilter = PrivacyFilter(k_threshold=10, is_demonstration_mode=True)
+                pfilter = PrivacyFilter(k_threshold=10, is_demonstration_mode=True, target_jurisdiction="Kerala")
                 TakedownRequestHandler.scoreboard = pfilter.filter_and_publish(
                     result.valid_records, invalid_records_count=result.invalid_count
                 )

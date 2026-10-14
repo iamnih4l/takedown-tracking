@@ -48,12 +48,17 @@ class PrivacyFilter:
         Category.FINANCIAL_FRAUD,
     }
 
+    DEFAULT_JURISDICTION = "Kerala"
+    DEFAULT_JURISDICTION_SCOPE = "Kerala State Cyber Police Jurisdiction (Kerala Police Cyber Operations Wing & Cyberdome)"
+
     def __init__(
         self,
         k_threshold: int = DEFAULT_K_THRESHOLD,
         is_demonstration_mode: bool = True,
         deadline_config: Optional[DeadlineConfig] = None,
         published_categories: Optional[Set[Category]] = None,
+        target_jurisdiction: Optional[str] = DEFAULT_JURISDICTION,
+        jurisdiction_scope: str = DEFAULT_JURISDICTION_SCOPE,
     ) -> None:
         if k_threshold < 1:
             raise ValueError("k_threshold must be >= 1")
@@ -65,6 +70,8 @@ class PrivacyFilter:
             if published_categories is not None
             else self.DEFAULT_PUBLIC_CATEGORIES
         )
+        self.target_jurisdiction = target_jurisdiction
+        self.jurisdiction_scope = jurisdiction_scope
         self.metrics_engine = MetricsEngine(self.deadline_config)
 
     def filter_and_publish(
@@ -98,12 +105,18 @@ class PrivacyFilter:
         is_demo = self.is_demonstration_mode or any(r.is_synthetic for r in records)
         disclaimer = self.DEMO_DISCLAIMER if is_demo else self.PRODUCTION_DISCLAIMER
 
-        # Scope filtering: filter records to published categories before computing metrics
+        # Scope filtering: filter records to target jurisdiction and published categories before computing metrics
         # so that overall, platform, and category totals are strictly consistent and don't leak out-of-scope counts.
+        scoped_records = records
+        if self.target_jurisdiction is not None:
+            scoped_records = [
+                r for r in scoped_records
+                if getattr(r, "jurisdiction", None) is None
+                or r.jurisdiction.strip().lower() == self.target_jurisdiction.strip().lower()
+            ]
+
         if self.published_categories is not None:
-            scoped_records = [r for r in records if r.category in self.published_categories]
-        else:
-            scoped_records = records
+            scoped_records = [r for r in scoped_records if r.category in self.published_categories]
 
         # 1. Compute overall metrics (global aggregate is permitted as long as total >= k)
         overall_metrics = self.metrics_engine.compute_performance_metrics(
@@ -290,7 +303,9 @@ class PrivacyFilter:
             is_demonstration_mode=is_demo,
             disclaimer=disclaimer,
             k_anonymity_threshold=self.k_threshold,
-            total_requests_analyzed=len(records),
+            total_requests_analyzed=len(scoped_records),
+            jurisdiction=self.target_jurisdiction or "Kerala",
+            jurisdiction_scope=self.jurisdiction_scope,
         )
 
         return PublicScoreboard(

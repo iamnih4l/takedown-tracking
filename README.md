@@ -4,13 +4,14 @@
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12-blue)](https://www.python.org/)
 
-An open-source accountability platform designed to audit and publish empirical response speed metrics for social media intermediaries responding to police takedown orders and data assistance requests under amended statutory rules.
+An open-source accountability platform designed to audit and publish empirical response speed metrics for social media intermediaries responding to lawful police takedown orders and data assistance requests under 2026 statutory rules, specifically tailored to the **Kerala State Police Cyber Jurisdiction** (State Cyber Operations Wing, Kerala Cyberdome, and 14 District Cyber Crime Police Stations - CCPS).
 
 ---
 
-## 1. Operating Modes & Deployment Notice
+## 1. Operating Modes & Regional Focus
 
-* **Demonstration Mode**: Uses 100% synthetic request records with **fictional platform identities** (`Platform A` through `Platform J`), HMAC-SHA-256 pseudonymized URL identifiers, and simulated response profiles. Built for public transparency demonstrations, method calibration, and automated regression testing without associating invented figures with real platforms.
+* **Regional Scope (Kerala State Cyber Jurisdiction)**: The system models lawful communications dispatched under IT Act § 79(3)(b) and 2026 IT Rules amendments from Kerala Police operational units across 14 districts, enforcing regional territorial filtering (`jurisdiction="Kerala"`).
+* **Demonstration Mode**: Uses 100% synthetic request records with **fictional platform identities** (`Platform A` through `Platform J`), Kerala district police stations, HMAC-SHA-256 pseudonymized URL identifiers, and simulated response profiles. Built for public transparency demonstrations, method calibration, and automated regression testing without associating invented figures with real platforms.
 * **Real-World Deployment**: Architected to operate inside an authorized, police-controlled boundary (e.g. prospective Kerala Police cyber infrastructure). All operational data remains strictly segregated within the agency environment, requiring an operator-configured `TAKEDOWN_HMAC_SECRET`.
 
 > **Important Deployment Notice**:

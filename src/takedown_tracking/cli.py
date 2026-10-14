@@ -163,8 +163,13 @@ def cmd_metrics(args: argparse.Namespace) -> int:
     observations = load_observations_file(args.observations)
 
     engine = MetricsEngine(deadline_cfg)
+    records = result.valid_records
+    if getattr(args, "jurisdiction", None):
+        target_jur = args.jurisdiction.strip().lower()
+        records = [r for r in records if getattr(r, "jurisdiction", None) is None or r.jurisdiction.strip().lower() == target_jur]
+
     metrics = engine.compute_performance_metrics(
-        result.valid_records,
+        records,
         invalid_records_count=result.invalid_count,
         as_of=as_of,
         observations=observations,
@@ -192,6 +197,7 @@ def cmd_export_scoreboard(args: argparse.Namespace) -> int:
         k_threshold=args.k_threshold,
         is_demonstration_mode=not args.production_mode,
         deadline_config=deadline_cfg,
+        target_jurisdiction=getattr(args, "jurisdiction", "Kerala"),
     )
 
     scoreboard = privacy_filter.filter_and_publish(
@@ -288,6 +294,12 @@ def build_parser() -> argparse.ArgumentParser:
         default=None,
         help="Optional path to verification observations JSON file",
     )
+    met_parser.add_argument(
+        "--jurisdiction",
+        type=str,
+        default="Kerala",
+        help="Territorial police jurisdiction filter (default: 'Kerala')",
+    )
     met_parser.set_defaults(func=cmd_metrics)
 
     # verify
@@ -328,6 +340,12 @@ def build_parser() -> argparse.ArgumentParser:
         type=int,
         default=10,
         help="k-anonymity suppression threshold (default: 10)",
+    )
+    sb_parser.add_argument(
+        "--jurisdiction",
+        type=str,
+        default="Kerala",
+        help="Target state police jurisdiction (default: 'Kerala')",
     )
     sb_parser.add_argument(
         "--deadlines", type=str, default=None, help="Custom deadline config JSON"
