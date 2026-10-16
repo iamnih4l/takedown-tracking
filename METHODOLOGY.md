@@ -299,3 +299,53 @@ flowchart TD
    - `jurisdiction_scope`: `"Kerala State Cyber Police Jurisdiction (Kerala Police Cyber Operations Wing & Cyberdome)"`
 4. **Legal Conformity**: Deadlines strictly adhere to Section 79(3)(b) of the Information Technology Act, 2000, and the IT (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021 as amended in February 2026.
 
+---
+
+## 10. Curated Edge-Case Test Suite & Verification Matrix
+
+To verify that the platform behaves correctly under real-world operational complexities, an explicit edge-case dataset is maintained in [`data/edge_cases_requests.json`](data/edge_cases_requests.json) with companion observations in [`data/edge_cases_observations.json`](data/edge_cases_observations.json).
+
+### 10.1. Edge-Case Coverage Matrix
+
+| Scenario / Edge Case | Test Record ID | Mechanism Verified | Expected System Behavior |
+| :--- | :--- | :--- | :--- |
+| **Rule 3(1)(d) SLA Compliance** | `EDGE-A-01-31D-PASS` | 3.0h statutory deadline | Removed in 1.5h $\le$ 3.0h $\rightarrow$ compliant. |
+| **Rule 3(2)(b) NCII SLA Compliance** | `EDGE-A-02-32B-PASS` | 2.0h grievance deadline | Removed in 1.2h $\le$ 2.0h $\rightarrow$ compliant. |
+| **Rule 3(2)(b) NCII SLA Miss** | `EDGE-A-03-32B-MISS` | 2.0h grievance deadline | Removed in 3.5h $>$ 2.0h $\rightarrow$ non-compliant / overdue. |
+| **Strictest-Wins Conflict** | `EDGE-A-04-STRICTEST-WINS` | $\min(\text{Route: 3h, Priority: 2h})$ | Evaluates to 2.0h SLA. Removed at 2.5h $\rightarrow$ fails strictest SLA. |
+| **Verifier Overrides Late Claim** | `EDGE-A-05-VERIFIER-WINS` | Independent verification | Platform reported 6.0h, verifier proved 2.0h $\rightarrow$ counted as on-time. |
+| **Contradicted Removal (False Claim)** | `EDGE-A-06-FALSE-CLAIM` | False claim detection | Platform claimed removed at 1.0h, crawler saw content UP at 4.0h $\rightarrow$ False Claim flagged. |
+| **Silent Removal Discovery** | `EDGE-A-07-SILENT-REMOVAL` | Crawler observation | Platform left status `acknowledged`, crawler confirmed removed at 2.5h $\rightarrow$ verified removal. |
+| **Inconclusive Check Fallback** | `EDGE-A-08-UNCERTAIN-FALLBACK` | Observation uncertainty | Crawler login-wall error $\rightarrow$ falls back to platform report; not fabricated as removal. |
+| **Observed Re-upload (7 Days)** | `EDGE-A-09-REUPLOAD` | Persistent surveillance | Removed in 2.0h, identical re-upload discovered at 48.0h $\rightarrow$ Re-upload counted. |
+| **Immature Cohort Protection** | `EDGE-A-10-IMMATURE-PENDING` | `as_of` measurement cutoff | Sent 1.5h before `as_of` with 3h deadline $\rightarrow$ excluded from SLA denominator. |
+| **Mature Overdue Takedown** | `EDGE-A-11-MATURE-OVERDUE` | Survival censoring | Sent 24h before `as_of` with 3h deadline, still pending $\rightarrow$ counts as non-compliant. |
+| **Procedural Quarantine** | `EDGE-A-12-INCOMPLETE-QUARANTINE` | Defect isolation | `MissingCourtOrder` $\rightarrow$ quarantined; excluded from platform penalty. |
+| **Lawful Platform Rejection** | `EDGE-A-13-REJECTION` | Jurisdictional rejection | Excluded from removal speed cohort; tracked under rejection rate. |
+| **Data Assistance Isolation** | `EDGE-A-14-DATA-REQ-PASS` | Section 79(3)(b) (72h SLA) | Met in 30h $\rightarrow$ data SLA compliant; isolated from takedown metrics. |
+| **Regional Territorial Gating** | `EDGE-OUT-OF-REGION-KA` | Territorial scoping | Origin `Karnataka` $\rightarrow$ automatically filtered out by Kerala scope. |
+| **$k$-Anonymity Suppression** | `Platform C` (3 cases) | $k=10$ privacy protection | Suppressed with standardized generic reason. |
+| **$k$-Anonymity Publication** | `Platform A` & `Platform B` ($\ge 10$) | $k=10$ threshold met | Fully published breakdowns and integrity metrics. |
+
+### 10.2. Running Edge-Case Verification
+
+To run the automated verification suite asserting all edge cases:
+
+```bash
+# Set PYTHONPATH and execute edge-cases test suite
+$env:PYTHONPATH="src"
+python -m pytest tests/test_edge_cases_dataset.py -v
+```
+
+To export the public scoreboard from this edge-case dataset:
+
+```bash
+python -m takedown_tracking.cli export-scoreboard \
+  --input data/edge_cases_requests.json \
+  --output data/edge_cases_scoreboard.json \
+  --observations data/edge_cases_observations.json \
+  --as-of "2026-03-15T00:00:00Z" \
+  --k-threshold 10
+```
+
+
